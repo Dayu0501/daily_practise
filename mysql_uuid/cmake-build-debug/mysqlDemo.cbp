@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="mysqlDemo"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/code_test/mysql_uuid/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mysqlDemo">
+				<Option output="E:/code_test/mysql_uuid/cmake-build-debug/mysqlDemo.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/code_test/mysql_uuid/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/code_test/mysql_uuid/include/mysql"/>
+					<Add directory="E:/code_test/mysql_uuid/include/uuid"/>
+					<Add directory="E:/code_test/mysql_uuid/test"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 mysqlDemo"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mysqlDemo/fast">
+				<Option output="E:/code_test/mysql_uuid/cmake-build-debug/mysqlDemo.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/code_test/mysql_uuid/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/code_test/mysql_uuid/include/mysql"/>
+					<Add directory="E:/code_test/mysql_uuid/include/uuid"/>
+					<Add directory="E:/code_test/mysql_uuid/test"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 mysqlDemo/fast"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/code_test/mysql_uuid/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/code_test/mysql_uuid/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/code_test/mysql_uuid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/code_test/mysql_uuid/src/DB_tools.cpp">
+			<Option target="mysqlDemo"/>
+		</Unit>
+		<Unit filename="E:/code_test/mysql_uuid/src/DB_tools.h">
+			<Option target="mysqlDemo"/>
+		</Unit>
+		<Unit filename="E:/code_test/mysql_uuid/src/MySQL_DB.cpp">
+			<Option target="mysqlDemo"/>
+		</Unit>
+		<Unit filename="E:/code_test/mysql_uuid/src/MySQL_DB.h">
+			<Option target="mysqlDemo"/>
+		</Unit>
+		<Unit filename="E:/code_test/mysql_uuid/src/_c_dbTask_sqlOper.cpp">
+			<Option target="mysqlDemo"/>
+		</Unit>
+		<Unit filename="E:/code_test/mysql_uuid/src/_c_dbTask_sqlOper.h">
+			<Option target="mysqlDemo"/>
+		</Unit>
+		<Unit filename="E:/code_test/mysql_uuid/src/baseTool.cpp">
+			<Option target="mysqlDemo"/>
+		</Unit>
+		<Unit filename="E:/code_test/mysql_uuid/src/baseTool.h">
+			<Option target="mysqlDemo"/>
+		</Unit>
+		<Unit filename="E:/code_test/mysql_uuid/src/main.cpp">
+			<Option target="mysqlDemo"/>
+		</Unit>
+		<Unit filename="E:/code_test/mysql_uuid/test/initialization_test.cpp">
+			<Option target="mysqlDemo"/>
+		</Unit>
+		<Unit filename="E:/code_test/mysql_uuid/test/left_right_value_test.cpp">
+			<Option target="mysqlDemo"/>
+		</Unit>
+		<Unit filename="E:/code_test/mysql_uuid/test/move_constructor_test.cpp">
+			<Option target="mysqlDemo"/>
+		</Unit>
+		<Unit filename="E:/code_test/mysql_uuid/test/time_interval.h">
+			<Option target="mysqlDemo"/>
+		</Unit>
+		<Unit filename="E:/code_test/mysql_uuid/test/time_interval_test.cpp">
+			<Option target="mysqlDemo"/>
+		</Unit>
+		<Unit filename="E:/code_test/mysql_uuid/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

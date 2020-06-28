@@ -1,0 +1,4 @@
+"D:\job_install\cl\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\code_test\mysql_uuid
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/code_test/mysql_uuid/cmake-build-debug

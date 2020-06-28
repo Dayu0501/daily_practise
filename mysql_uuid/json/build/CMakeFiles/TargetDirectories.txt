@@ -1,0 +1,3 @@
+/mnt/hgfs/E/code_test/mysql_uuid/json/build/CMakeFiles/edit_cache.dir
+/mnt/hgfs/E/code_test/mysql_uuid/json/build/CMakeFiles/rebuild_cache.dir
+/mnt/hgfs/E/code_test/mysql_uuid/json/build/CMakeFiles/json.dir

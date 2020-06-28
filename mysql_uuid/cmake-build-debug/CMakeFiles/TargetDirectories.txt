@@ -1,0 +1,3 @@
+E:/code_test/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir
+E:/code_test/mysql_uuid/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/code_test/mysql_uuid/cmake-build-debug/CMakeFiles/rebuild_cache.dir
