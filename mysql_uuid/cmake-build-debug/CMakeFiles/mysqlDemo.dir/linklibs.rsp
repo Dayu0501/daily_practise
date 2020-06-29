@@ -1,1 +1,1 @@
-  -LE:/daily_practice/daily_practise/mysql_uuid/lib  -LE:/daily_practice/daily_practise/mysql_uuid/lib/mysql  -llibmysqlclient.so -llibuuid.so -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+  -LF:/daily_practise/daily_practise/mysql_uuid/lib  -LF:/daily_practise/daily_practise/mysql_uuid/lib/mysql  -llibmysqlclient.so -llibuuid.so -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

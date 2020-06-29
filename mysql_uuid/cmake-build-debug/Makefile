@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\job_install\cl\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\job_install\cl\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\daily_practice\daily_practise\mysql_uuid
+CMAKE_SOURCE_DIR = F:\daily_practise\daily_practise\mysql_uuid
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug
+CMAKE_BINARY_DIR = F:\daily_practise\daily_practise\mysql_uuid\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\job_install\cl\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\job_install\cl\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\daily_practise\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles F:\daily_practise\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\daily_practise\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -257,33 +257,6 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/ram_string_test.obj: src/ram_string_test.cpp.obj
-
-.PHONY : src/ram_string_test.obj
-
-# target to build an object file
-src/ram_string_test.cpp.obj:
-	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.obj
-.PHONY : src/ram_string_test.cpp.obj
-
-src/ram_string_test.i: src/ram_string_test.cpp.i
-
-.PHONY : src/ram_string_test.i
-
-# target to preprocess a source file
-src/ram_string_test.cpp.i:
-	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.i
-.PHONY : src/ram_string_test.cpp.i
-
-src/ram_string_test.s: src/ram_string_test.cpp.s
-
-.PHONY : src/ram_string_test.s
-
-# target to generate assembly for a file
-src/ram_string_test.cpp.s:
-	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.s
-.PHONY : src/ram_string_test.cpp.s
-
 test/initialization_test.obj: test/initialization_test.cpp.obj
 
 .PHONY : test/initialization_test.obj
@@ -365,6 +338,60 @@ test/move_constructor_test.cpp.s:
 	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/move_constructor_test.cpp.s
 .PHONY : test/move_constructor_test.cpp.s
 
+test/move_test.obj: test/move_test.cpp.obj
+
+.PHONY : test/move_test.obj
+
+# target to build an object file
+test/move_test.cpp.obj:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/move_test.cpp.obj
+.PHONY : test/move_test.cpp.obj
+
+test/move_test.i: test/move_test.cpp.i
+
+.PHONY : test/move_test.i
+
+# target to preprocess a source file
+test/move_test.cpp.i:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/move_test.cpp.i
+.PHONY : test/move_test.cpp.i
+
+test/move_test.s: test/move_test.cpp.s
+
+.PHONY : test/move_test.s
+
+# target to generate assembly for a file
+test/move_test.cpp.s:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/move_test.cpp.s
+.PHONY : test/move_test.cpp.s
+
+test/raw_string_test.obj: test/raw_string_test.cpp.obj
+
+.PHONY : test/raw_string_test.obj
+
+# target to build an object file
+test/raw_string_test.cpp.obj:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/raw_string_test.cpp.obj
+.PHONY : test/raw_string_test.cpp.obj
+
+test/raw_string_test.i: test/raw_string_test.cpp.i
+
+.PHONY : test/raw_string_test.i
+
+# target to preprocess a source file
+test/raw_string_test.cpp.i:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/raw_string_test.cpp.i
+.PHONY : test/raw_string_test.cpp.i
+
+test/raw_string_test.s: test/raw_string_test.cpp.s
+
+.PHONY : test/raw_string_test.s
+
+# target to generate assembly for a file
+test/raw_string_test.cpp.s:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/raw_string_test.cpp.s
+.PHONY : test/raw_string_test.cpp.s
+
 test/time_interval_test.obj: test/time_interval_test.cpp.obj
 
 .PHONY : test/time_interval_test.obj
@@ -416,9 +443,6 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
-	@echo ... src/ram_string_test.obj
-	@echo ... src/ram_string_test.i
-	@echo ... src/ram_string_test.s
 	@echo ... test/initialization_test.obj
 	@echo ... test/initialization_test.i
 	@echo ... test/initialization_test.s
@@ -428,6 +452,12 @@ help:
 	@echo ... test/move_constructor_test.obj
 	@echo ... test/move_constructor_test.i
 	@echo ... test/move_constructor_test.s
+	@echo ... test/move_test.obj
+	@echo ... test/move_test.i
+	@echo ... test/move_test.s
+	@echo ... test/raw_string_test.obj
+	@echo ... test/raw_string_test.i
+	@echo ... test/raw_string_test.s
 	@echo ... test/time_interval_test.obj
 	@echo ... test/time_interval_test.i
 	@echo ... test/time_interval_test.s
