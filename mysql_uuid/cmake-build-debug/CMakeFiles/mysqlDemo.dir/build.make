@@ -126,10 +126,24 @@ CMakeFiles/mysqlDemo.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mysqlDemo.dir/src/main.cpp.s"
 	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\mysql_uuid\src\main.cpp -o CMakeFiles\mysqlDemo.dir\src\main.cpp.s
 
+CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.obj: CMakeFiles/mysqlDemo.dir/flags.make
+CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.obj: CMakeFiles/mysqlDemo.dir/includes_CXX.rsp
+CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.obj: ../src/ram_string_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\mysqlDemo.dir\src\ram_string_test.cpp.obj -c E:\daily_practice\daily_practise\mysql_uuid\src\ram_string_test.cpp
+
+CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.i"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\mysql_uuid\src\ram_string_test.cpp > CMakeFiles\mysqlDemo.dir\src\ram_string_test.cpp.i
+
+CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.s"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\mysql_uuid\src\ram_string_test.cpp -o CMakeFiles\mysqlDemo.dir\src\ram_string_test.cpp.s
+
 CMakeFiles/mysqlDemo.dir/test/left_right_value_test.cpp.obj: CMakeFiles/mysqlDemo.dir/flags.make
 CMakeFiles/mysqlDemo.dir/test/left_right_value_test.cpp.obj: CMakeFiles/mysqlDemo.dir/includes_CXX.rsp
 CMakeFiles/mysqlDemo.dir/test/left_right_value_test.cpp.obj: ../test/left_right_value_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mysqlDemo.dir/test/left_right_value_test.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mysqlDemo.dir/test/left_right_value_test.cpp.obj"
 	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\mysqlDemo.dir\test\left_right_value_test.cpp.obj -c E:\daily_practice\daily_practise\mysql_uuid\test\left_right_value_test.cpp
 
 CMakeFiles/mysqlDemo.dir/test/left_right_value_test.cpp.i: cmake_force
@@ -143,7 +157,7 @@ CMakeFiles/mysqlDemo.dir/test/left_right_value_test.cpp.s: cmake_force
 CMakeFiles/mysqlDemo.dir/test/time_interval_test.cpp.obj: CMakeFiles/mysqlDemo.dir/flags.make
 CMakeFiles/mysqlDemo.dir/test/time_interval_test.cpp.obj: CMakeFiles/mysqlDemo.dir/includes_CXX.rsp
 CMakeFiles/mysqlDemo.dir/test/time_interval_test.cpp.obj: ../test/time_interval_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mysqlDemo.dir/test/time_interval_test.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mysqlDemo.dir/test/time_interval_test.cpp.obj"
 	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\mysqlDemo.dir\test\time_interval_test.cpp.obj -c E:\daily_practice\daily_practise\mysql_uuid\test\time_interval_test.cpp
 
 CMakeFiles/mysqlDemo.dir/test/time_interval_test.cpp.i: cmake_force
@@ -157,7 +171,7 @@ CMakeFiles/mysqlDemo.dir/test/time_interval_test.cpp.s: cmake_force
 CMakeFiles/mysqlDemo.dir/test/move_constructor_test.cpp.obj: CMakeFiles/mysqlDemo.dir/flags.make
 CMakeFiles/mysqlDemo.dir/test/move_constructor_test.cpp.obj: CMakeFiles/mysqlDemo.dir/includes_CXX.rsp
 CMakeFiles/mysqlDemo.dir/test/move_constructor_test.cpp.obj: ../test/move_constructor_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mysqlDemo.dir/test/move_constructor_test.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mysqlDemo.dir/test/move_constructor_test.cpp.obj"
 	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\mysqlDemo.dir\test\move_constructor_test.cpp.obj -c E:\daily_practice\daily_practise\mysql_uuid\test\move_constructor_test.cpp
 
 CMakeFiles/mysqlDemo.dir/test/move_constructor_test.cpp.i: cmake_force
@@ -171,7 +185,7 @@ CMakeFiles/mysqlDemo.dir/test/move_constructor_test.cpp.s: cmake_force
 CMakeFiles/mysqlDemo.dir/test/initialization_test.cpp.obj: CMakeFiles/mysqlDemo.dir/flags.make
 CMakeFiles/mysqlDemo.dir/test/initialization_test.cpp.obj: CMakeFiles/mysqlDemo.dir/includes_CXX.rsp
 CMakeFiles/mysqlDemo.dir/test/initialization_test.cpp.obj: ../test/initialization_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mysqlDemo.dir/test/initialization_test.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/mysqlDemo.dir/test/initialization_test.cpp.obj"
 	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\mysqlDemo.dir\test\initialization_test.cpp.obj -c E:\daily_practice\daily_practise\mysql_uuid\test\initialization_test.cpp
 
 CMakeFiles/mysqlDemo.dir/test/initialization_test.cpp.i: cmake_force
@@ -189,6 +203,7 @@ mysqlDemo_OBJECTS = \
 "CMakeFiles/mysqlDemo.dir/src/_c_dbTask_sqlOper.cpp.obj" \
 "CMakeFiles/mysqlDemo.dir/src/baseTool.cpp.obj" \
 "CMakeFiles/mysqlDemo.dir/src/main.cpp.obj" \
+"CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.obj" \
 "CMakeFiles/mysqlDemo.dir/test/left_right_value_test.cpp.obj" \
 "CMakeFiles/mysqlDemo.dir/test/time_interval_test.cpp.obj" \
 "CMakeFiles/mysqlDemo.dir/test/move_constructor_test.cpp.obj" \
@@ -202,6 +217,7 @@ mysqlDemo.exe: CMakeFiles/mysqlDemo.dir/src/MySQL_DB.cpp.obj
 mysqlDemo.exe: CMakeFiles/mysqlDemo.dir/src/_c_dbTask_sqlOper.cpp.obj
 mysqlDemo.exe: CMakeFiles/mysqlDemo.dir/src/baseTool.cpp.obj
 mysqlDemo.exe: CMakeFiles/mysqlDemo.dir/src/main.cpp.obj
+mysqlDemo.exe: CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.obj
 mysqlDemo.exe: CMakeFiles/mysqlDemo.dir/test/left_right_value_test.cpp.obj
 mysqlDemo.exe: CMakeFiles/mysqlDemo.dir/test/time_interval_test.cpp.obj
 mysqlDemo.exe: CMakeFiles/mysqlDemo.dir/test/move_constructor_test.cpp.obj
@@ -210,7 +226,7 @@ mysqlDemo.exe: CMakeFiles/mysqlDemo.dir/build.make
 mysqlDemo.exe: CMakeFiles/mysqlDemo.dir/linklibs.rsp
 mysqlDemo.exe: CMakeFiles/mysqlDemo.dir/objects1.rsp
 mysqlDemo.exe: CMakeFiles/mysqlDemo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable mysqlDemo.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable mysqlDemo.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\mysqlDemo.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

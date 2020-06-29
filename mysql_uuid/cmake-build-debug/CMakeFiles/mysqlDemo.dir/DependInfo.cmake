@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "E:/daily_practice/daily_practise/mysql_uuid/src/_c_dbTask_sqlOper.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/src/_c_dbTask_sqlOper.cpp.obj"
   "E:/daily_practice/daily_practise/mysql_uuid/src/baseTool.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/src/baseTool.cpp.obj"
   "E:/daily_practice/daily_practise/mysql_uuid/src/main.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/src/main.cpp.obj"
+  "E:/daily_practice/daily_practise/mysql_uuid/src/ram_string_test.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.obj"
   "E:/daily_practice/daily_practise/mysql_uuid/test/initialization_test.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/test/initialization_test.cpp.obj"
   "E:/daily_practice/daily_practise/mysql_uuid/test/left_right_value_test.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/test/left_right_value_test.cpp.obj"
   "E:/daily_practice/daily_practise/mysql_uuid/test/move_constructor_test.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/test/move_constructor_test.cpp.obj"

@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/mysqlDemo.dir/src/_c_dbTask_sqlOper.cpp.obj"
   "CMakeFiles/mysqlDemo.dir/src/baseTool.cpp.obj"
   "CMakeFiles/mysqlDemo.dir/src/main.cpp.obj"
+  "CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.obj"
   "CMakeFiles/mysqlDemo.dir/test/initialization_test.cpp.obj"
   "CMakeFiles/mysqlDemo.dir/test/left_right_value_test.cpp.obj"
   "CMakeFiles/mysqlDemo.dir/test/move_constructor_test.cpp.obj"

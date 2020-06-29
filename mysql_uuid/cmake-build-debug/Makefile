@@ -257,6 +257,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/ram_string_test.obj: src/ram_string_test.cpp.obj
+
+.PHONY : src/ram_string_test.obj
+
+# target to build an object file
+src/ram_string_test.cpp.obj:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.obj
+.PHONY : src/ram_string_test.cpp.obj
+
+src/ram_string_test.i: src/ram_string_test.cpp.i
+
+.PHONY : src/ram_string_test.i
+
+# target to preprocess a source file
+src/ram_string_test.cpp.i:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.i
+.PHONY : src/ram_string_test.cpp.i
+
+src/ram_string_test.s: src/ram_string_test.cpp.s
+
+.PHONY : src/ram_string_test.s
+
+# target to generate assembly for a file
+src/ram_string_test.cpp.s:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/src/ram_string_test.cpp.s
+.PHONY : src/ram_string_test.cpp.s
+
 test/initialization_test.obj: test/initialization_test.cpp.obj
 
 .PHONY : test/initialization_test.obj
@@ -389,6 +416,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/ram_string_test.obj
+	@echo ... src/ram_string_test.i
+	@echo ... src/ram_string_test.s
 	@echo ... test/initialization_test.obj
 	@echo ... test/initialization_test.i
 	@echo ... test/initialization_test.s

@@ -113,6 +113,9 @@
 		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/src/main.cpp">
 			<Option target="mysqlDemo"/>
 		</Unit>
+		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/src/ram_string_test.cpp">
+			<Option target="mysqlDemo"/>
+		</Unit>
 		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/test/initialization_test.cpp">
 			<Option target="mysqlDemo"/>
 		</Unit>
