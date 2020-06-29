@@ -1,0 +1,445 @@
+https://blog.csdn.net/csdn_blog_lcl/article/details/86261799
+
+sudo mount -t vboxsf shared_file /home/xingoo/shared
+
+代码路径
+http://git.em.io/sunchao/chejian-refactor.git
+
+git clone "http://git.em.io/sunchao/chejian-refactor.git"
+
+安装ssh
+sudo apt-get update
+sudo apt-get install openssh-server
+
+sevice ssh restart
+
+关闭防火墙
+sudo ufw disable
+sudo ufw status
+
+删除mysql
+sudo apt purge mysql-*
+sudo rm -rf /etc/mysql/ /var/lib/mysql
+sudo apt autoremove
+sudo apt autoreclean(如果提示指令有误，就把reclean改成clean)
+
+netstat -tap | grep mysql
+
+查看进程打开的端口号
+netstat -tnlp | grep hunHe*
+
+service mysql restart
+service mysql stop
+service mysql start
+
+journalctl -xe 查看详细日志
+
+chown mysql:mysql mysql
+
+虚拟机和主机之间的通信，基本上是以 socket 的方式进行通信的（这里的 socket 泛指一切 socket，
+包括本地的、网络的等等）某个程序通过 LSP 给系统的 TCP/IP stack 注入了自己的 DLL，如果程序退出时，
+没有把这个 DLL 收回来，或者回收失败、没有彻底回收等，那么这个 DLL 残留的东西影响了整个 TCP/IP stack，
+而且是永久性的。每个 socket 收发的数据包是要经过 TCP/IP stack 的，这个 DLL 可能会对这些 socket 的数据包做了些什么操作（比如修改数据、直接丢弃等等），
+然后所以你的虚拟机就黑屏了……netsh winsock reset这条命令会重置，所以那些被注入的 DLL 就被清理掉了，所以一切都是最初的模样了……
+netsh winsock reset
+
+vm黑屏解决方案：
+https://blog.csdn.net/what_about_us/article/details/81207926
+
+
+数据库授权命令：
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'em-data-9527' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+
+mysqld --initialize
+
+mysqld install
+windows 开启服务:
+net start mysql
+
+
+重启mysql服务
+service mysql restart
+
+
+mysql5.7更改密码：
+update mysql.user set authentication_string=password('em-data-9527') where user='root';
+
+下面命令没有分号；
+source result.sql
+
+sql报错：
+alter  user 'root'@'localhost' identified by '123456';
+flush privileges;
+
+net start mysql
+
+windows查看端口占用：
+netstat -ano | findstr "3306"
+查看哪个进程占用：
+tasklist | findstr "3540"
+
+SET GLOBAL sql_mode='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION';
+
+
+Ubuntu关闭网络服务命令：
+
+service network-manager stop
+
+
+
+重启网络服务命令：
+
+service network-manager restart
+sudo /etc/init.d/networking restart
+
+/etc/network/interface
+
+service network restart
+
+ifconfig eth0 down 卸载网卡
+ifconfig eth0 up1 加载网卡
+
+ifdown eth0 / ifup eth01同上
+
+kill 掉算法的进程
+# ./kill_chejian_alg.sh
+重启算法的进程
+/opt/vehicle/algserver/scripts# ./watch_dog_chejian_alg.sh
+
+登录redis
+redis-cli -a 123
+
+清空redis
+flushall
+
+lsof -i:6379
+
+tcpdump tcp port 43048 and host 192.168.20.71 -i enp3s0 -w
+
+
+车间进程的名字是 chejian_redis
+ps -aux | grep chejian
+
+
+
+查看当前机器的ssh连接数量
+w | grep pts |wc -l
+
+redis查看队列 keys *
+
+配置域名解析服务器：
+第二种办法：（成功）
+
+1. 临时修改dns配置文件：vi  /etc/resolv.conf  添加内容如下：
+永久修改为vim  /etc/resolvconf/resolv.conf.d/base：
+
+nameserver 223.5.5.5
+
+2. 重启网卡：sudo /etc/init.d/networking restart
+
+3. ping测试：ping www.baidu.com
+
+4. 测试结果：OK
+
+查看显卡工作的进程
+nvidia-smi
+
+
+netstat -an |grep tcp   查看所有tcp连接包括LISTEN状态
+
+netstat -an |grep ESTABLISHED   查看所有正在连接中的tcp连接
+TCP连接状态详解
+LISTEN：          侦听来自远方的TCP端口的连接请求
+SYN-SENT：    再发送连接请求后等待匹配的连接请求
+SYN-RECEIVED：再收到和发送一个连接请求后等待对方对连接请求的确认
+ESTABLISHED： 代表一个打开的连接
+FIN-WAIT-1：  等待远程TCP连接中断请求，或先前的连接中断请求的确认
+FIN-WAIT-2：  从远程TCP等待连接中断请求
+CLOSE-WAIT：  等待从本地用户发来的连接中断请求
+CLOSING：     等待远程TCP对连接中断的确认
+LAST-ACK：    等待原来的发向远程TCP的连接中断请求的确认
+TIME-WAIT：   等待足够的时间以确保远程TCP接收到连接中断请求的确认
+CLOSED：      没有任何连接状态
+
+
+[root@localhost ~]# watch -n 1 "uptime"                 # 监测系统负载
+[root@localhost ~]# watch -n 1 "netstat -tunlp"         # 监测网络连接
+[root@localhost ~]# watch -n 1 "pstree | grep nginx"    # 监测 Nginx 连接数
+[root@localhost ~]# watch -n 1 "netstat -n | awk '/^tcp/ {print $5}' | awk -F: '{print $1}' | sort | uniq -c| sort -rn | head"    # 监测每个IP的连接数
+[root@localhost ~]# watch -n 1 "netstat -an | awk '/^tcp/ {++sta[\$NF]} END {for(key in sta) print key, "\t", sta[key]}'"         # 监测每个连接状态的数量
+
+
+cnmon info 寒武纪显卡驱动信息命令
+
+添加开机自启动
+vim /etc/rc.local
+
+打包命令
+tar -czvf algClassConfig_3503.tar.gz algClassConfig_5303
+
+telnet测试对方端口：
+<code class="language-html hljs xml">测试域名：
+# telnet baidu.com 80
+Trying 123.125.114.144...
+Connected to baidu.com (123.125.114.144).         #==>出现Connected表示连通了，说
+明百度的80端口开放的
+Escape character is '^]'.             #==>按“ctrl+]”退出此地。
+^]
+telnet> quit
+Connection closed.
+测试IP地址：
+# telnet 108.5.16.139 7506
+Trying 108.5.16.139...
+Connected to static-108-5-16-139.nycmny.fios.verizon.net (108.5.16.139).    #==>出
+现Connected表示连通了，说明108.5.16.139的7506端口开放的
+Escape character is '^]'.        #==>按“ctrl+]”退出此地
+^]
+telnet> quit
+Connection closed.</code>
+
+检查对端端口情况：
+https://www.cnblogs.com/Archmage/p/7570749.html
+
+
+1.从远程克隆一份到本地可以通过git clone
+
+Git支持HTTPS和SSH协议，SSH速度更快
+
+$ git clone http://192.168.30.29/sunchao/chejian-refactor.git
+
+2.本地库关联远程库，在本地仓库目录运行命令
+
+$ git remote add origin git@172.20.46.127:study/spring-boot-xxx.git
+
+3.添加本地文件
+
+$ git add .
+
+4.提交本地仓库
+
+$ git commit -m '注释内容'
+
+5.拉取代码远程主机代码(提交之前先拉取最新代码)
+
+$ git pull origin master
+
+6.推送本地分支代码到远程主机
+
+$ git push -u origin master (第一次使用加上了-u参数，是推送内容并关联分支)
+
+卸载软件
+sudo apt-get --purge remove 包名
+
+
+tar
+-c: 建立压缩档案
+-x：解压
+-t：查看内容
+-r：向压缩归档文件末尾追加文件
+-u：更新原压缩包中的文件
+
+这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个。下面的参数是根据需要在压缩或解压档案时可选的。
+
+-z：有gzip属性的
+-j：有bz2属性的
+-Z：有compress属性的
+-v：显示所有过程
+-O：将文件解开到标准输出
+
+下面的参数-f是必须的
+
+-f: 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名。
+
+# tar -cf all.tar *.jpg
+这条命令是将所有.jpg的文件打成一个名为all.tar的包。-c是表示产生新的包，-f指定包的文件名。
+
+# tar -rf all.tar *.gif
+这条命令是将所有.gif的文件增加到all.tar的包里面去。-r是表示增加文件的意思。
+
+# tar -uf all.tar logo.gif
+这条命令是更新原来tar包all.tar中logo.gif文件，-u是表示更新文件的意思。
+
+# tar -tf all.tar
+这条命令是列出all.tar包中所有文件，-t是列出文件的意思
+
+# tar -xf all.tar
+这条命令是解出all.tar包中所有文件，-x是解开的意思
+
+压缩
+
+tar –cvf jpg.tar *.jpg //将目录里所有jpg文件打包成tar.jpg
+
+tar –czf jpg.tar.gz *.jpg   //将目录里所有jpg文件打包成jpg.tar后，并且将其用gzip压缩，生成一个gzip压缩过的包，命名为jpg.tar.gz
+
+tar –cjf jpg.tar.bz2 *.jpg //将目录里所有jpg文件打包成jpg.tar后，并且将其用bzip2压缩，生成一个bzip2压缩过的包，命名为jpg.tar.bz2
+
+tar –cZf jpg.tar.Z *.jpg   //将目录里所有jpg文件打包成jpg.tar后，并且将其用compress压缩，生成一个umcompress压缩过的包，命名为jpg.tar.Z
+
+rar a jpg.rar *.jpg //rar格式的压缩，需要先下载rar for linux
+
+zip jpg.zip *.jpg //zip格式的压缩，需要先下载zip for linux
+
+解压
+
+tar –xvf file.tar //解压 tar包
+
+tar -xzvf file.tar.gz //解压tar.gz
+
+tar -xjvf file.tar.bz2   //解压 tar.bz2
+
+tar –xZvf file.tar.Z   //解压tar.Z
+
+unrar e file.rar //解压rar
+
+unzip file.zip //解压zip
+
+总结
+
+1、*.tar 用 tar –xvf 解压
+
+2、*.gz 用 gzip -d或者gunzip 解压
+
+3、*.tar.gz和*.tgz 用 tar –xzf 解压
+
+4、*.bz2 用 bzip2 -d或者用bunzip2 解压
+
+5、*.tar.bz2用tar –xjf 解压
+
+6、*.Z 用 uncompress 解压
+
+7、*.tar.Z 用tar –xZf 解压
+
+8、*.rar 用 unrar e解压
+
+9、*.zip 用 unzip 解压
+
+把可执行程序放到/usr/local/sbin下，就可以直接执行了
+
+grep -o  \{\"name\":zhiDongDeng\",\"value\":\"true\"\}  log/alg/infolog.2020-05-19\:10.log | wc -l
+
+
+ssh yucicheung@10.170.11.147
+#或
+ssh -l yucicheung 10.170.11.147
+
+格式化代码
+Shift + Alt + F
+
+发版本打包命令
+cd /home/public/software/buildpackage &&  ./start_build.sh
+
+/etc/ld.so.conf.d/chejian.conf
+ldconfig /etc/ld.so.conf.d/chejian.conf(绝对路径)
+
+https://blog.csdn.net/ruohuanni/article/details/45902567
+
+VSCode列选择快捷键：Alt+Shift+左键
+
+增加tcp的缓冲区在什么情况下是无用的：延迟 丢包
+
+
+SELECT count(*) FROM vehicle_checks WHERE created_at < "2019-09-23 08:00:00";
+
+配置文件中加注释导致问题。误操作把//这种注释加到了配置文件中了。
+
+inyint(1)  和 tinyint(3) 没什么区别，占用字节都是一位，存储范围都是一样的。
+
+tinyint(3) zerofill ，当插入的数据少于3位的时候，左边自动补零，这才是限制显示长度啊。
+
+int(1) 和 tinyint(1) ，够用的情况下，优先选择tinyint(1)，因为占字节少、节省空间。
+
+tinyint一个字节   smallint  两个字节   MEDIUMINT三个字节  int 4个字节  BIGINT 8个字节。
+
+
+grep -o  \{\"name\":zhiDongDeng\",\"value\":\"true\"\}  log/alg/infolog.2020-05-19\:10.log | wc -l
+
+nohup /home/java/new_chejian/bin.sh start
+
+
+echo 3 > /proc/sys/vm/drop_caches
+
+
+
+上面的echo 3 是清理所有缓存
+
+echo 0 是不释放缓存
+
+echo 1 是释放页缓存
+
+ehco 2 是释放dentries和inodes缓存
+
+echo 3 是释放 1 和 2 中说道的的所有缓存
+
+nohup和&的区别
+nohup是永久执行
+&是指在后台运行
+
+运行 nohup --help
+Run COMMAND, ignoring hangup signals. 可以看到是“运行命令，忽略挂起信号”
+就是指，用nohup运行命令可以使命令永久的执行下去，和用户终端没有关系，例如我们断开SSH连接都不会影响他的运行，注意了nohup没有后台运行的意思；&才是后台运行
+
+&是指在后台运行，但当用户推出(挂起)的时候，命令自动也跟着退出
+
+那么，我们可以巧妙的吧他们结合起来用就是
+nohup COMMAND &
+这样就能使命令永久的在后台执行
+
+举个例子nohup tail -f nohup.out
+然后退出登录，再连接，用ps -ef 你会还能看到在运行
+ps -ef
+root      3457     1  0 18:20 ?        00:00:00 tail -f nohup.out
+
+另外，nohup执行后，会产生日子文件，把命令的执行中的消息保存到这个文件中，一般在当前目录下，如果当前目录不可写，那么自动保存到执行这个命令的用户的home目录下，例如root的话就保存在/root/下
+
+这个我们常在运行命令和脚本中常用到的
+
+
+rm hunHeJiaoTong;scp yulichao@192.168.20.71:/home/yulichao/code_code/code_base_working/chejian-refactor/build/hunHeJiaoTong ./
+
+windowns下写的shell脚本换行结束是以\n\r结尾的，而linux下是以\n结尾的，所有多出来了一个\r，
+这是用命令：sed -i 's/\r$//' start.sh 回车，就把start.sh的\r换成空白，
+sed -i 's/\r$//' start.sh 把windows上的文件格式转换成linux的。
+
+./hunHeJiaoTong -mv 用来打包
+
+rm -rf chejian-refactor; scp -r yulichao@192.168.20.71:/home/yulichao/code_code/code_base_working/chejian-refactor ./ ; cd chejian-refactor/build ; make clean && make -j8 ; cp hunHeJiaoTong /opt/vehicle/program/programPath/bin ;  ll /opt/vehicle/program/programPath/bin/hunHeJiaoTong
+
+qmake ../chejian/hunHeJiaoTong.pro -r -spec linux-g++-64 CONFIG+=debug
+
+
+SELECT a.zhaoPianLeiXing, ifnull(b.shuoMing, '通过') AS shuoMing
+	, ifnull(b.passcount, 0) AS passcount, a.allcount
+	, CONCAT(ROUND(ifnull(b.passcount, 0) / a.allcount * 100, 2), '%') AS per
+FROM (
+	SELECT zhaoPianLeiXing, COUNT(*) AS allcount
+	FROM photo_info
+	WHERE (1 = 1
+		AND zhaoPianLeiXing IN ('0113')
+		AND inDbTime > '2020-06-12 00:00:00'
+		AND inDbTime < '2020-06-12 23:59:59'
+		AND jieGuo IN (1, 5))
+	GROUP BY zhaoPianLeiXing
+) a
+	LEFT JOIN (
+		SELECT zhaoPianLeiXing, shuoMing, COUNT(*) AS passcount
+		FROM photo_info
+		WHERE (1 = 1
+			AND jieGuo IN ('1', '5')
+			AND zhaoPianLeiXing IN ('0113')
+			AND inDbTime > '2020-06-12 00:00:00'
+			AND inDbTime < '2020-06-12 23:59:59')
+		GROUP BY zhaoPianLeiXing, shuoMing
+	) b
+	ON a.zhaoPianLeiXing = b.zhaoPianLeiXing
+ORDER BY b.zhaoPianLeiXing, b.passcount
+
+
+chejian_v2_yulichao_20200616_1044_深圳_0297_三个签名联合判定_0201_行驶证判定身份证的有无_珠海非粤C车辆判定_福州_0348_制动尾灯_0322_制动尾灯_0202号牌申请表签名有效期为3个月_0167_车辆正前方车牌判定.rar
+
+
+shift + alt + a   ---> /**/
+ctrl + /             ---> //
+
+https://blog.csdn.net/qianqin_2014
