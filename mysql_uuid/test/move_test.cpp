@@ -16,27 +16,27 @@ public:
     }
 
     //此处调用string的move constructor
-    explicit myType(string val) : val(move(val)) {
+    explicit myType(string val) : _val(move(val)) {
         cout << "I am param constructor !" << endl;
     }
 
-    myType(const myType& ins) : val(ins.val) {
+    myType(const myType& ins) : _val(ins._val) {
         cout << "I am copy constructor !" << endl;
     }
 
-    myType(myType&& ins)  noexcept : val(move(ins.val)) {
+    myType(myType&& ins)  noexcept : _val(move(ins._val)) {
         cout << "I am move constructor !" << endl;
     }
 
     myType& operator=(const myType& ins) {
         cout << "I am operator= !" << endl;
-        val = ins.val;
+        _val = ins._val;
 
         return *this;
     }
 
 public:
-    string val{};
+    string _val{};
 };
 
 int main() {

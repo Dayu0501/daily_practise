@@ -1,3 +1,3 @@
-F:/daily_practise/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir
-F:/daily_practise/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/edit_cache.dir
-F:/daily_practise/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir
+E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/rebuild_cache.dir
