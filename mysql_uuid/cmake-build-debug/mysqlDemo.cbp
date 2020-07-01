@@ -137,6 +137,9 @@
 		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/test/time_interval_test.cpp">
 			<Option target="mysqlDemo"/>
 		</Unit>
+		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/test/variadic_template.cpp">
+			<Option target="mysqlDemo"/>
+		</Unit>
 		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

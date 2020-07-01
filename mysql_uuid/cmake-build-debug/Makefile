@@ -446,6 +446,33 @@ test/time_interval_test.cpp.s:
 	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/time_interval_test.cpp.s
 .PHONY : test/time_interval_test.cpp.s
 
+test/variadic_template.obj: test/variadic_template.cpp.obj
+
+.PHONY : test/variadic_template.obj
+
+# target to build an object file
+test/variadic_template.cpp.obj:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/variadic_template.cpp.obj
+.PHONY : test/variadic_template.cpp.obj
+
+test/variadic_template.i: test/variadic_template.cpp.i
+
+.PHONY : test/variadic_template.i
+
+# target to preprocess a source file
+test/variadic_template.cpp.i:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/variadic_template.cpp.i
+.PHONY : test/variadic_template.cpp.i
+
+test/variadic_template.s: test/variadic_template.cpp.s
+
+.PHONY : test/variadic_template.s
+
+# target to generate assembly for a file
+test/variadic_template.cpp.s:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/variadic_template.cpp.s
+.PHONY : test/variadic_template.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -491,6 +518,9 @@ help:
 	@echo ... test/time_interval_test.obj
 	@echo ... test/time_interval_test.i
 	@echo ... test/time_interval_test.s
+	@echo ... test/variadic_template.obj
+	@echo ... test/variadic_template.i
+	@echo ... test/variadic_template.s
 .PHONY : help
 
 

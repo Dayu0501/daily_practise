@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/mysqlDemo.dir/test/move_test.cpp.obj"
   "CMakeFiles/mysqlDemo.dir/test/raw_string_test.cpp.obj"
   "CMakeFiles/mysqlDemo.dir/test/time_interval_test.cpp.obj"
+  "CMakeFiles/mysqlDemo.dir/test/variadic_template.cpp.obj"
   "libmysqlDemo.dll.a"
   "mysqlDemo.exe"
   "mysqlDemo.exe.manifest"

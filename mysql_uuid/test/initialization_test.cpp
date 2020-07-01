@@ -105,5 +105,14 @@ int main() {
         //该for循环中是会调用myC的以const string为参数的构造函数的，来构造item
     }
 
+    cout << "------------------------" << endl;
+
+    string str11 = "粤";
+
+    cout << "str11 = " << str11 << endl;
+
+    cout << "char = " << str11.substr(0, 3) << endl;
+
+    cout << "strlen = " << str11.size() << endl;
     return 0;
 }
