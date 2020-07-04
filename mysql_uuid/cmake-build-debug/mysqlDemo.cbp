@@ -113,10 +113,16 @@
 		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/src/main.cpp">
 			<Option target="mysqlDemo"/>
 		</Unit>
+		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/test/aliansTemplate.cpp">
+			<Option target="mysqlDemo"/>
+		</Unit>
 		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/test/initialization_test.cpp">
 			<Option target="mysqlDemo"/>
 		</Unit>
 		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/test/left_right_value_test.cpp">
+			<Option target="mysqlDemo"/>
+		</Unit>
+		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/test/lesson/cpp_actual_combat.cpp">
 			<Option target="mysqlDemo"/>
 		</Unit>
 		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/test/move_constructor.cpp">

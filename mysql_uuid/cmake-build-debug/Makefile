@@ -257,6 +257,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+test/aliansTemplate.obj: test/aliansTemplate.cpp.obj
+
+.PHONY : test/aliansTemplate.obj
+
+# target to build an object file
+test/aliansTemplate.cpp.obj:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/aliansTemplate.cpp.obj
+.PHONY : test/aliansTemplate.cpp.obj
+
+test/aliansTemplate.i: test/aliansTemplate.cpp.i
+
+.PHONY : test/aliansTemplate.i
+
+# target to preprocess a source file
+test/aliansTemplate.cpp.i:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/aliansTemplate.cpp.i
+.PHONY : test/aliansTemplate.cpp.i
+
+test/aliansTemplate.s: test/aliansTemplate.cpp.s
+
+.PHONY : test/aliansTemplate.s
+
+# target to generate assembly for a file
+test/aliansTemplate.cpp.s:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/aliansTemplate.cpp.s
+.PHONY : test/aliansTemplate.cpp.s
+
 test/initialization_test.obj: test/initialization_test.cpp.obj
 
 .PHONY : test/initialization_test.obj
@@ -310,6 +337,33 @@ test/left_right_value_test.s: test/left_right_value_test.cpp.s
 test/left_right_value_test.cpp.s:
 	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/left_right_value_test.cpp.s
 .PHONY : test/left_right_value_test.cpp.s
+
+test/lesson/cpp_actual_combat.obj: test/lesson/cpp_actual_combat.cpp.obj
+
+.PHONY : test/lesson/cpp_actual_combat.obj
+
+# target to build an object file
+test/lesson/cpp_actual_combat.cpp.obj:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/lesson/cpp_actual_combat.cpp.obj
+.PHONY : test/lesson/cpp_actual_combat.cpp.obj
+
+test/lesson/cpp_actual_combat.i: test/lesson/cpp_actual_combat.cpp.i
+
+.PHONY : test/lesson/cpp_actual_combat.i
+
+# target to preprocess a source file
+test/lesson/cpp_actual_combat.cpp.i:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/lesson/cpp_actual_combat.cpp.i
+.PHONY : test/lesson/cpp_actual_combat.cpp.i
+
+test/lesson/cpp_actual_combat.s: test/lesson/cpp_actual_combat.cpp.s
+
+.PHONY : test/lesson/cpp_actual_combat.s
+
+# target to generate assembly for a file
+test/lesson/cpp_actual_combat.cpp.s:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/lesson/cpp_actual_combat.cpp.s
+.PHONY : test/lesson/cpp_actual_combat.cpp.s
 
 test/move_constructor.obj: test/move_constructor.cpp.obj
 
@@ -497,12 +551,18 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... test/aliansTemplate.obj
+	@echo ... test/aliansTemplate.i
+	@echo ... test/aliansTemplate.s
 	@echo ... test/initialization_test.obj
 	@echo ... test/initialization_test.i
 	@echo ... test/initialization_test.s
 	@echo ... test/left_right_value_test.obj
 	@echo ... test/left_right_value_test.i
 	@echo ... test/left_right_value_test.s
+	@echo ... test/lesson/cpp_actual_combat.obj
+	@echo ... test/lesson/cpp_actual_combat.i
+	@echo ... test/lesson/cpp_actual_combat.s
 	@echo ... test/move_constructor.obj
 	@echo ... test/move_constructor.i
 	@echo ... test/move_constructor.s
