@@ -98,8 +98,7 @@ void foo() {
     shape_wrapper ptr_wrapper(create_shape(shape_type::circle));
 }
 
-
-template<typename T>
+template <typename T>
 class smart_ptr {
 public:
     explicit smart_ptr(T *ptr = nullptr) : ptr_(ptr) {

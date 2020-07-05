@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\job_install\cl\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\job_install\cl\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\daily_practice\daily_practise\mysql_uuid
+CMAKE_SOURCE_DIR = F:\daily_practise\daily_practise\mysql_uuid
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug
+CMAKE_BINARY_DIR = F:\daily_practise\daily_practise\mysql_uuid\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\job_install\cl\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\job_install\cl\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\daily_practise\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles F:\daily_practise\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\daily_practise\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -283,6 +283,33 @@ test/aliansTemplate.s: test/aliansTemplate.cpp.s
 test/aliansTemplate.cpp.s:
 	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/aliansTemplate.cpp.s
 .PHONY : test/aliansTemplate.cpp.s
+
+test/depthCpp11.obj: test/depthCpp11.cpp.obj
+
+.PHONY : test/depthCpp11.obj
+
+# target to build an object file
+test/depthCpp11.cpp.obj:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/depthCpp11.cpp.obj
+.PHONY : test/depthCpp11.cpp.obj
+
+test/depthCpp11.i: test/depthCpp11.cpp.i
+
+.PHONY : test/depthCpp11.i
+
+# target to preprocess a source file
+test/depthCpp11.cpp.i:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/depthCpp11.cpp.i
+.PHONY : test/depthCpp11.cpp.i
+
+test/depthCpp11.s: test/depthCpp11.cpp.s
+
+.PHONY : test/depthCpp11.s
+
+# target to generate assembly for a file
+test/depthCpp11.cpp.s:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/depthCpp11.cpp.s
+.PHONY : test/depthCpp11.cpp.s
 
 test/initialization_test.obj: test/initialization_test.cpp.obj
 
@@ -554,6 +581,9 @@ help:
 	@echo ... test/aliansTemplate.obj
 	@echo ... test/aliansTemplate.i
 	@echo ... test/aliansTemplate.s
+	@echo ... test/depthCpp11.obj
+	@echo ... test/depthCpp11.i
+	@echo ... test/depthCpp11.s
 	@echo ... test/initialization_test.obj
 	@echo ... test/initialization_test.i
 	@echo ... test/initialization_test.s
