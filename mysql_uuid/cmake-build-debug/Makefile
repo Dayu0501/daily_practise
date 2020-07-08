@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\job_install\cl_mymechine\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "D:\job_install\cl_mymechine\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = F:\daily_practise\daily_practise\mysql_uuid
+CMAKE_SOURCE_DIR = E:\daily_practice\daily_practise\mysql_uuid
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = F:\daily_practise\daily_practise\mysql_uuid\cmake-build-debug
+CMAKE_BINARY_DIR = E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = F:\daily_practise\daily_practise\mysql_uuid\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\job_install\cl_mymechine\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\job_install\cl_mymechine\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\daily_practise\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles F:\daily_practise\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\daily_practise\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\mysql_uuid\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -527,6 +527,33 @@ test/time_interval_test.cpp.s:
 	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/time_interval_test.cpp.s
 .PHONY : test/time_interval_test.cpp.s
 
+test/trivilItem.obj: test/trivilItem.cpp.obj
+
+.PHONY : test/trivilItem.obj
+
+# target to build an object file
+test/trivilItem.cpp.obj:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/trivilItem.cpp.obj
+.PHONY : test/trivilItem.cpp.obj
+
+test/trivilItem.i: test/trivilItem.cpp.i
+
+.PHONY : test/trivilItem.i
+
+# target to preprocess a source file
+test/trivilItem.cpp.i:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/trivilItem.cpp.i
+.PHONY : test/trivilItem.cpp.i
+
+test/trivilItem.s: test/trivilItem.cpp.s
+
+.PHONY : test/trivilItem.s
+
+# target to generate assembly for a file
+test/trivilItem.cpp.s:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/trivilItem.cpp.s
+.PHONY : test/trivilItem.cpp.s
+
 test/variadic_template.obj: test/variadic_template.cpp.obj
 
 .PHONY : test/variadic_template.obj
@@ -608,6 +635,9 @@ help:
 	@echo ... test/time_interval_test.obj
 	@echo ... test/time_interval_test.i
 	@echo ... test/time_interval_test.s
+	@echo ... test/trivilItem.obj
+	@echo ... test/trivilItem.i
+	@echo ... test/trivilItem.s
 	@echo ... test/variadic_template.obj
 	@echo ... test/variadic_template.i
 	@echo ... test/variadic_template.s
