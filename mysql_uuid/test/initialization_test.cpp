@@ -35,7 +35,7 @@ public:
 //        cout << "i am myC(const string& s) !" << endl;
 //    }
 
-    myC(const string& s) {
+    explicit myC(const string& s) {
         cout << "i am myC(const string& s) !" << endl;
     }
 };

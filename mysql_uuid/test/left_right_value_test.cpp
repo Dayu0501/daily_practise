@@ -23,7 +23,7 @@ public:
         _len = 0;
     }
 
-    MyString(const char *p) {
+    explicit MyString(const char *p) {
         _len = strlen(p);
         _init_data(p);
 
