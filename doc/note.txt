@@ -468,5 +468,4 @@ chmod 755 ~/.ssh
 cat ~/.ssh/id_rsa.pub
 3,公共密钥复制到要访问的机器
 最后把这个密钥对中的公共密钥复制到你要访问的机器上去，并保存为
-
 ~/.ssh/authorized_keys
