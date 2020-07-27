@@ -146,6 +146,9 @@
 		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/test/time_interval_test.cpp">
 			<Option target="mysqlDemo"/>
 		</Unit>
+		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/test/time_test.cpp">
+			<Option target="mysqlDemo"/>
+		</Unit>
 		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/test/trivilItem.cpp">
 			<Option target="mysqlDemo"/>
 		</Unit>

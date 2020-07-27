@@ -527,6 +527,33 @@ test/time_interval_test.cpp.s:
 	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/time_interval_test.cpp.s
 .PHONY : test/time_interval_test.cpp.s
 
+test/time_test.obj: test/time_test.cpp.obj
+
+.PHONY : test/time_test.obj
+
+# target to build an object file
+test/time_test.cpp.obj:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/time_test.cpp.obj
+.PHONY : test/time_test.cpp.obj
+
+test/time_test.i: test/time_test.cpp.i
+
+.PHONY : test/time_test.i
+
+# target to preprocess a source file
+test/time_test.cpp.i:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/time_test.cpp.i
+.PHONY : test/time_test.cpp.i
+
+test/time_test.s: test/time_test.cpp.s
+
+.PHONY : test/time_test.s
+
+# target to generate assembly for a file
+test/time_test.cpp.s:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/time_test.cpp.s
+.PHONY : test/time_test.cpp.s
+
 test/trivilItem.obj: test/trivilItem.cpp.obj
 
 .PHONY : test/trivilItem.obj
@@ -635,6 +662,9 @@ help:
 	@echo ... test/time_interval_test.obj
 	@echo ... test/time_interval_test.i
 	@echo ... test/time_interval_test.s
+	@echo ... test/time_test.obj
+	@echo ... test/time_test.i
+	@echo ... test/time_test.s
 	@echo ... test/trivilItem.obj
 	@echo ... test/trivilItem.i
 	@echo ... test/trivilItem.s

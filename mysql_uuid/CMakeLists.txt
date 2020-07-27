@@ -28,7 +28,8 @@ LINK_DIRECTORIES(${PROJECT_SOURCE_DIR}/lib/mysql)
 #LINK_DIRECTORIES(${PROJECT_SOURCE_DIR}/lib/json)
 
 #生成可执行文件
-ADD_EXECUTABLE(mysqlDemo ${DIR_SRCS} "src/DB_tools.h" "src/DB_tools.cpp" test/left_right_value_test.cpp test/time_interval.h test/time_interval_test.cpp test/move_constructor_test.cpp test/initialization_test.cpp test/raw_string_test.cpp test/move_test.cpp test/move_constructor.cpp test/variadic_template.cpp test/aliansTemplate.cpp test/lesson/cpp_actual_combat.cpp test/depthCpp11.cpp test/trivilItem.cpp)
+ADD_EXECUTABLE(mysqlDemo ${DIR_SRCS} "src/DB_tools.h" "src/DB_tools.cpp" test/left_right_value_test.cpp test/time_interval.h
+        test/time_interval_test.cpp test/move_constructor_test.cpp test/initialization_test.cpp test/raw_string_test.cpp test/move_test.cpp test/move_constructor.cpp test/variadic_template.cpp test/aliansTemplate.cpp test/lesson/cpp_actual_combat.cpp test/depthCpp11.cpp test/trivilItem.cpp test/time_test.cpp)
 
 #为mysqlDemo添加共享库链接
 TARGET_LINK_LIBRARIES(mysqlDemo libmysqlclient.so)
