@@ -358,7 +358,9 @@ grep -o  \{\"name\":zhiDongDeng\",\"value\":\"true\"\}  log/alg/infolog.2020-05-
 nohup /home/java/new_chejian/bin.sh start
 
 
-echo 3 > /proc/sys/vm/drop_caches
+
+# 清理文件页、目录项、Inodes等各种缓存
+$ echo 3 > /proc/sys/vm/drop_caches
 
 
 
@@ -372,9 +374,45 @@ ehco 2 是释放dentries和inodes缓存
 
 echo 3 是释放 1 和 2 中说道的的所有缓存
 
+#写入临时文件区
+$ dd if=/dev/urandom of=/tmp/file bs=1M count=500
+
+# 首先清理缓存
+$ echo 3 > /proc/sys/vm/drop_caches
+# 然后运行dd命令向磁盘分区/dev/sdb1写入2G数据
+$ dd if=/dev/urandom of=/dev/sdb1 bs=1M count=2048
+
+if为读文件   of为写文件
+/dev/urandom 为随机设备
+
+# 首先清理缓存
+$ echo 3 > /proc/sys/vm/drop_caches
+# 运行dd命令读取文件数据 
+$ dd if=/tmp/file of=/dev/null
+/dev/null 是空设备
+
+一、不重启电脑，禁用启用swap，立刻生效
+# 禁用命令
+sudo swapoff -a
+
+# 启用命令
+sudo swapon -a
+# 查看交换分区的状态
+
+sudo free -m
+
 nohup和&的区别
 nohup是永久执行
 &是指在后台运行
+
+bcc软件包的安装
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4052245BD4284CDD
+echo "deb https://repo.iovisor.org/apt/xenial xenial main" | sudo tee /etc/apt/sources.list.d/iovisor.list
+sudo apt-get update
+sudo apt-get install -y bcc-tools libbcc-examples linux-headers-$(uname -r)
+操作完这些步骤，bcc 提供的所有工具就都安装到 /usr/share/bcc/tools 这个目录中了。不过这里提醒你，bcc 软件包默认不会把这些工具配置到系统的 PATH 路径中，所以你得自己手动配置：
+$ export PATH=$PATH:/usr/share/bcc/tools
 
 运行 nohup --help
 Run COMMAND, ignoring hangup signals. 可以看到是“运行命令，忽略挂起信号”
@@ -469,3 +507,6 @@ cat ~/.ssh/id_rsa.pub
 3,公共密钥复制到要访问的机器
 最后把这个密钥对中的公共密钥复制到你要访问的机器上去，并保存为
 ~/.ssh/authorized_keys
+
+//go 软件包的路径
+https://github.com/golang 
