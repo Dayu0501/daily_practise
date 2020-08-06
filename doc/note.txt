@@ -114,6 +114,8 @@ redis-cli -a 123
 清空redis
 flushall
 
+redis查看队列 keys *
+
 lsof -i:6379
 
 tcpdump tcp port 43048 and host 192.168.20.71 -i enp3s0 -w
@@ -127,7 +129,7 @@ ps -aux | grep chejian
 查看当前机器的ssh连接数量
 w | grep pts |wc -l
 
-redis查看队列 keys *
+
 
 配置域名解析服务器：
 第二种办法：（成功）
@@ -510,3 +512,44 @@ cat ~/.ssh/id_rsa.pub
 
 //go 软件包的路径
 https://github.com/golang 
+
+[root@localhost ~]# strace php 2>&1 | grep php.ini
+open("/Data/apps/php7/bin/php.ini", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/Data/apps/php7/etc/php.ini", O_RDONLY) = 3
+
+$(pidof app)
+
+memleak -a -p $(pidof app)
+或者
+memleak -a
+
+查看内核版本命令uname -a
+或者 cat /proc/version
+或者uname -r
+
+valgrind --tool=memcheck --leak-check=full ./testValgrind
+
+swap开启的两种形式
+# 创建Swap文件
+$ fallocate -l 8G /mnt/swapfile
+# 修改权限只有根用户可以访问
+$ chmod 600 /mnt/swapfile
+# 配置Swap文件
+$ mkswap /mnt/swapfile
+# 开启Swap
+$ swapon /mnt/swapfile
+
+
+# 按VmSwap使用量对进程排序，输出进程名称、进程ID以及SWAP用量
+$ for file in /proc/*/status ; do awk '/VmSwap|Name|^Pid/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 3 -n -r | head
+dockerd 2226 10728 kB
+docker-containe 2251 8516 kB
+snapd 936 4020 kB
+networkd-dispat 911 836 kB
+polkitd 1004 44 kB
+
+关闭swap
+swapoff -a 
+
+清空swap
+$ swapoff -a && swapon -a 

@@ -128,6 +128,9 @@
 		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/test/lesson/cpp_actual_combat.cpp">
 			<Option target="mysqlDemo"/>
 		</Unit>
+		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/test/memleak/test1.cpp">
+			<Option target="mysqlDemo"/>
+		</Unit>
 		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/test/move_constructor.cpp">
 			<Option target="mysqlDemo"/>
 		</Unit>
@@ -153,6 +156,9 @@
 			<Option target="mysqlDemo"/>
 		</Unit>
 		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/test/variadic_template.cpp">
+			<Option target="mysqlDemo"/>
+		</Unit>
+		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/test/vector_test_learn.cpp">
 			<Option target="mysqlDemo"/>
 		</Unit>
 		<Unit filename="E:/daily_practice/daily_practise/mysql_uuid/CMakeLists.txt">

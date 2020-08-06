@@ -392,6 +392,33 @@ test/lesson/cpp_actual_combat.cpp.s:
 	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/lesson/cpp_actual_combat.cpp.s
 .PHONY : test/lesson/cpp_actual_combat.cpp.s
 
+test/memleak/test1.obj: test/memleak/test1.cpp.obj
+
+.PHONY : test/memleak/test1.obj
+
+# target to build an object file
+test/memleak/test1.cpp.obj:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/memleak/test1.cpp.obj
+.PHONY : test/memleak/test1.cpp.obj
+
+test/memleak/test1.i: test/memleak/test1.cpp.i
+
+.PHONY : test/memleak/test1.i
+
+# target to preprocess a source file
+test/memleak/test1.cpp.i:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/memleak/test1.cpp.i
+.PHONY : test/memleak/test1.cpp.i
+
+test/memleak/test1.s: test/memleak/test1.cpp.s
+
+.PHONY : test/memleak/test1.s
+
+# target to generate assembly for a file
+test/memleak/test1.cpp.s:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/memleak/test1.cpp.s
+.PHONY : test/memleak/test1.cpp.s
+
 test/move_constructor.obj: test/move_constructor.cpp.obj
 
 .PHONY : test/move_constructor.obj
@@ -608,6 +635,33 @@ test/variadic_template.cpp.s:
 	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/variadic_template.cpp.s
 .PHONY : test/variadic_template.cpp.s
 
+test/vector_test_learn.obj: test/vector_test_learn.cpp.obj
+
+.PHONY : test/vector_test_learn.obj
+
+# target to build an object file
+test/vector_test_learn.cpp.obj:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/vector_test_learn.cpp.obj
+.PHONY : test/vector_test_learn.cpp.obj
+
+test/vector_test_learn.i: test/vector_test_learn.cpp.i
+
+.PHONY : test/vector_test_learn.i
+
+# target to preprocess a source file
+test/vector_test_learn.cpp.i:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/vector_test_learn.cpp.i
+.PHONY : test/vector_test_learn.cpp.i
+
+test/vector_test_learn.s: test/vector_test_learn.cpp.s
+
+.PHONY : test/vector_test_learn.s
+
+# target to generate assembly for a file
+test/vector_test_learn.cpp.s:
+	$(MAKE) -f CMakeFiles\mysqlDemo.dir\build.make CMakeFiles/mysqlDemo.dir/test/vector_test_learn.cpp.s
+.PHONY : test/vector_test_learn.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -647,6 +701,9 @@ help:
 	@echo ... test/lesson/cpp_actual_combat.obj
 	@echo ... test/lesson/cpp_actual_combat.i
 	@echo ... test/lesson/cpp_actual_combat.s
+	@echo ... test/memleak/test1.obj
+	@echo ... test/memleak/test1.i
+	@echo ... test/memleak/test1.s
 	@echo ... test/move_constructor.obj
 	@echo ... test/move_constructor.i
 	@echo ... test/move_constructor.s
@@ -671,6 +728,9 @@ help:
 	@echo ... test/variadic_template.obj
 	@echo ... test/variadic_template.i
 	@echo ... test/variadic_template.s
+	@echo ... test/vector_test_learn.obj
+	@echo ... test/vector_test_learn.i
+	@echo ... test/vector_test_learn.s
 .PHONY : help
 
 

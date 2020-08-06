@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "E:/daily_practice/daily_practise/mysql_uuid/test/initialization_test.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/test/initialization_test.cpp.obj"
   "E:/daily_practice/daily_practise/mysql_uuid/test/left_right_value_test.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/test/left_right_value_test.cpp.obj"
   "E:/daily_practice/daily_practise/mysql_uuid/test/lesson/cpp_actual_combat.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/test/lesson/cpp_actual_combat.cpp.obj"
+  "E:/daily_practice/daily_practise/mysql_uuid/test/memleak/test1.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/test/memleak/test1.cpp.obj"
   "E:/daily_practice/daily_practise/mysql_uuid/test/move_constructor.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/test/move_constructor.cpp.obj"
   "E:/daily_practice/daily_practise/mysql_uuid/test/move_constructor_test.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/test/move_constructor_test.cpp.obj"
   "E:/daily_practice/daily_practise/mysql_uuid/test/move_test.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/test/move_test.cpp.obj"
@@ -22,6 +23,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "E:/daily_practice/daily_practise/mysql_uuid/test/time_test.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/test/time_test.cpp.obj"
   "E:/daily_practice/daily_practise/mysql_uuid/test/trivilItem.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/test/trivilItem.cpp.obj"
   "E:/daily_practice/daily_practise/mysql_uuid/test/variadic_template.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/test/variadic_template.cpp.obj"
+  "E:/daily_practice/daily_practise/mysql_uuid/test/vector_test_learn.cpp" "E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug/CMakeFiles/mysqlDemo.dir/test/vector_test_learn.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

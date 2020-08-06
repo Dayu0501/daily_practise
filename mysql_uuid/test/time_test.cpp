@@ -46,9 +46,29 @@ time_t strTime2unix(const std::string& time, const std::string& format) {
     return mktime(&tm);
 }
 
+
+//test case
+bool subBeforAlgCheck() {
+
+    std::string yxqz = "2020-11-01 00:00:00.0";
+    printf("@@@@@ yxqz = %s\n", yxqz.c_str());
+
+    time_t desStamp = strTime2unix(yxqz, "%d-%d-%d %d:%d:%d");
+    time_t curStamp = getTimeStamp();
+    if ((desStamp - curStamp) / (24 * 60 * 60) >= 90) {
+        printf("Not pass current date diff is %lld\n", (desStamp - curStamp) / (24 * 60 * 60));
+
+        return false;
+    } else {
+        printf("Pass current date diff is %lld\n", (desStamp - curStamp) / (24 * 60 * 60));
+
+        return true;
+    }
+}
+
 int main()
 {
-    //std::string str = "2020-05-20 20:04:00.0";
+    //std::string str = "2020-11-20 20:04:00.0";
     std::string str = "09dh:89";
     time_t t = strTime2unix(str, "%d-%d-%d %d:%d:%d");
 
@@ -74,6 +94,10 @@ int main()
     cout << "---------------------------------------" << endl;
     std::string str1{"2020年05月20日 20时04分00秒"};
     cout << strTime2unix(str1, "%d年%d月%d日 %d时%d分%d秒") << endl;
+
+    cout << "---------------------------------------" << endl;
+
+    subBeforAlgCheck();
 
 
     return 0;
