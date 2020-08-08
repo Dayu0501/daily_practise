@@ -99,7 +99,7 @@ sudo /etc/init.d/networking restart
 service network restart
 
 ifconfig eth0 down 卸载网卡
-ifconfig eth0 up1 加载网卡
+ifconfig eth0 up 加载网卡
 
 ifdown eth0 / ifup eth01同上
 
@@ -448,37 +448,6 @@ rm -rf chejian-refactor; scp -r yulichao@192.168.20.71:/home/yulichao/code_code/
 
 qmake ../chejian/hunHeJiaoTong.pro -r -spec linux-g++-64 CONFIG+=debug
 
-
-SELECT a.zhaoPianLeiXing, ifnull(b.shuoMing, '通过') AS shuoMing
-	, ifnull(b.passcount, 0) AS passcount, a.allcount
-	, CONCAT(ROUND(ifnull(b.passcount, 0) / a.allcount * 100, 2), '%') AS per
-FROM (
-	SELECT zhaoPianLeiXing, COUNT(*) AS allcount
-	FROM photo_info
-	WHERE (1 = 1
-		AND zhaoPianLeiXing IN ('0113')
-		AND inDbTime > '2020-06-12 00:00:00'
-		AND inDbTime < '2020-06-12 23:59:59'
-		AND jieGuo IN (1, 5))
-	GROUP BY zhaoPianLeiXing
-) a
-	LEFT JOIN (
-		SELECT zhaoPianLeiXing, shuoMing, COUNT(*) AS passcount
-		FROM photo_info
-		WHERE (1 = 1
-			AND jieGuo IN ('1', '5')
-			AND zhaoPianLeiXing IN ('0113')
-			AND inDbTime > '2020-06-12 00:00:00'
-			AND inDbTime < '2020-06-12 23:59:59')
-		GROUP BY zhaoPianLeiXing, shuoMing
-	) b
-	ON a.zhaoPianLeiXing = b.zhaoPianLeiXing
-ORDER BY b.zhaoPianLeiXing, b.passcount
-
-
-chejian_v2_yulichao_20200616_1044_深圳_0297_三个签名联合判定_0201_行驶证判定身份证的有无_珠海非粤C车辆判定_福州_0348_制动尾灯_0322_制动尾灯_0202号牌申请表签名有效期为3个月_0167_车辆正前方车牌判定.rar
-
-
 shift + alt + a   ---> /**/
 ctrl + /             ---> //
 
@@ -553,3 +522,21 @@ swapoff -a
 
 清空swap
 $ swapoff -a && swapon -a 
+
+从 /proc/meminfo 中，查询活跃页和非活跃页的大小
+# grep表示只保留包含active的指标（忽略大小写）
+# sort表示按照字母顺序排序
+$ cat /proc/meminfo | grep -i active | sort
+Active(anon):     167976 kB
+Active(file):     971488 kB
+Active:          1139464 kB
+Inactive(anon):      720 kB
+Inactive(file):  2109536 kB
+Inactive:        2110256 kB
+
+可以查看到哪个进程因为内存不足被杀死
+$ dmesg | grep -i "Out of memory"
+Out of memory: Kill process 9329 (java) score 321 or sacrifice child
+
+ubuntu开机自启动rc.local中的执行的成功与否的日志，会输出在/var/log/syslog中。比如：/etc/rc.local中某个命令执行失败。
+
