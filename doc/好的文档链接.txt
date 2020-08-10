@@ -6,3 +6,12 @@ https://www.cnblogs.com/liliuguang/p/10935080.html
 
 https://shockerli.net/
 
+《如何通过Smem命令行检查Ubuntu上的内存使用情况》
+https://www.linuxidc.com/Linux/2018-01/150193.htm
+https://www.cnblogs.com/kerrycode/p/5079319.html
+
+《Memstat -- 查看Linux共享库的内存占用》
+http://blog.chinaunix.net/uid-1724205-id-2813140.html
+
+
+
