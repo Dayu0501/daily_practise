@@ -540,3 +540,6 @@ Out of memory: Kill process 9329 (java) score 321 or sacrifice child
 
 ubuntu开机自启动rc.local中的执行的成功与否的日志，会输出在/var/log/syslog中。比如：/etc/rc.local中某个命令执行失败。
 
+一个进程占用了多少空间：
+https://www.cnblogs.com/arnoldlu/p/9375377.html
+
