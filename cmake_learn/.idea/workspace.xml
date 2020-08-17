@@ -13,6 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="949f9612-5aac-452e-ad81-698a3207d813" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/linux常用工具命令.doc" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/linux常用工具命令.doc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../doc/好的文档链接.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/好的文档链接.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +67,7 @@
       <updated>1597310526856</updated>
       <workItem from="1597310528740" duration="5205000" />
       <workItem from="1597371797748" duration="5436000" />
-      <workItem from="1597643099235" duration="8319000" />
+      <workItem from="1597643099235" duration="9201000" />
     </task>
     <servers />
   </component>

@@ -16,5 +16,8 @@ http://blog.chinaunix.net/uid-1724205-id-2813140.html
 cmake 
 https://blog.csdn.net/QTVLC/article/details/82380413
 
+qmake pro
+https://blog.csdn.net/wangrunmin/article/details/7746893?utm_source=blogxgwz8
+
 
 
