@@ -1,0 +1,8 @@
+/home/yulichao/code_code/daily_practice/daily_practise/cmake_learn/build/CMakeFiles/edit_cache.dir
+/home/yulichao/code_code/daily_practice/daily_practise/cmake_learn/build/CMakeFiles/rebuild_cache.dir
+/home/yulichao/code_code/daily_practice/daily_practise/cmake_learn/build/Tmath/CMakeFiles/edit_cache.dir
+/home/yulichao/code_code/daily_practice/daily_practise/cmake_learn/build/Tmath/CMakeFiles/rebuild_cache.dir
+/home/yulichao/code_code/daily_practice/daily_practise/cmake_learn/build/Tmath/CMakeFiles/Tmath.dir
+/home/yulichao/code_code/daily_practice/daily_practise/cmake_learn/build/src/CMakeFiles/rebuild_cache.dir
+/home/yulichao/code_code/daily_practice/daily_practise/cmake_learn/build/src/CMakeFiles/edit_cache.dir
+/home/yulichao/code_code/daily_practice/daily_practise/cmake_learn/build/src/CMakeFiles/myTest.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/demoTest.dir/test.cpp.o  -o demoTest  -L/home/yulichao/code_code/daily_practice/daily_practise/cmake_learn/test/../libs -rdynamic -lmylib -Wl,-rpath,/home/yulichao/code_code/daily_practice/daily_practise/cmake_learn/test/../libs 

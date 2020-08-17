@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/myTest.dir/main.o  -o bin/myTest  -L../libs -rdynamic -lTmath -lmylib -Wl,-rpath,../libs 

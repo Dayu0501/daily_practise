@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yulichao/code_code/daily_practice/daily_practise/cmake_learn/Tmath/Tmath.cpp
+Tmath.h
+/home/yulichao/code_code/daily_practice/daily_practise/cmake_learn/Tmath/Tmath.h
+iostream
+-
+
+/home/yulichao/code_code/daily_practice/daily_practise/cmake_learn/Tmath/Tmath.h
+

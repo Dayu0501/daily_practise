@@ -1,0 +1,3 @@
+/home/yulichao/code_code/daily_practice/daily_practise/cmake_learn/src/build/CMakeFiles/rebuild_cache.dir
+/home/yulichao/code_code/daily_practice/daily_practise/cmake_learn/src/build/CMakeFiles/edit_cache.dir
+/home/yulichao/code_code/daily_practice/daily_practise/cmake_learn/src/build/CMakeFiles/myTest.dir
