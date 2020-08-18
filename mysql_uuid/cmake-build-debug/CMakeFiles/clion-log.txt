@@ -1,4 +1,4 @@
-"D:\job_install\cl_mymechine\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\daily_practice\daily_practise\mysql_uuid
+"D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" F:\daily_practise\daily_practise\mysql_uuid
 -- The C compiler identification is GNU 8.1.0
 -- The CXX compiler identification is GNU 8.1.0
 -- Check for working C compiler: D:/job_install/mingw/mingw64/bin/gcc.exe
@@ -15,4 +15,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: E:/daily_practice/daily_practise/mysql_uuid/cmake-build-debug
+-- Build files have been written to: F:/daily_practise/daily_practise/mysql_uuid/cmake-build-debug
