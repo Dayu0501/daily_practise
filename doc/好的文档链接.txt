@@ -22,6 +22,10 @@ https://blog.csdn.net/wangrunmin/article/details/7746893?utm_source=blogxgwz8
 仙人掌D
 https://www.jianshu.com/u/08ef8e6eb2f6
 
+gcc编译选项参数
+https://www.runoob.com/w3cnote/gcc-parameter-detail.html
 
+gcc -v解释
+https://www.cnblogs.com/kelamoyujuzhen/p/9411002.html
 
 
