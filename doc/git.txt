@@ -1,0 +1,177 @@
+一、git code
+git config
+用法：git config –global user.name “[name]”
+用法：git config –global user.email “[email address]”
+该命令将分别设置提交代码的用户名和电子邮件地址。
+
+git init
+用法：git init [repository name]
+该命令可用于创建一个新的代码库。
+
+git clone
+用法：git clone [url]
+该命令可用于通过指定的URL获取一个代码库。
+
+git add
+用法：git add [file]
+该命令可以将一个文件添加至stage(暂存区)。
+用法：git add *
+该命令可以将多个文件添加至stage(暂存区)。
+
+git commit
+用法：git commit -m “[ Type in the commit message]”
+该命令可以在版本历史记录中永久记录文件。
+用法：git commit -a
+该命令将提交git add命令添加的所有文件，并提交git add命令之后更改的所有文件。
+
+git reset
+用法：git reset [file]
+该命令将从stage中撤出指定的文件，但可以保留文件的内容。
+用法：git reset [commit]
+该命令可以撤销指定提交之后的所有提交，并在本地保留变更。
+用法：git reset –hard [commit]
+该命令将丢弃所有的历史记录，并回滚到指定的提交。
+
+git status
+用法：git status
+该命令将显示所有需要提交的文件。
+
+git rm
+用法：git rm [file]
+该命令将删除工作目录中的文件，并将删除动作添加到stage。
+
+
+用法：git branch [branch name]
+该命令将创建一个分支。
+
+用法：git branch -d [branch name]
+该命令将删除指定的分支。
+
+git merge
+用法：git merge [branch name]
+该命令可以将指定分支的历史记录合并到当前分支。
+
+git remote
+用法：git remote add [variable name] [Remote Server Link]
+你可以通过该命令将本地的代码库连接到远程服务器。
+git remote add origin git@172.20.46.127:study/spring-boot-xxx.git
+
+git push
+用法：git push [variable name] master
+该命令可以将主分支上提交的变更发送到远程代码库。
+git push origin master
+用法：git push [variable name] [branch]
+该命令可以将指定分支上的提交发送到远程代码库。
+git push -u origin master (第一次使用加上了-u参数，是推送内容并关联分支)
+
+用法：git push –all [variable name]
+该命令可以将所有分支发送到远程代码库。
+git push -all origin
+
+用法：git push [variable name] :[branch name]
+该命令可以删除远程代码库上的一个分支。
+
+git pull
+用法：git pull [Repository Link]
+该命令将获取远程服务器上的变更，并合并到你的工作目录。
+
+
+
+二、 log	
+显示git提交的log日志
+git log
+
+查看某一分支的提交log
+如果alg_refactor从master切出来的
+（1）如果当前分支是master，执行下面命令
+        git log master..alg_refactor  //查看alg_refactor的提交log
+        git log                                //查看的是master提交的log
+        git log master..                        //显示的是空
+（2）如果当前分支是alg_refactor，执行下面命令
+       git log master..alg_refactor  //查看alg_refactor的提交log
+       git log                                 //查看的是总的log
+       git log master..                          //查看alg_refactor的提交log
+
+每次修改的文件列表, 显示状态
+git log --name-status 
+
+每次修改的文件列表
+git log --name-only 
+
+git log –follow[file]
+该命令可用于显示某个文件的版本历史记录，包括文件的重命名。
+
+每次修改的文件列表, 及文件修改的统计
+git log --stat 
+git log -3 --stat（最近3次的）
+
+每次修改的文件列表
+git whatchanged 
+
+每次修改的文件列表, 及文件修改的统计
+git whatchanged --stat 
+
+显示最后一次的文件改变的具体内容
+git show 
+
+显示最后 5 次的文件改变的具体内容
+git show -5 
+
+显示某个 commitid 改变的具体内容
+git show commitid 
+git show commit id --stat 显示某一次的提交的修改的文件信息
+git show 548c72f42f51c22dbf2fdf133426e094c59789e4 --stat
+
+显示每次提交某文件的diff
+git log -p filename
+
+显示某一次提交，某一个文件的修改
+git show c5e69804bbd9725b5dece57f8cbece4a96b9f80b filename
+
+可以看到fileName相关的commit记录
+git log filename
+
+显示某一文件的修改历史，且仅显示一行修改历史的hash值
+git log --pretty=oneline 文件名
+
+三、diff
+git diff用来比较文件之间的不同，其基本用法如下：
+（1）git diff：当工作区有改动，临时区为空，diff的对比是“工作区与最后一次commit提交的仓库的共同文件”；当工作区有改动，临时区不为空，diff对比的是“工作区与暂存区的共同文件”。
+
+（2）git diff --cached 或 git diff --staged：显示暂存区(已add但未commit文件)和最后一次commit(HEAD)之间的所有不相同文件的增删改(git diff --cached和git diff –staged相同作用)
+
+（3）git diff HEAD：显示工作目录(已track但未add文件)和暂存区(已add但未commit文件)与最后一次commit之间的的所有不相同文件的增删改。
+
+     （3.1）git diff HEAD~X或git diff HEAD^^^…(后面有X个^符号，X为正整数):可以查看最近一次提交的版本与往过去时间线前数X个的版本之间的所有同(3)中定义文件之间的增删改。
+
+（4）git diff <分支名1> <分支名2> ：比较两个分支上最后 commit 的内容的差别
+    
+      (4.1)  git diff branch1 branch2 --stat                         显示出所有有差异的文件(不详细,没有对比内容)
+
+      (4.2)  git diff branch1 branch2                                  显示出所有有差异的文件的详细差异(更详细)
+        git diff master alg_refactor
+
+      (4.3)  git diff branch1 branch2 具体文件路径             显示指定文件的详细差异(对比内容)
+
+     我们有2个分支：master、dev(dev为develop的缩写,应是开发新功能的Feature分支)，查看这两个 branch 的区别，除了上面(abc)还有以下几种方式：
+
+     (4.4) git log dev ^master 查看 dev中log有的commit，而 master中log没有的commit
+
+     (4.5) git log master..dev查看 dev 中的log比 master 中的log多提交了哪些内容(注意，列出来的是两个点“..”后边（此处即dev）多提交的内容)
+
+     (4.6) git log dev...master 不知道谁提交的多谁提交的少，单纯想知道有什么不一样
+
+     (4.7) git log --left-right dev...master 在上述情况下，再显示出每个提交是在哪个分支上
+     注意 commit 后面的箭头，根据我们在 –left-right dev…master 的顺序，左箭头 < 表示是 dev 的，右箭头 > 表示是 master的，截图中表示这三个提交都是在 master 分支上的
+
+比较两个历史版本之间的差异
+git diff SHA1 SHA2
+
+显示当前目录和另一个叫'test'分支的差别
+git diff test
+
+显示当前目录下的lib目录和上次提交之间的差别（更准确的说是在当前分支下）
+ git diff HEAD -- ./lib
+
+比较上次提交commit和上上次提交
+git diff HEAD^ HEAD
