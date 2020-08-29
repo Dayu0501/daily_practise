@@ -235,6 +235,8 @@ $ git push -u origin master (第一次使用加上了-u参数，是推送内容�
 sudo apt-get --purge remove 包名
 
 
+
+
 tar
 -c: 建立压缩档案
 -x：解压
