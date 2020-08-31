@@ -1,0 +1,6 @@
+"D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" F:\daily_practise\daily_practise\STL_alg
+-- Configuring done
+CMake Error: Cannot determine link language for target "STL_alg".
+CMake Error: CMake can not determine linker language for target: STL_alg
+-- Generating done
+CMake Generate step failed.  Build files cannot be regenerated correctly.
