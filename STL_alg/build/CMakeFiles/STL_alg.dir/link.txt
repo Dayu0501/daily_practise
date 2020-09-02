@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/STL_alg.dir/remove.cpp.o CMakeFiles/STL_alg.dir/remove_copy.cpp.o  -o STL_alg 
