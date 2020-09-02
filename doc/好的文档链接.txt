@@ -31,4 +31,5 @@ https://www.cnblogs.com/kelamoyujuzhen/p/9411002.html
 c++官方参考文档
 https://zh.cppreference.com/w/%E9%A6%96%E9%A1%B5
 
-
+stl的知乎专栏
+https://zhuanlan.zhihu.com/p/31505598
