@@ -1,3 +1,0 @@
-/home/yulichao/code_code/daily_practice/daily_practise/STL_alg/build/CMakeFiles/rebuild_cache.dir
-/home/yulichao/code_code/daily_practice/daily_practise/STL_alg/build/CMakeFiles/edit_cache.dir
-/home/yulichao/code_code/daily_practice/daily_practise/STL_alg/build/CMakeFiles/STL_alg.dir
