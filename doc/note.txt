@@ -545,3 +545,37 @@ ubuntu开机自启动rc.local中的执行的成功与否的日志，会输出在
 一个进程占用了多少空间：
 https://www.cnblogs.com/arnoldlu/p/9375377.html
 
+
+
+1、查看日期时间
+
+date
+
+2、修改日期
+
+date -s 01/26/2019
+
+3、修改时间
+
+date -s 06:12:01
+
+4、更新计算机硬件时钟
+
+hwclock -w
+
+
+ Ubuntu如何同步网络时间
+1.安装ntpdate工具
+
+sudo apt-get install ntpdate
+2.将系统时间与网络同步
+
+ntpdate cn.pool.ntp.org
+3.将时间写入硬件
+
+hwclock --systohc
+4.查看时间是否已同步
+
+date
+
+
