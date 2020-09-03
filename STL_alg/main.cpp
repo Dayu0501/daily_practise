@@ -54,7 +54,6 @@ std::string getDangTianRiQi()
 
 	return nowTime;
 }
->>>>>>> fb49f2ad80ba9783d569153aa581cd8f4a7350b1
 
 int main() {
 
@@ -62,16 +61,13 @@ int main() {
 	test_DY_remove();
 #endif
 
-<<<<<<< HEAD
 #ifdef DY_REMOVE_IF
     test_DY_remove_if();
 #endif
-=======
 	//vector<string, my_alloc::allocator<string>> ins {"hello", "world"};
 
 	cout << "date is " << getNowDate() << endl;
 	cout << "getDangTianRiQi is " << getDangTianRiQi() << endl;
->>>>>>> fb49f2ad80ba9783d569153aa581cd8f4a7350b1
 
 
 
