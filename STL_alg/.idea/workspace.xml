@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="STL_alg" targetName="STL_alg" />
@@ -11,47 +29,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4792b2d-f42b-4e5d-9c75-05b19d988753" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/STL_alg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/STL_alg.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithmUnity.h" beforeDir="false" afterPath="$PROJECT_DIR$/algorithmUnity.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithmUnity.h.gch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.16.0/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.16.0/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.16.0/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.16.0/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.16.0/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.16.0/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.16.0/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.16.0/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.16.0/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Progress/3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Progress/count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/STL_alg.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/STL_alg.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/STL_alg.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/STL_alg.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/STL_alg.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/STL_alg.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/STL_alg.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/STL_alg.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/STL_alg.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/STL_alg.dir/remove.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/STL_alg.dir/remove_copy.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" />
+    <list default="true" id="2fbe604e-3cf4-41af-9d97-0d6f33ccfdde" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithmUnity.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/algorithmUnity.h.gch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,43 +83,50 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="742" y="304" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599198630999">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="742" y="304" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599198630999" />
     <state x="808" y="211" key="FileChooserDialogImpl" timestamp="1599057526507">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="808" y="211" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599057526507" />
-    <state width="1305" height="333" key="GridCell.Tab.0.bottom" timestamp="1599057531027">
+    <state width="1869" height="199" key="GridCell.Tab.0.bottom" timestamp="1599213294097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1305" height="333" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599057531027" />
-    <state width="1305" height="333" key="GridCell.Tab.0.center" timestamp="1599057531026">
+    <state width="1869" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599213294097" />
+    <state width="1869" height="199" key="GridCell.Tab.0.center" timestamp="1599213294097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1305" height="333" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599057531026" />
-    <state width="1305" height="333" key="GridCell.Tab.0.left" timestamp="1599057531026">
+    <state width="1869" height="199" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599213294097" />
+    <state width="1869" height="199" key="GridCell.Tab.0.left" timestamp="1599213294097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1305" height="333" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599057531026" />
-    <state width="1305" height="333" key="GridCell.Tab.0.right" timestamp="1599057531026">
+    <state width="1869" height="199" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599213294097" />
+    <state width="1869" height="199" key="GridCell.Tab.0.right" timestamp="1599213294097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1305" height="333" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599057531026" />
-    <state width="1305" height="333" key="GridCell.Tab.1.bottom" timestamp="1599057531027">
+    <state width="1869" height="199" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599213294097" />
+    <state width="1869" height="200" key="GridCell.Tab.1.bottom" timestamp="1599213294042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1305" height="333" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599057531027" />
-    <state width="1305" height="333" key="GridCell.Tab.1.center" timestamp="1599057531027">
+    <state width="1869" height="200" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599213294042" />
+    <state width="1869" height="200" key="GridCell.Tab.1.center" timestamp="1599213294042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1305" height="333" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599057531027" />
-    <state width="1305" height="333" key="GridCell.Tab.1.left" timestamp="1599057531027">
+    <state width="1869" height="200" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599213294042" />
+    <state width="1869" height="200" key="GridCell.Tab.1.left" timestamp="1599213294042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1305" height="333" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599057531027" />
-    <state width="1305" height="333" key="GridCell.Tab.1.right" timestamp="1599057531027">
+    <state width="1869" height="200" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599213294042" />
+    <state width="1869" height="200" key="GridCell.Tab.1.right" timestamp="1599213294042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1305" height="333" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599057531027" />
+    <state width="1869" height="200" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599213294042" />
     <state width="800" height="255" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1599057528930">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -147,5 +135,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="800" height="595" key="ImportCMakeProjectWizard.topPanel/0.0.1920.1040@0.0.1920.1040" timestamp="1599057528930" />
+    <state x="581" y="195" width="757" height="650" key="find.popup" timestamp="1599212071447">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="581" y="195" width="757" height="650" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599212071447" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1599212477475">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599212477475" />
   </component>
 </project>
