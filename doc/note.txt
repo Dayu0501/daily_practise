@@ -578,4 +578,10 @@ hwclock --systohc
 
 date
 
+source insight 查找快捷方式
+Ctrl+F
+本文件内查找。 
+F3
+本文件查找结果的上一个。 
+F4
 
