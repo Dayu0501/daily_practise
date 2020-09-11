@@ -1,0 +1,1367 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>deviceConfig</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bm.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bminterface.js"></script>
+
+    <style type="text/css">
+
+    </style>
+
+    <script>
+        var __jylbMapJson = [
+            { "key": "00", "name": "注册登记检验" },
+            { "key": "01", "name": "在用车检验(定检)-即年检" },
+            { "key": "02", "name": "临时检验" },
+            { "key": "03", "name": "特殊检验" },
+            { "key": "04", "name": "在用车检验(非定检)" }]
+  
+        var __syxzMapJson = [{ "key": "A", "name": "非营运" },
+            { "key": "B", "name": "公路客运" },
+            { "key": "C", "name": "公路客运" },
+            { "key": "D", "name": "出租客运" },
+            { "key": "E", "name": "旅游客运" },
+            { "key": "F", "name": "货运" },
+            { "key": "G", "name": "租赁" },
+            { "key": "H", "name": "警用" },
+            { "key": "I", "name": "消防" },
+            { "key": "J", "name": "救护" },
+            { "key": "K", "name": "工程抢险" },
+            { "key": "L", "name": "营转非" },
+            { "key": "M", "name": "出租转非" },
+            { "key": "N", "name": "教练" },
+            { "key": "O", "name": "幼儿校车" },
+            { "key": "P", "name": "小学生校车" },
+            { "key": "Q", "name": "初中生校车" },
+            { "key": "R", "name": "危化品运输" },
+            { "key": "S", "name": "中小学生小车" },
+            { "key": "T", "name": "预约出租客运" },
+            { "key": "U", "name": "预约出租转非" },
+            { "key": "Z", "name": "其他" }];
+
+        var __cllxMapJson = [
+            { "name": "大型客车", "key": "K10" },
+            { "name": "大型普通客车", "key": "K11" },
+            { "name": "大型双层客车", "key": "K12" },
+            { "name": "大型卧铺客车", "key": "K13" },
+            { "name": "大型铰接客车", "key": "K14" },
+            { "name": "大型越野客车", "key": "K15" },
+            { "name": "大型轿车", "key": "K16" },
+            { "name": "大型专用客车", "key": "K17" },
+            { "name": "大型专用校车", "key": "K18" },
+            { "name": "中型客车", "key": "K20" },
+            { "name": "中型普通客车", "key": "K21" },
+            { "name": "中型双层客车", "key": "K22" },
+            { "name": "中型卧铺客车", "key": "K23" },
+            { "name": "中型铰接客车", "key": "K24" },
+            { "name": "中型越野客车", "key": "K25" },
+            { "name": "中型专用客车", "key": "K27" },
+            { "name": "中型专用校车", "key": "K28" },
+            { "name": "小型客车", "key": "K30" },
+            { "name": "小型普通客车", "key": "K31" },
+            { "name": "小型越野客车", "key": "K32" },
+            { "name": "小型轿车", "key": "K33" },
+            { "name": "小型专用客车", "key": "K34" },
+            { "name": "K35", "key": "K35" },
+            { "name": "K36", "key": "K36" },
+            { "name": "K37", "key": "K37" },
+            { "name": "K38", "key": "K38" },
+            { "name": "小型面包车", "key": "K39" },
+            { "name": "微型客车", "key": "K40" },
+            { "name": "微型普通客车", "key": "K41" },
+            { "name": "微型越野客车", "key": "K42" },
+            { "name": "微型轿车", "key": "K43" },
+            { "name": "K44", "key": "K44" },
+            { "name": "K45", "key": "K45" },
+            { "name": "K46", "key": "K46" },
+            { "name": "K47", "key": "K47" },
+            { "name": "K48", "key": "K48" },
+            { "name": "微型面包车", "key": "K49" },
+            { "name": "重型货车", "key": "H10" },
+            { "name": "重型普通货车", "key": "H11" },
+            { "name": "重型厢式货车", "key": "H12" },
+            { "name": "重型封闭货车", "key": "H13" },
+            { "name": "重型罐式货车", "key": "H14" },
+            { "name": "重型平板货车", "key": "H15" },
+            { "name": "重型集装厢车", "key": "H16" },
+            { "name": "重型自卸货车", "key": "H17" },
+            { "name": "重型特殊结构货车", "key": "H18" },
+            { "name": "重型仓栅式货车", "key": "H19" },
+            { "name": "重型车辆运输车", "key": "H1A" },
+            { "name": "中型货车", "key": "H20" },
+            { "name": "中型普通货车", "key": "H21" },
+            { "name": "中型厢式货车", "key": "H22" },
+            { "name": "中型封闭货车", "key": "H23" },
+            { "name": "中型罐式货车", "key": "H24" },
+            { "name": "中型平板货车", "key": "H25" },
+            { "name": "中型集装厢车", "key": "H26" },
+            { "name": "中型自卸货车", "key": "H27" },
+            { "name": "中型特殊结构货车", "key": "H28" },
+            { "name": "中型仓栅式货车", "key": "H29" },
+            { "name": "轻型货车", "key": "H30" },
+            { "name": "轻型普通货车", "key": "H31" },
+            { "name": "轻型厢式货车", "key": "H32" },
+            { "name": "轻型封闭货车", "key": "H33" },
+            { "name": "轻型罐式货车", "key": "H34" },
+            { "name": "轻型平板货车", "key": "H35" },
+            { "name": "轻型自卸货车", "key": "H37" },
+            { "name": "轻型特殊结构货车", "key": "H38" },
+            { "name": "轻型仓栅式货车", "key": "H39" },
+            { "name": "微型货车", "key": "H40" },
+            { "name": "微型普通货车", "key": "H41" },
+            { "name": "微型厢式货车", "key": "H42" },
+            { "name": "微型封闭货车", "key": "H43" },
+            { "name": "微型罐式货车", "key": "H44" },
+            { "name": "微型自卸货车", "key": "H45" },
+            { "name": "微型特殊结构货车", "key": "H46" },
+            { "name": "微型仓栅式货车", "key": "H47" },
+            { "name": "低速货车", "key": "H50" },
+            { "name": "普通低速货车", "key": "H51" },
+            { "name": "厢式低速货车", "key": "H52" },
+            { "name": "罐式低速货车", "key": "H53" },
+            { "name": "自卸低速货车", "key": "H54" },
+            { "name": "仓栅式低速货车", "key": "H55" },
+            { "name": "重型牵引车", "key": "Q10" },
+            { "name": "重型半挂牵引车", "key": "Q11" },
+            { "name": "重型全挂牵引车", "key": "Q12" },
+            { "name": "中型牵引车", "key": "Q20" },
+            { "name": "中型半挂牵引车", "key": "Q21" },
+            { "name": "中型全挂牵引车", "key": "Q22" },
+            { "name": "轻型牵引车", "key": "Q30" },
+            { "name": "轻型半挂牵引车", "key": "Q31" },
+            { "name": "轻型全挂牵引车", "key": "Q32" },
+            { "name": "大型专项作业车", "key": "Z11" },
+            { "name": "中型专项作业车", "key": "Z21" },
+            { "name": "小型专项作业车", "key": "Z31" },
+            { "name": "微型专项作业车", "key": "Z41" },
+            { "name": "重型专项作业车", "key": "Z51" },
+            { "name": "重型载货专项作业车", "key": "Z52" },
+            { "name": "轻型专项作业车", "key": "Z71" },
+            { "name": "轻型载货专项作业车", "key": "Z72" },
+            { "name": "无轨电车", "key": "D11" },
+            { "name": "有轨电车", "key": "D12" },
+            { "name": "三轮摩托车", "key": "M10" },
+            { "name": "普通正三轮摩托车", "key": "M11" },
+            { "name": "轻便正三轮摩托车", "key": "M12" },
+            { "name": "正三轮载客摩托车", "key": "M13" },
+            { "name": "正三轮载货摩托车", "key": "M14" },
+            { "name": "侧三轮摩托车", "key": "M15" },
+            { "name": "二轮摩托车", "key": "M20" },
+            { "name": "普通二轮摩托车", "key": "M21" },
+            { "name": "轻便二轮摩托车", "key": "M22" },
+            { "name": "三轮汽车", "key": "N11" },
+            { "name": "大型轮式拖拉机", "key": "T11" },
+            { "name": "小型拖拉机", "key": "T20" },
+            { "name": "小型轮式拖拉机", "key": "T21" },
+            { "name": "手扶拖拉机", "key": "T22" },
+            { "name": "手扶变形运输机", "key": "T23" },
+            { "name": "轮式装载机械", "key": "J11" },
+            { "name": "轮式挖掘机械", "key": "J12" },
+            { "name": "轮式平地机械", "key": "J13" },
+            { "name": "重型全挂车", "key": "G10" },
+            { "name": "重型普通全挂车", "key": "G11" },
+            { "name": "重型厢式全挂车", "key": "G12" },
+            { "name": "重型罐式全挂车", "key": "G13" },
+            { "name": "重型平板全挂车", "key": "G14" },
+            { "name": "重型集装箱全挂车", "key": "G15" },
+            { "name": "重型自卸全挂车", "key": "G16" },
+            { "name": "重型仓栅式全挂车", "key": "G17" },
+            { "name": "重型旅居全挂车", "key": "G18" },
+            { "name": "重型专项作业全挂车", "key": "G19" },
+            { "name": "中型全挂车", "key": "G20" },
+            { "name": "中型普通全挂车", "key": "G21" },
+            { "name": "中型厢式全挂车", "key": "G22" },
+            { "name": "中型罐式全挂车", "key": "G23" },
+            { "name": "中型平板全挂车", "key": "G24" },
+            { "name": "中型集装箱全挂车", "key": "G25" },
+            { "name": "中型自卸全挂车", "key": "G26" },
+            { "name": "中型仓栅式全挂车", "key": "G27" },
+            { "name": "中型旅居全挂车", "key": "G28" },
+            { "name": "中型专项作业全挂车", "key": "G29" },
+            { "name": "轻型全挂车", "key": "G30" },
+            { "name": "轻型普通全挂车", "key": "G31" },
+            { "name": "轻型厢式全挂车", "key": "G32" },
+            { "name": "轻型罐式全挂车", "key": "G33" },
+            { "name": "轻型平板全挂车", "key": "G34" },
+            { "name": "轻型自卸全挂车", "key": "G35" },
+            { "name": "轻型仓栅式全挂车", "key": "G36" },
+            { "name": "轻型旅居全挂车", "key": "G37" },
+            { "name": "轻型专项作业全挂车", "key": "G38" },
+            { "name": "重型半挂车", "key": "B10" },
+            { "name": "重型普通半挂车", "key": "B11" },
+            { "name": "重型厢式半挂车", "key": "B12" },
+            { "name": "重型罐式半挂车", "key": "B13" },
+            { "name": "重型平板半挂车", "key": "B14" },
+            { "name": "重型集装箱半挂车", "key": "B15" },
+            { "name": "重型自卸半挂车", "key": "B16" },
+            { "name": "重型特殊结构半挂车", "key": "B17" },
+            { "name": "重型仓栅式半挂车", "key": "B18" },
+            { "name": "重型旅居半挂车", "key": "B19" },
+            { "name": "重型专项作业半挂车", "key": "B1A" },
+            { "name": "重型低平板半挂车", "key": "B1B" },
+            { "name": "重型车辆运输半挂车", "key": "B1C" },
+            { "name": "重型平板自卸半挂车", "key": "B1E" },
+            { "name": "中型半挂车", "key": "B20" },
+            { "name": "中型普通半挂车", "key": "B21" },
+            { "name": "中型厢式半挂车", "key": "B22" },
+            { "name": "中型罐式半挂车", "key": "B23" },
+            { "name": "中型平板半挂车", "key": "B24" },
+            { "name": "中型集装箱半挂车", "key": "B25" },
+            { "name": "中型自卸半挂车", "key": "B26" },
+            { "name": "中型特殊结构半挂车", "key": "B27" },
+            { "name": "中型仓栅式半挂车", "key": "B28" },
+            { "name": "中型旅居半挂车", "key": "B29" },
+            { "name": "中型专项作业半挂车", "key": "B2A" },
+            { "name": "中型低平板半挂车", "key": "B2B" },
+            { "name": "轻型半挂车", "key": "B30" },
+            { "name": "轻型普通半挂车", "key": "B31" },
+            { "name": "轻型厢式半挂车", "key": "B32" },
+            { "name": "轻型罐式半挂车", "key": "B33" },
+            { "name": "轻型平板半挂车", "key": "B34" },
+            { "name": "轻型自卸半挂车", "key": "B35" },
+            { "name": "轻型仓栅式半挂车", "key": "B36" },
+            { "name": "轻型旅居半挂车", "key": "B37" },
+            { "name": "轻型专项作业半挂车", "key": "B38" },
+            { "name": "轻型低平板半挂车", "key": "B39" },
+            { "name": "其他", "key": "X99" }
+        ];
+
+        var __CurrencyJson = null;
+        var __QdcsJson = null;
+        var __JqxJson = null;
+
+        function clickCurrency() {
+            var html = "";
+            html += bm_getEditHtmlByJson(__CurrencyJson["value"], true);
+            html += bm_getInputHtml("fromType", "Currency", true);
+            bm_html("div_edit", html);
+            $('#myModal').modal('show');
+        }
+
+        function clickQdcs() {
+            var html = "";
+            html += bm_getEditHtmlByJson(__QdcsJson["value"], true);
+            html += bm_getInputHtml("fromType", "Qdcs", true);
+            bm_html("div_edit", html);
+            $('#myModal').modal('show');
+        }
+
+        function clickJqx() {
+            var html = "";
+            html += bm_getEditHtmlByJson(__JqxJson["value"], true);
+            html += bm_getInputHtml("fromType", "Jqx", true);
+            bm_html("div_edit", html);
+            $('#myModal').modal('show');
+        }
+
+        function loadCurrencyHtml(json) {
+            var tbody_str = "";
+            
+            for (var key in json) {
+                tbody_str += "<tr>";
+                tbody_str += "<td>" + key + "</td>";
+                tbody_str += "<td>" + json[key] + "</td>";
+                tbody_str += "<td><button type=\"button\" class=\"btn btn-primary btn-xs\" onclick=\"clickCurrency()\">编辑</button></td>";
+                tbody_str += "</tr>";
+            }
+           
+            bm_html("tbody_currency", tbody_str);
+        }
+        function loadRequestTimes(json ,id ){
+
+            if ( json.length < 1){
+                return 
+            }
+           
+           //document.getElementById("head_soapRequestTimes").innerHTML = "soap 请求次数记录表"
+           var tbody_str = "";
+           tbody_str="<td onclick=\"GetCurrencyConfig()\"><button type=\"button\" class=\"btn btn-primary btn-xs\">刷新</button></td>"
+           bm_html("head_soapRequestTimes",tbody_str)
+
+           tbody_str = "<tr >";
+            for (var key in json[0]) {
+                tbody_str += "<td >" + key + "</td>";
+            }
+           tbody_str += "</tr>";
+
+           for(var i =0 ;i < json.length ;i++){
+                tbody_str += "<tr>";
+                for (var key in json[i]) {
+                    
+                   // tbody_str += "<td>" + key + "</td>";
+                    tbody_str += "<td >" + json[i][key] + "</td>";
+                    
+                }
+                tbody_str += "</tr>";
+            }
+            // console.log("+++++++++++++++++++++++++id:",id)
+            // console.log("--------value:",tbody_str);
+            //TODO
+            bm_html(id, tbody_str);
+            //document.getElementById(id).style.width= "400%" ;
+        }
+        function GetCurrencyConfig() {
+
+            bm_ajax("GetCurrencyConfig", "", function (json) {
+                console.log(json);
+                if (json["return"]) {
+                    __CurrencyJson = json;
+                    loadCurrencyHtml(json["value"])
+                }
+            });
+
+            bm_ajax("GetSoapRequestCount", "", function (json) {
+                console.log(json);
+                if (json["return"]) {
+                    //__CurrencyJson = json;
+                    //loadCurrencyHtml(json["value"])
+                    loadRequestTimes(json["value"],"tbody_soapRequestTimes" )
+                }
+            });
+
+        }
+
+        function getLicenseCheckResult()
+        {
+            bm_ajax("GetLicenseCheckResult", "", function (json) {
+                console.log(json);
+                if (json["return"]) {
+                    //   __algVectorJson = json;
+
+                    //   loadAlgVectorHtml(json);
+                    if (json["isOk"] == false) {
+
+                        console.log("GetLicenseCheckResult:", json["result"]);
+                        document.getElementById("license_check_result").innerHTML = "您的license文件存在问题：" + JSON.stringify(json["result"])
+                                                                                  + ", 有效期开始时间：" + JSON.stringify(json["beginDate"])
+                                                                                  + ", 有效期结束时间：" + JSON.stringify(json["endDate"]);
+                        document.getElementById("license_check_result").style.color = "red";
+                    } else {
+                        document.getElementById("license_check_result").style.color = "green";
+                        document.getElementById("license_check_result").innerHTML = "license is ok, 有效期开始时间：" + JSON.stringify(json["beginDate"])
+                                                                               + ", 有效期结束时间：" + JSON.stringify(json["endDate"]);
+                    }
+                }
+            });
+        }
+
+        function findNameByKey(json, key) {
+            var itemNum = json.length;
+
+            for (var i = 0; i < itemNum; i++) {
+                if (json[i]["key"] == key) {
+
+                    return json[i]["name"];
+                }
+            }
+            return "未知类型";
+        }
+
+        function deleteByActionAndKey(action, keyName, key, cb) {
+            bm_cgi(action, "&" + keyName + "=" + key, cb);
+        }
+
+        function loadKetNameJsonHtml(innerId, json, mapJson, keyName, deleteAction, deletecbName) {
+            if (json) {
+                var tbody_str = "";
+                var itemNum = json.length;
+
+                for (var i = 0; i < itemNum; i++) {
+                    tbody_str += "<tr>";
+                    tbody_str += "<td>" + findNameByKey(mapJson, json[i][keyName]) + "</td>";
+                    tbody_str += "<td>" + json[i][keyName] + "</td>";
+                    tbody_str += "<td><button type=\"button\" class=\"btn btn-primary btn-xs\" onclick=\"deleteByActionAndKey('" + deleteAction + "','" + keyName + "','" + json[i][keyName] + "'," + deletecbName + ")\">删除</button></td>";
+                    tbody_str += "</tr>";
+                }
+                bm_html(innerId, tbody_str);
+            } else {
+                bm_html(innerId, "");
+            }
+        }
+
+        function loadMapJsonHtml(id, json, funName) {
+            if (json) {
+                var tbody_str = "";
+                var itemNum = json.length;
+                for (var i = 0; i < itemNum; i++) {
+                    tbody_str += "<li><a href=\"#\" onclick=\"" + funName + "('" + json[i]["key"] + "','" + json[i]["name"] + "')\">" + json[i]["key"] + ":" + json[i]["name"] + "</a></li>";
+                }
+                bm_html(id, tbody_str);
+
+            } else {
+                bm_html(id, "");
+            }
+
+        }
+
+
+
+        var __CllxMapKey = "";
+        function cllxMapClick(key, name) {
+            $("#input_cllxMap").val(key + ":" + name);
+            __CllxMapKey = key;
+        }
+
+        var __SyxzMapKey = "";
+        function syxzMapClick(key, name) {
+            $("#input_syxzMap").val(key + ":" + name);
+            __SyxzMapKey = key;
+        }
+
+        var __xiaoCheMapKey = "";
+        function xiaoCheMapClick(key, name) {
+            $("#input_xiaoCheMap").val(key + ":" + name);
+            __xiaoCheMapKey = key;
+        }
+
+        var __jylbMapKey = "";
+        function jylbMapClick(key, name) {
+            $("#input_jylbMap").val(key + ":" + name);
+            __jylbMapKey = key;
+        }
+
+
+
+
+        function addCllxConfig() {
+            if (__CllxMapKey != "") {
+                bm_cgi("AddCllxConfig", "&cllx=" + __CllxMapKey, GetCllxConfig);
+            }
+        }
+
+        function addSyxzConfig() {
+            if (__SyxzMapKey != "") {
+                bm_cgi("AddSyxzConfig", "&syxz=" + __SyxzMapKey, GetSyxzConfig);
+            }
+        }  
+
+        function addXiaoCheConfig() {
+            if (__xiaoCheMapKey != "") {
+                bm_cgi("AddXiaoCheConfig", "&cllx=" + __xiaoCheMapKey, GetXiaoCheConfig);
+            }
+        }  
+
+        function addJylbConfig() {
+            if (__jylbMapKey != "") {
+                bm_cgi("AddJylbConfig", "&jylb=" + __jylbMapKey, GetJylbConfig);
+            }
+        }  
+
+
+
+
+        function loadCllxHtml(json) {
+            loadKetNameJsonHtml("tbody_cllx", json, __cllxMapJson, "cllx", "DeleteCllxConfig", "GetCllxConfig");
+        }
+
+        function loadSyxzHtml(json) {
+            loadKetNameJsonHtml("tbody_syxz", json, __syxzMapJson, "syxz", "DeleteSyxzConfig", "GetSyxzConfig");
+        }
+
+        function loadXiaoCheHtml(json) {
+            loadKetNameJsonHtml("tbody_xiaoChe", json, __cllxMapJson, "cllx", "DeleteXiaoCheConfig", "GetXiaoCheConfig");
+        }
+
+        function loadJylbHtml(json) {
+            loadKetNameJsonHtml("tbody_jylb", json, __jylbMapJson, "jylb", "DeleteJylbConfig", "GetJylbConfig");
+        }
+
+        function jyjgDelete(bh) {
+            bm_cgi("DeleteJyjgConfig", "&bh=" + bh, GetJyjgConfig);
+        }
+        
+        function videoJyjgDelete(bh) {
+            bm_cgi("DeleteVideoJyjgConfig", "&jyjgbh=" + bh, GetVideoJyjgConfig);
+        }
+		
+        function xrjyjgDelete(bh) {
+            bm_cgi("DeleteXrJyjgConfig", "&bh=" + bh, GetXrjyjgConfig);
+        }
+
+        function loadJyjgHtml(json) {
+            if (json) {
+                var Num = json.length;
+                var thead_str = "";
+                var tbody_str = "";
+
+                if (Num > 0) {
+                    thead_str += "<tr>";
+                    for (var key in json[0]) {
+                        thead_str += "<th>" + key + "</th>";
+                    }
+                    thead_str += "<th>" + "操作" + "</th>";
+                    thead_str += "</tr>";
+                }
+
+                for (var i = 0; i < Num; i++) {
+                    tbody_str += "<tr>"
+                    for (var key in json[i]) {
+                        tbody_str += "<td>" + json[i][key] + "</td>";
+                    }
+
+                    tbody_str += "<td><button type=\"button\" class=\"btn btn-primary btn-xs\" onclick=\"jyjgDelete('" + json[i]["bh"] + "')\">删除</button></td>";
+                    tbody_str += "</tr>"
+                }
+
+                bm_html("thead_jyjg", thead_str);
+                bm_html("tbody_jyjg", tbody_str);
+            } else {
+                bm_html("tbody_jyjg", "");
+            }       
+        }
+
+        function loadVideoJyjgHtml(json) {
+            if (json) {
+                var Num = json.length;
+                var thead_str = "";
+                var tbody_str = "";
+
+                if (Num > 0) {
+                    thead_str += "<tr>";
+                    for (var key in json[0]) {
+                        thead_str += "<th>" + key + "</th>";
+                    }
+                    thead_str += "<th>" + "操作" + "</th>";
+                    thead_str += "</tr>";
+                }
+
+                for (var i = 0; i < Num; i++) {
+                    tbody_str += "<tr>"
+                    for (var key in json[i]) {
+                        tbody_str += "<td>" + json[i][key] + "</td>";
+                    }
+
+                    tbody_str += "<td><button type=\"button\" class=\"btn btn-primary btn-xs\" onclick=\"videoJyjgDelete('" + json[i]["jyjgbh"] + "')\">删除</button></td>";
+                    tbody_str += "</tr>"
+                }
+
+                bm_html("thead_videoJyjg", thead_str);
+                bm_html("tbody_videoJyjg", tbody_str);
+            } else {
+                bm_html("tbody_videoJyjg", "");
+            }       
+        }
+		
+        function loadXrjyjgHtml(json) {
+            if (json) {
+                var Num = json.length;
+                var thead_str = "";
+                var tbody_str = "";
+
+                if (Num > 0) {
+                    thead_str += "<tr>";
+                    for (var key in json[0]) {
+                        thead_str += "<th>" + key + "</th>";
+                    }
+                    thead_str += "<th>" + "操作" + "</th>";
+                    thead_str += "</tr>";
+                }
+
+                for (var i = 0; i < Num; i++) {
+                    tbody_str += "<tr>"
+                    for (var key in json[i]) {
+                        tbody_str += "<td>" + json[i][key] + "</td>";
+                    }
+
+                    tbody_str += "<td><button type=\"button\" class=\"btn btn-primary btn-xs\" onclick=\"xrjyjgDelete('" + json[i]["bh"] + "')\">删除</button></td>";
+                    tbody_str += "</tr>"
+                }
+
+                bm_html("thead_xrjyjg", thead_str);
+                bm_html("tbody_xrjyjg", tbody_str);
+            } else {
+                bm_html("tbody_xrjyjg", "");
+            }
+        }
+
+        function addJyjgConfig() {
+            var html = "";
+            html += bm_getEditHtmlByJson({"bh":"","ip":""}, true);
+            html += bm_getInputHtml("fromType", "Jyjg", true);
+            bm_html("div_edit", html);
+            $('#myModal').modal('show');
+        }
+
+        function addVideoJyjgConfig() {
+            var html = "";
+            html += bm_getEditHtmlByJson({"jyjgbh":"", "portIp":"", "tongXunFangShi":"", "xieYiLeiXing":""}, true);
+            html += bm_getInputHtml("fromType", "VideoCheck", true);
+            bm_html("div_edit", html);
+            $('#myModal').modal('show');
+        }
+		
+        function addXrjyjgConfig() {
+            var html = "";
+            html += bm_getEditHtmlByJson({"bh":"","ip":""}, true);
+            html += bm_getInputHtml("fromType", "Xrjyjg", true);
+            bm_html("div_edit", html);
+            $('#myModal').modal('show');
+        }
+
+
+        function hmdDelete(chePai) {
+            bm_cgi("DeleteHmdConfig", "&chePai=" + chePai, GetHmdConfig);
+        }
+
+        function loadHmdHtml(json) {
+            if (json) {
+                var Num = json.length;
+                var thead_str = "";
+                var tbody_str = "";
+
+                if (Num > 0) {
+                    thead_str += "<tr>";
+                    for (var key in json[0]) {
+                        thead_str += "<th>" + key + "</th>";
+                    }
+                    thead_str += "<th>" + "操作" + "</th>";
+                    thead_str += "</tr>";
+                }
+
+                for (var i = 0; i < Num; i++) {
+                    tbody_str += "<tr>"
+                    for (var key in json[i]) {
+                        tbody_str += "<td>" + json[i][key] + "</td>";
+                    }
+
+                    tbody_str += "<td><button type=\"button\" class=\"btn btn-primary btn-xs\" onclick=\"hmdDelete('" + json[i]["hmd"] + "')\">删除</button></td>";
+                    tbody_str += "</tr>"
+                }
+
+                bm_html("thead_hmd", thead_str);
+                bm_html("tbody_hmd", tbody_str);
+            } else {
+                bm_html("tbody_hmd", "");
+            }       
+        }
+
+
+        
+
+        function addHmdConfig() {
+            var html = "";
+            html += bm_getEditHtmlByJson({ "chePai": ""}, true);
+            html += bm_getInputHtml("fromType", "Hmd", true);
+            bm_html("div_edit", html);
+            $('#myModal').modal('show');
+        }
+
+        function cjhHmdDelete(cheJiaHao) {
+            bm_cgi("DeleteCjhHmdConfig", "&cheJiaHao=" + cheJiaHao, GetCjhHmdConfig);
+        }
+
+        function loadCjhHmdHtml(json) {
+            if (json) {
+                var Num = json.length;
+                var thead_str = "";
+                var tbody_str = "";
+                if (Num > 0) {
+                    thead_str += "<tr>";
+                    for (var key in json[0]) {
+                        thead_str += "<th>" + key + "</th>";
+                    }
+                    thead_str += "<th>" + "操作" + "</th>";
+                    thead_str += "</tr>";
+                }
+                for (var i = 0; i < Num; i++) {
+                    tbody_str += "<tr>"
+                    for (var key in json[i]) {
+                        tbody_str += "<td>" + json[i][key] + "</td>";
+                    }
+                    tbody_str += "<td><button type=\"button\" class=\"btn btn-primary btn-xs\" onclick=\"cjhHmdDelete('" + json[i]["cjhHmd"] + "')\">删除</button></td>";
+                    tbody_str += "</tr>"
+                }
+                bm_html("thead_cjhHmd", thead_str);
+                bm_html("tbody_cjhHmd", tbody_str);
+            } else {
+                bm_html("tbody_cjhHmd", "");
+            }       
+        }
+        function addCjhHmdConfig() {
+            var html = "";
+            html += bm_getEditHtmlByJson({ "cheJiaHao": ""}, true);
+            html += bm_getInputHtml("fromType", "CjhHmd", true);
+            bm_html("div_edit", html);
+            $('#myModal').modal('show');
+        }
+
+        function GetCllxConfig() {
+            bm_cgi("GetCllxConfig", "", loadCllxHtml);
+        }
+
+        function GetSyxzConfig() {
+            bm_cgi("GetSyxzConfig", "", loadSyxzHtml);
+        }
+
+        function GetXiaoCheConfig() {
+            bm_cgi("GetXiaoCheConfig", "", loadXiaoCheHtml);
+        }
+
+        function GetJylbConfig() {
+            bm_cgi("GetJylbConfig", "", loadJylbHtml);
+        }
+
+        function GetJyjgConfig() {
+            bm_cgi("GetJyjgConfig", "", loadJyjgHtml);
+        }
+
+        function GetVideoJyjgConfig() {
+            bm_cgi("GetVideoJyjgConfig", "", loadVideoJyjgHtml);
+        }
+		
+        function GetXrjyjgConfig() {
+            bm_cgi("GetXrJyjgConfig", "", loadXrjyjgHtml);
+        }
+
+        function GetHmdConfig() {
+            bm_cgi("GetHmdConfig", "", loadHmdHtml);
+        }
+        function GetCjhHmdConfig() {
+            bm_cgi("GetCjhHmdConfig", "", loadCjhHmdHtml);
+        }
+
+        function loadQdcsHtml(json) {
+            var tbody_str = "";
+            
+            for (var key in json) {
+                tbody_str += "<tr>";
+                tbody_str += "<td>" + key + "</td>";
+                tbody_str += "<td>" + json[key] + "</td>";
+                tbody_str += "<td><button type=\"button\" class=\"btn btn-primary btn-xs\" onclick=\"clickQdcs()\">编辑</button></td>";
+                tbody_str += "</tr>";
+            }
+           
+            bm_html("tbody_qdcs", tbody_str);
+        }
+
+        function loadJqxHtml(json) {
+            var tbody_str = "";
+            
+            for (var key in json) {
+                tbody_str += "<tr>";
+                tbody_str += "<td>" + key + "</td>";
+                tbody_str += "<td>" + json[key] + "</td>";
+                tbody_str += "<td><button type=\"button\" class=\"btn btn-primary btn-xs\" onclick=\"clickJqx()\">编辑</button></td>";
+                tbody_str += "</tr>";
+            }
+           
+            bm_html("tbody_jqx", tbody_str);
+        }
+
+        function GetQdcsConfig() {
+            bm_ajax("GetQdcsConfig", "", function (json) {
+                console.log(json);
+                if (json["return"]) {
+                    __QdcsJson = json;
+                    // loadCurrencyHtml(json["value"])
+                    loadQdcsHtml(json["value"])
+                }
+            });
+        }
+
+        function GetJqxConfig() {
+            bm_ajax("GetJqxConfig", "", function (json) {
+                console.log(json);
+                if (json["return"]) {
+                    __JqxJson = json;
+                    loadJqxHtml(json["value"])
+                }
+            });
+        }
+
+        function restartApp() {
+            bm_ajax("restartApp", "", function (json) {
+                console.log(json);
+            });
+            successMsg11("请耐心等待1分钟后刷新页面!");
+        }
+
+        function videoJyjgLocalSync() {
+            bm_ajax("videoJyjgLocalSync", "", function (json) {
+                console.log(json);
+                if (json["return"]) {
+                    successMsg11("视频审核检验机构名单同步成功!");
+                }
+                else
+                {
+                    successMsg11("视频审核检验机构名单同步失败!请确认服务是否开启!");
+                }
+            });
+
+        }
+
+        function loadMapHtml() {
+
+            loadMapJsonHtml("ul_cllxMap", __cllxMapJson, "cllxMapClick");
+            loadMapJsonHtml("ul_xiaoCheMap", __cllxMapJson, "xiaoCheMapClick");
+            loadMapJsonHtml("ul_syxzMap", __syxzMapJson, "syxzMapClick");
+            loadMapJsonHtml("ul_jylbMap", __jylbMapJson, "jylbMapClick");
+            
+        }
+
+        function setParams(extData) {
+            bm_ajax("SetAlgParam", extData, function (json) {
+                console.log(json);
+                if (json["return"]) {
+                    successMsg("Submit Sucess!");
+
+                    if ($("#fromType").val() == "Currency") {
+                        GetCurrencyConfig();
+                    }
+
+                    if ($("#fromType").val() == "Jyjg") {
+                        GetJyjgConfig();
+                    }
+
+                    if ($("#fromType").val() == "VideoCheck") {
+                        GetVideoJyjgConfig();
+                    }
+					
+                    if ($("#fromType").val() == "Xrjyjg") {
+                        GetXrjyjgConfig();
+                    }
+
+                    if ($("#fromType").val() == "Hmd") {
+                        GetHmdConfig();
+                    }
+                    if ($("#fromType").val() == "CjhHmd") {
+                        GetCjhHmdConfig();
+                    }
+                }
+            });
+        }
+
+        function SubmitClick() {
+            if ($("#fromType")) {
+                successMsg("Submit " + $("#fromType").val() + " Data .");
+                var extData = "";
+                if ($("#fromType").val()) {
+                    $("#div_edit input[type=text]").each(function () {
+                        extData += "&" + this.id + "=" + this.value;
+                    })
+                    $("#div_edit input[type=checkbox]").each(function () {
+                        extData += "&" + this.id + "=" + (this.checked ? 1 : 0);
+                    })
+                    console.log(extData);
+                    setParams(extData);
+                }
+                else {
+
+                    dangerMsg($("#fromType").val() + " is Unkown !");
+                }
+
+            } else {
+                dangerMsg("No DataType !");
+            }
+        }
+        function onloadConfig() {
+            loadMapHtml();
+            GetCurrencyConfig();
+            GetCllxConfig();
+            GetSyxzConfig();
+            GetXiaoCheConfig();
+            GetJylbConfig();
+            GetJyjgConfig();
+            GetVideoJyjgConfig();
+            GetHmdConfig();
+            GetCjhHmdConfig();
+            GetQdcsConfig();
+            GetJqxConfig();
+			GetXrjyjgConfig();
+            getLicenseCheckResult();
+        }
+
+        function ConfigMenuBarClick(clickelement,id) {
+            $("#div_configMenuBar a").removeClass("active");
+            clickelement.setAttribute("class", "list-group-item active");
+            $("#div_ConfigMain > div").hide();
+            $("#" + id).show();
+        }
+
+        function successMsg11(msg) {
+            bm_html("div_MsgOut11", "<div class=\"alert alert-success\" style=\"max-width:400px\" >" + msg + "</div >");
+        }
+
+    </script>
+
+    <style>
+
+    </style>
+</head>
+<body onload="onloadConfig();">
+
+    <div id ="license_check_result" style="width:100%">
+
+    </div>
+
+    <div class="row" style="max-width:100%;">
+        <div id="div_configMenuBar" class="col-sm-2">
+            <a href="#" class="list-group-item active" onclick="ConfigMenuBarClick(this,'div_currency')">通用参数</a>
+            <a href="#" class="list-group-item" onclick="ConfigMenuBarClick(this,'div_cllx')">车辆类型（审核范围）</a>
+            <a href="#" class="list-group-item" onclick="ConfigMenuBarClick(this,'div_xiaoChe')">车辆类型（整车判定）</a>
+            <a href="#" class="list-group-item" onclick="ConfigMenuBarClick(this,'div_syxz')">使用性质</a>
+            <a href="#" class="list-group-item" onclick="ConfigMenuBarClick(this,'div_jylb')">检验类别</a>
+            <a href="#" class="list-group-item" onclick="ConfigMenuBarClick(this,'div_jyjg')">检验机构</a>
+            <a href="#" class="list-group-item" onclick="ConfigMenuBarClick(this,'div_xrjyjg')">信任检验机构</a>
+            <a href="#" class="list-group-item" onclick="ConfigMenuBarClick(this,'div_hmd')">黑名单车辆</a>
+            <a href="#" class="list-group-item" onclick="ConfigMenuBarClick(this,'div_cjhHmd')">车架号黑名单车辆</a>
+            <a href="#" class="list-group-item" onclick="ConfigMenuBarClick(this,'div_qdcs')">启动参数</a>
+            <a href="#" class="list-group-item" onclick="ConfigMenuBarClick(this,'div_jqx')">交强险(网络接口)</a>
+            <a href="#" class="list-group-item" onclick="ConfigMenuBarClick(this,'div_videoJyjg')">视频审核检验机构配置</a>
+        </div>
+        <div id="div_ConfigMain" class="col-sm-3">
+
+            <div id="div_currency" class="row">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            通用参数
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="div_edit_main" class="panel panel-default">
+                            <div class="panel-body">
+                                <table class="table table-bordered table-striped table-hover table-condensed">
+                                    <thead><tr><th>ConfigName</th><th>Value</th><th>操作</th></tr></thead>
+                                    <tbody id="tbody_currency"> </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                             <div class="panel-heading">
+                            <h2 class="panel-title" style="color:green">
+                            soap 请求次数记录 及异常记录
+                            </h2>
+                            </div>
+                            
+                            <tbody  >
+                                
+                            <h9  style="color:red">
+                                如遇车检现场停止审核, 请注意第一条是否存在异常
+                                 <br> 
+                                :[ maxSoapRequest: 设置的最大请求数
+                                 <br>
+                                otherInfo  :报错信息
+                                 <br>
+                                todayRequestTimes :今天尝试请求的总次数
+                                 <br>
+                                todayPermitTimes  :拦截处理下 被成功允许请求的总次数]
+                            </h9>
+                            <div id="head_soapRequestTimes" > 
+                            </div>
+                            <table id="tbody_soapRequestTimes" class="table table-bordered table-striped table-hover table-condensed">
+                            </table>
+                            </tbody>
+            </div>
+            <div id="div_cllx" class="row" hidden>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            车辆类型（审核范围）
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="col-lg-6" style="width:100%;padding-left: 0px;padding-right: 0px;">
+                                    <div class="input-group">
+                                        <input id="input_cllxMap" type="text" class="form-control">
+                                        <div class="input-group-btn">
+                                            <button type="button" class="btn btn-default" tabindex="-1" onclick="addCllxConfig();">
+                                                添加
+                                            </button>
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                                                <span class="caret"></span>
+                                                <span class="sr-only">切换下拉菜单</span>
+                                            </button>
+                                            <ul id="ul_cllxMap" class="dropdown-menu pull-right" style="max-height:300px; overflow:scroll;"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br /><br />
+                                <table class="table table-bordered table-striped table-hover table-condensed">
+                                    <thead><tr><th>名称</th><th>key</th><th>操作</th></tr></thead>
+                                    <tbody id="tbody_cllx"> </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="div_xiaoChe" class="row" hidden>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            车辆类型（整车判定）
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="col-lg-6" style="width: 100%;padding-left: 0px;padding-right: 0px;">
+                                    <div class="input-group">
+                                        <input id="input_xiaoCheMap" type="text" class="form-control">
+                                        <div class="input-group-btn">
+                                            <button type="button" class="btn btn-default" tabindex="-1" onclick="addXiaoCheConfig();">
+                                                添加
+                                            </button>
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                                                <span class="caret"></span>
+                                                <span class="sr-only">切换下拉菜单</span>
+                                            </button>
+                                            <ul id="ul_xiaoCheMap" class="dropdown-menu pull-right" style="max-height:300px; overflow:scroll;"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br /><br />
+                                <table class="table table-bordered table-striped table-hover table-condensed">
+                                    <thead><tr><th>名称</th><th>key</th><th>操作</th></tr></thead>
+                                    <tbody id="tbody_xiaoChe"> </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="div_syxz" class="row" hidden>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            使用性质
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="col-lg-6" style="width: 100%;padding-left: 0px;padding-right: 0px;">
+                                    <div class="input-group">
+                                        <input id="input_syxzMap" type="text" class="form-control">
+                                        <div class="input-group-btn">
+                                            <button type="button" class="btn btn-default" tabindex="-1" onclick="addSyxzConfig();">
+                                                添加
+                                            </button>
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                                                <span class="caret"></span>
+                                                <span class="sr-only">切换下拉菜单</span>
+                                            </button>
+                                            <ul id="ul_syxzMap" class="dropdown-menu pull-right" style="max-height:300px; overflow:scroll;"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br /><br />
+                                <table class="table table-bordered table-striped table-hover table-condensed">
+                                    <thead><tr><th>名称</th><th>key</th><th>操作</th></tr></thead>
+                                    <tbody id="tbody_syxz"> </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="div_jylb" class="row" hidden>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            检验类别
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="col-lg-6" style="width: 100%;padding-left: 0px;padding-right: 0px;">
+                                    <div class="input-group">
+                                        <input id="input_jylbMap" type="text" class="form-control">
+                                        <div class="input-group-btn">
+                                            <button type="button" class="btn btn-default" tabindex="-1" onclick="addJylbConfig();">
+                                                添加
+                                            </button>
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                                                <span class="caret"></span>
+                                                <span class="sr-only">切换下拉菜单</span>
+                                            </button>
+                                            <ul id="ul_jylbMap" class="dropdown-menu pull-right" style="max-height:300px; overflow:scroll;"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br /><br />
+                                <table class="table table-bordered table-striped table-hover table-condensed">
+                                    <thead><tr><th>名称</th><th>key</th><th>操作</th></tr></thead>
+                                    <tbody id="tbody_jylb"> </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="div_jyjg" class="row" hidden>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            检验机构
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-default" tabindex="-1" onclick="addJyjgConfig();">
+                                    添加
+                                </button>
+                                <br /><br />
+                                <table class="table table-bordered table-striped table-hover table-condensed">
+                                    <thead id="thead_jyjg"></thead>
+                                    <tbody id="tbody_jyjg"> </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="div_xrjyjg" class="row" hidden>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            信任检验机构
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-default" tabindex="-1" onclick="addXrjyjgConfig();">
+                                    添加
+                                </button>
+                                <br /><br />
+                                <table class="table table-bordered table-striped table-hover table-condensed">
+                                    <thead id="thead_xrjyjg"></thead>
+                                    <tbody id="tbody_xrjyjg"> </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+            <div id="div_videoJyjg" class="row" hidden>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            视频审核检验机构配置
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-default" tabindex="-1" onclick="addVideoJyjgConfig();">
+                                    添加
+                                </button>
+                                <br /><br />
+                                <table class="table table-bordered table-striped table-hover table-condensed">
+                                    <thead id="thead_videoJyjg"></thead>
+                                    <tbody id="tbody_videoJyjg"> </tbody>
+                                </table>
+                                <button type="button" class="btn btn-default" tabindex="-1" onclick="videoJyjgLocalSync();">
+                                    本地服务列表同步
+                                </button>
+                                <div id="div_MsgOut11" class="col-sm-offset-1 col-sm-10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="div_hmd" class="row" hidden>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            黑名单车辆
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-default" tabindex="-1" onclick="addHmdConfig();">
+                                    添加
+                                </button>
+                                <br /><br />
+                                <table class="table table-bordered table-striped table-hover table-condensed">
+                                    <thead id="thead_hmd"></thead>
+                                    <tbody id="tbody_hmd"> </tbody>
+                                </table>
+                                <button type="button" class="btn btn-default" tabindex="-1" onclick="restartApp();">
+                                    重新启动
+                                </button>
+                                <div id="div_MsgOut11" class="col-sm-offset-1 col-sm-10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="div_cjhHmd" class="row" hidden>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            车架号黑名单车辆
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-default" tabindex="-1" onclick="addCjhHmdConfig();">
+                                    添加
+                                </button>
+                                <br /><br />
+                                <table class="table table-bordered table-striped table-hover table-condensed">
+                                    <thead id="thead_cjhHmd"></thead>
+                                    <tbody id="tbody_cjhHmd"> </tbody>
+                                </table>
+                                <button type="button" class="btn btn-default" tabindex="-1" onclick="restartApp();">
+                                    重新启动
+                                </button>
+                                <div id="div_MsgOut11" class="col-sm-offset-1 col-sm-10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="div_qdcs" class="row" hidden>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            启动参数
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="div_edit_main" class="panel panel-default">
+                            <div class="panel-body">
+                                <table class="table table-bordered table-striped table-hover table-condensed">
+                                    <thead><tr><th>ConfigName</th><th>Value</th><th>操作</th></tr></thead>
+                                    <tbody id="tbody_qdcs"> </tbody>
+                                </table>
+                                <br /><br />
+                                <button type="button" class="btn btn-default" tabindex="-1" onclick="restartApp();">
+                                    重新启动
+                                </button>
+                                <div id="div_MsgOut11" class="col-sm-offset-1 col-sm-10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="div_jqx" class="row" hidden>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            交强险网络接口
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="div_edit_main" class="panel panel-default">
+                            <div class="panel-body">
+                                <table class="table table-bordered table-striped table-hover table-condensed">
+                                    <thead><tr><th>ConfigName</th><th>Value</th><th>操作</th></tr></thead>
+                                    <tbody id="tbody_jqx"> </tbody>
+                                </table>
+                                <br /><br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="clearMsg();">
+                                &times;
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">
+                                ParamEdit
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="div_edit_main" class="panel panel-default">
+                                <div class="panel-body">
+                                    <div id="div_edit" class="form-horizontal">
+
+
+                                    </div>
+                                    <div class="form-horizontal">
+                                        <div class="form-group">
+                                            <div id="div_MsgOut" class="col-sm-offset-1 col-sm-10">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="clearMsg();">
+                                关闭
+                            </button>
+                            <button type="button" class="btn btn-primary" onclick="SubmitClick();">
+                                提交更改
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</body>
+</html>

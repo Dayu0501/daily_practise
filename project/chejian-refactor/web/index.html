@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>车检项目参数配置</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bm.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bminterface.js"></script>
+
+    <script>
+        var algVectorListJson;
+        var deviceStateStop = false;
+
+        function MenuBarClick(clickelement, linkid) {
+            SeviceStateStop();
+            $("#ul_menubar li").removeClass("active");
+            clickelement.setAttribute("class", "active");
+            $("#main_bottom_top > div").hide();
+            $("#" + linkid).show();
+            if (linkid == "device_state")
+                SeviceStateStart();
+        }
+
+        function checkAlgCode(algCode) {
+            if (algVectorListJson) {
+                var Num = algVectorListJson.length;
+                for (var i = 0; i < Num; i++) {
+                    if (algVectorListJson[i]["name"] == algCode) {
+                        return true;
+                    }       
+                }
+            }
+            return false;
+        }
+
+        function openImag(imgUrl) {
+            window.open(imgUrl); 
+        }
+
+        function loadAlgVector(json) {
+            var Num = json.length;
+            var Str = "";
+            //PASS = 1,               /* 通过 */
+            //UNABLE_IDENTIFY = 4,    /* 无法比对,需人工 */
+            //NOT_PASS = 5,           /* 不通过 */
+            Str += "<div class=\"btn-group\">";
+            for (var i = 0; i < Num; i++) {   
+                if (checkAlgCode(json[i]["algCode"])) {
+                    var titleValue = "";
+
+                    for (var key in json[i]) {
+                        titleValue += key + ":[" + json[i][key] + "];\r\n";
+                    }
+                    var colorStr = "";
+                    if (json[i]["result"] == "4")
+                        colorStr = "style=\"background-color:coral\"";
+                    else if (json[i]["result"] == "5")
+                        colorStr = "style=\"background-color:red\"";
+                    else if (json[i]["result"] == "1")
+                        colorStr = "style=\"background-color:forestgreen\"";
+					
+					if(!json[i]["sendRedisDate"])
+					{
+						colorStr = "";
+					}
+
+                    Str += "<button title=\"" + titleValue + "\" type=\"button\" " + colorStr + " class=\"btn btn-default\" ondblclick=\"openImag('" + json[i]["photoUrl"] +"')\">" + json[i]["algCode"] + "</button>"
+                }    
+            }
+            Str += " </div>";
+            return Str;
+        }
+
+        function loadDeviceStateHtml(json) {
+            var Num = json.length;
+            var thead_str = "";
+            var tbody_str = "";
+
+            if (Num > 0) {
+                thead_str += "<tr>";
+                thead_str += "<th>ID</th>";
+                thead_str += "<th>uuid</th>";
+                thead_str += "<th>endWork</th>";
+                thead_str += "<th>inSystemTime</th>";
+                thead_str += "<th>algVector</th>";
+                thead_str += "</tr>";
+            }
+
+            for (var i = 0; i < Num; i++) {
+                tbody_str += "<tr>"
+                tbody_str += "<td>" + i + "</td>";
+                tbody_str += "<td>" + json[i]["uuid"] + "</td>";
+                tbody_str += "<td>" + json[i]["endWork"] + "</td>";
+                tbody_str += "<td>" + json[i]["algVector"][0]["inSystemTime"] + "</td>";
+                tbody_str += "<td>" + loadAlgVector(json[i]["algVector"]) + "</td>";
+                tbody_str += "</tr>"
+            }
+
+            bm_html("thead_deviceState", thead_str);
+            bm_html("tbody_deviceState", tbody_str);
+        }
+		
+		function loadDeviceErrStateHtml(json) {
+            var Num = json.length;
+            var thead_str = "";
+            var tbody_str = "";
+
+            if (Num > 0) {
+                thead_str += "<tr>";
+                thead_str += "<th>deviceState</th>";
+				thead_str += "<th>deviceTime</th>";
+                thead_str += "</tr>";
+            }
+
+            for (var i = 0; i < Num; i++) {
+                tbody_str += "<tr>"
+                tbody_str += "<td>" + json[i]["deviceState"] + "</td>";
+				tbody_str += "<td>" + json[i]["deviceTime"] + "</td>";
+                tbody_str += "</tr>"
+            }
+
+            bm_html("thead_deviceState", thead_str);
+            bm_html("tbody_deviceState", tbody_str);
+        }
+
+
+        function GetDeviceState() {
+            if (!deviceStateStop) {
+                bm_ajax("GetSessionWorkState", "", function (json) {
+                    console.log(json);
+                    if (json["return"]) {
+						if(json["mode"] == 1)
+						{
+							loadDeviceStateHtml(json["value"]);
+						}else{
+							loadDeviceErrStateHtml(json["value"]);
+						} 
+                    }
+                });
+            }
+        }
+
+        function GetAlgList() {
+            bm_ajax("GetOpenAlgList", "", function (json) {
+                console.log(json);
+                if (json["return"]) {
+                    algVectorListJson = json["value"];
+                }   
+            });
+        }
+		
+		function loadSlaveDeviceStateHtml(json) {
+            var Num = json.length;
+            var thead_str = "";
+            var tbody_str = "";
+
+            if (Num > 0) {
+				thead_str += "<tr>";
+				for (var key in json[0]) {
+					thead_str += "<th>" + key + "</th>";
+				}
+				thead_str += "</tr>";
+			}
+
+            for (var i = 0; i < Num; i++) {
+                tbody_str += "<tr>"
+				for (var key in json[i]) {
+                    tbody_str += "<td>" + json[i][key] + "</td>";
+                }
+                tbody_str += "</tr>"
+            }
+
+            bm_html("thead_slaveState", thead_str);
+            bm_html("tbody_slaveState", tbody_str);
+        }
+
+        function GetSlaveState() {
+			bm_ajax("GetSlaveDeviceState", "", function (json) {
+				console.log(json);
+				if (json["return"]) {
+					loadSlaveDeviceStateHtml(json["value"]);
+				}
+			});
+        }
+
+
+        function login() {
+            var pwd = $("#loginpwd").val();
+            setCookie("pwd", pwd);
+            bm_ajax("Login", "", function (json) {
+                if (json["return"]) {
+                    $("#div_main_show").hide();
+                    $("#div_main_hidden").show();
+                    GetAlgList();
+                    GetDeviceState();
+                    setInterval(GetDeviceState, 500);
+                    SeviceStateStart();
+					GetSlaveState();
+                    document.getElementById("iframe_deviceConfig").src = "deviceConfig.html";
+                    document.getElementById("iframe_algVector").src = "algVector.html";
+                    document.getElementById("iframe_update").src = "update.html";
+                    document.getElementById("iframe_result").src = "result.html";
+                    document.getElementById("iframe_pass").src = "pass.html";
+
+                    
+                }
+            });
+        } 
+
+        function ClearSoapDataOpen() {
+            bm_ajax("ClearSoapData", "isOpen=true", function (json) {
+                console.log(json);
+            });
+        }
+
+        function ClearSoapDataClose() {
+            bm_ajax("ClearSoapData", "isOpen=false", function (json) {
+                console.log(json);
+            });
+        }
+
+        function SeviceStateStop() {
+            deviceStateStop = true;
+        }
+
+        function SeviceStateStart() {
+            deviceStateStop = false;
+        }
+    </script>
+</head>
+<body onload="">
+
+        <div id="div_main_show" style="height:100%;">
+            <div class="row" style="max-width:100%; height:100%">
+                <div  class="col-sm-6" style="padding: 100px 100px 10px;">
+                    <form class="bs-example bs-example-form" role="form">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="input-group">
+                                    <input type="password" id="loginpwd" class="form-control" value="em-data-9527">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button" onclick="login();">
+                                            登陆
+                                        </button>
+                                    </span>
+                                </div><!-- /input-group -->
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row -->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="div_main_hidden" style="height:100%" hidden>
+            <nav id="main_top" class="navbar navbar-default" style="margin-bottom:0px; height: 5%;" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Welcome</a>
+                    </div>
+                    <div>
+                        <ul id="ul_menubar" class="nav navbar-nav">
+                            <li id="li_devicestate" onclick="MenuBarClick(this,'device_state');" class="active"><a href="#">设备状态</a></li>
+							<li onclick="MenuBarClick(this,'slave_config');"><a href="#">从机管理</a></li>
+                            <li onclick="MenuBarClick(this,'alg_config');"><a href="#">算法参数</a></li>
+                            <li onclick="MenuBarClick(this,'device_config');"><a href="#">设备参数</a></li>
+                            <!-- <li onclick="MenuBarClick(this,'update_config');"><a href="#">设备升级</a></a> -->
+                            <li onclick="MenuBarClick(this,'result_config');"><a href="#">审核流水</a></li>
+                            <li onclick="MenuBarClick(this,'pass_config');"><a href="#">通过率</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="main_bottom" class="panel panel-default" style="width:100%;height:90%;">
+                <div id="main_bottom_top" class="panel-body" style="width:100%;height:100%;">
+
+
+                    <div id="device_state" style="width:100%;height:100%;">
+                        <div class="panel panel-success" style="width:100%;height:100%;">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">设备状态</h1>
+                                <button type="button" class="btn btn-primary btn-xs" onclick="GetDeviceState();">刷新</button>
+                                <button type="button" class="btn btn-primary btn-xs" onclick="ClearSoapDataOpen();">打开清理</button>
+                                <button type="button" class="btn btn-primary btn-xs" onclick="ClearSoapDataClose();">关闭清理</button>
+                            </div>
+                            <div class="panel-body" onmouseover="SeviceStateStop()" onmouseout="SeviceStateStart()">
+                                <table class="table table-bordered table-striped table-hover table-condensed">
+                                    <thead id="thead_deviceState"> </thead>
+                                    <tbody id="tbody_deviceState"> </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div id="slave_config" style="width:100%;height:100%;" hidden>
+                        <div class="panel panel-success" style="width:100%;height:100%;">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">从机列表</h1>
+								<button type="button" class="btn btn-primary btn-xs" onclick="GetSlaveState();">刷新</button>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table table-bordered table-striped table-hover table-condensed">
+                                    <thead id="thead_slaveState"> </thead>
+                                    <tbody id="tbody_slaveState"> </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="alg_config" style="width:100%;height:100%;" hidden>
+                        <div class="panel panel-info" style="width:100%;height:100%;">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">算法参数</h1>
+                            </div>
+                            <div class="panel-body" style="width:100%;height:100%;">
+                                <iframe id="iframe_algVector" src="noPermission.html" style="width:100%;height:95%;" frameborder="0" class="iFrameCss"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="device_config" style="width:100%;height:100%;" hidden>
+                        <div class="panel panel-info" style="width:100%;height:100%;">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">设备参数</h1>
+                            </div>
+                            <div class="panel-body" style="width:100%;height:100%;">
+                                <iframe id="iframe_deviceConfig" src="noPermission.html" style="width:100%;height:95%;" frameborder="0" class="iFrameCss"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="update_config" style="width:100%;height:100%;" hidden>
+                        <div class="panel panel-info" style="width:100%;height:100%;">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">设备升级</h1>
+                            </div>
+                            <div class="panel-body" style="width:100%;height:100%;">
+                                <iframe id="iframe_update" src="noPermission.html" style="width:100%;height:95%;" frameborder="0" class="iFrameCss"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="result_config" style="width:100%;height:100%;" hidden>
+                        <div class="panel panel-info" style="width:100%;height:100%;">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">审核流水</h1>
+                            </div>
+                            <div class="panel-body" style="width:100%;height:100%;">
+                                <iframe id="iframe_result" src="noPermission.html" style="width:100%;height:95%;" frameborder="0" class="iFrameCss"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="pass_config" style="width:100%;height:100%;" hidden>
+                        <div class="panel panel-info" style="width:100%;height:100%;">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">审核流水</h1>
+                            </div>
+                            <div class="panel-body" style="width:100%;height:100%;">
+                                <iframe id="iframe_pass" src="noPermission.html" style="width:100%;height:95%;" frameborder="0" class="iFrameCss"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </div>
+</body>
+</html>

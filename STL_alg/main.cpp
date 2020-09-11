@@ -5,6 +5,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
+#include <cassert>
 
 void test_DY_remove() {
 	cout << "test remove start !" << endl;
@@ -167,6 +168,14 @@ int main() {
 	};
 
 	cout << "bb = " << bb << endl;
+
+	int hehe = 1;
+
+	assert(hehe == 1);
+
+
+
+	cout << "test test test !" << endl;
 
 	return 0;
 }

@@ -1,0 +1,14 @@
+*.vs*
+*.cpp.*
+*.h.*
+*.idea*
+chejian/hunHeJiaoTong.pro.user
+chejian_refactor.rar
+cmake-build-debug
+CMakeLists.txt
+build-hunHeJiaoTong-Desktop_Qt_5_12_2_MinGW_32_bit2-Debug/Makefile.Release
+build-hunHeJiaoTong-Desktop_Qt_5_12_2_MinGW_32_bit2-Debug/Makefile.Debug
+build-hunHeJiaoTong-Desktop_Qt_5_12_2_MinGW_32_bit2-Debug/.qmake.stash
+build-hunHeJiaoTong-Desktop_Qt_5_12_2_MinGW_32_bit2-Debug/object_script.hunHeJiaoTong.Release
+build-hunHeJiaoTong-Desktop_Qt_5_12_2_MinGW_32_bit2-Debug/object_script.hunHeJiaoTong.Debug
+build-hunHeJiaoTong-Desktop_Qt_5_12_2_MinGW_32_bit2-Debug/Makefile

@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>algVector</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bm.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bminterface.js"></script>
+    <script>
+
+        var __algVectorJson = null;
+        var __algClassJson = null;
+        var __algClassType = 0;
+        var __algClassName = "";
+
+
+        function algClassEdit(key, index) {
+			
+			selectedColor(index + 1, "tablbe_" + key);
+            console.log("key" + key + "  index" + index);
+            console.log(__algClassJson);
+            var Data = __algClassJson["value"][key][index];
+            var html = "";
+            html += bm_getEditHtmlByJson(Data,false);    
+            html += bm_getInputHtml("fromType", "algClass", true);
+            html += bm_getInputHtml("PicType", __algClassType, true);
+            html += bm_getInputHtml("memberName", key, true);
+
+            bm_html("div_edit", html);
+
+            bm_setInpuUnable("name");
+            $('#myModal').modal('show');
+        }
+        function loadAlgClassTableThead(jsonData) {
+            var thead_str = "";
+            var Num = jsonData.length;
+
+            if (Num > 0) {
+                thead_str += "<tr>";
+                for (var key in jsonData[0]) {
+                    thead_str += "<th>" + key + "</th>";
+                }
+                thead_str += "<th>操作</th>";
+                thead_str += "</tr>";
+            }
+            return thead_str; 
+        }
+        function loadAlgClassTableTbody(memberKey,jsonData) {
+            var tbody_str = "";
+            var Num = jsonData.length;
+            for (var i = 0; i < Num; i++) {
+                tbody_str += "<tr>"
+                for (var key in jsonData[i]) {
+                    tbody_str += "<td>" + jsonData[i][key] + "</td>";
+                }
+                tbody_str += "<td onclick=\"algClassEdit('" + memberKey + "'," + i + ")\"><button type=\"button\" class=\"btn btn-primary btn-xs\">编辑</button></td>";
+                tbody_str += "</tr>"
+            }
+            return tbody_str; 
+        }
+		
+		function hideTable(tableName)
+		{
+			$("#"+tableName).hide();
+		}
+		
+		function showTable(tableName)
+		{
+			$("#"+tableName).show();
+		}
+		
+        function loadAlgClassHtml(json) {   
+            var html = "";
+            if (json) {
+                for (var key in json) {
+                    
+                    html += "<h2 class=\"panel-title\">" + key ;
+                    html += "<button type=\"button\" onclick=\"hideTable('tablbe_"+key+"')\" class=\"btn btn-primary btn-xs\">隐藏</button><button type=\"button\" onclick=\"showTable('tablbe_"+key+"')\" class=\"btn btn-primary btn-xs\">显示</button></h2>";
+					html += "<table id=\"tablbe_"+key+"\" class=\"table table-bordered table-striped table-hover table-condensed\">";
+                    html += "<thead>" + loadAlgClassTableThead(json[key]) + "</thead>";
+                    html += "<tbody>" + loadAlgClassTableTbody(key, json[key]) + "</tbody>";
+                    html += "</table>";
+                }
+                bm_html("div_algClass_table", html);
+            } else {
+                bm_html("div_algClass_table", " ");
+            }
+            
+        }
+		
+		function selectedColor(index, elementName) {
+			var tbl = document.getElementById(elementName);
+			var trs = tbl.getElementsByTagName("tr");
+			for (var i = 0; i < trs.length; i++) {
+				if (i == index) {  //判断是不是当前选择的行
+					trs[i].style.background = "yellow";
+				}
+				else {
+					trs[i].style.background = "white";
+				}
+			}
+		}
+
+        function algItemClick(type,name,index)
+        {
+			selectedColor(index, "tbody_algVector");
+		
+            bm_ajax("GetAlgClass", "&PicType=" + type, function (json) {
+                console.log(json);
+                __algClassType = type;
+                __algClassName = name;
+
+                if (json["return"]) {
+                    __algClassJson = json;
+                    loadAlgClassHtml(json["value"]);
+                    bm_html("h3_algClassName", name);               
+                }
+                else {
+
+                    bm_html("div_algClass_table", "没有实体!");
+
+                    bm_html("h3_algClassName", name );  
+                }
+            });
+        }
+
+        function loadAlgItemHtml(index) {
+            var Data = __algVectorJson["value"][index];
+            var html = "";
+            html += bm_getEditHtmlByJson(Data, false);   
+            html += bm_getInputHtml("fromType", "algItem", true);
+            $("#div_edit").html(html);
+
+            bm_setInpuUnable("type");
+            bm_setInpuUnable("name");
+            
+        }
+
+        function algItemEdit(ev, index) {
+			selectedColor(index, "tbody_algVector");
+
+            $('#myModal').modal('show');
+            ev.stopPropagation();
+            loadAlgItemHtml(index);
+        }
+
+        function loadAlgVectorHtml(json)
+        {
+           
+            var algVectorData = json["value"];
+            var algItemNum = algVectorData.length;
+            var thead_str = "";
+            var tbody_str = "";
+
+            if (algItemNum > 0){
+                thead_str += "<tr>";
+                for (var key in algVectorData[0]) {
+                    thead_str += "<th>" + key + "</th>";
+                }
+                thead_str += "<th>" + "操作" + "</th>";
+                thead_str += "</tr>";
+            }
+
+            for (var i = 0; i < algItemNum; i++) {
+                tbody_str += "<tr onclick=\"algItemClick(" + algVectorData[i]["type"] + ",'" + algVectorData[i]["name"] + "'," + i.toString() + ")\">"
+                for (var key in algVectorData[i]) {
+                    tbody_str += "<td>" + algVectorData[i][key] + "</td>";
+                }
+                
+                tbody_str += "<td onclick=\"algItemEdit(event," + i + ")\"><button type=\"button\" class=\"btn btn-primary btn-xs\">编辑</button></td>";
+                tbody_str += "</tr>"
+            }
+
+            bm_html("thead_algVector", thead_str);
+            bm_html("tbody_algVector", tbody_str);
+        }
+
+        function getVectorConflict()
+        {
+            bm_ajax("GetAlgCheckConflict", "", function (json) {
+                console.log(json);
+                if (json["return"]) {
+                 //   __algVectorJson = json;
+                   
+                 //   loadAlgVectorHtml(json);
+                    if (json["value"] != null) {
+                        //algItemClick(json["value"][0]["type"],json["value"][0]["name"], 100);
+                        console.log("getVectorConflict:",json["value"]);
+                        document.getElementById("getVectorConflict").innerHTML="您的配置中存在冲突:"+JSON.stringify(json["value"] );
+                        document.getElementById("getVectorConflict").style.color = "red" ;
+                    }else{
+                        document.getElementById("getVectorConflict").style.color = "green" ;
+                        document.getElementById("getVectorConflict").innerHTML= "请注意code配置不要重复" ;
+                    }
+                }
+            });
+        }
+
+        function getVectorConfig() {
+            bm_ajax("GetAlgVector", "", function (json) {
+                console.log(json);
+                if (json["return"]) {
+                    __algVectorJson = json;
+                   
+                    loadAlgVectorHtml(json);
+                    if (__algClassJson == null) {
+                        algItemClick(json["value"][0]["type"],json["value"][0]["name"], 100);
+                    }
+                }
+            });
+            getVectorConflict()
+        }
+
+
+        function setParams(extData) {
+            bm_ajax("SetAlgParam", extData, function (json) {
+                console.log(json);
+                if (json["return"]) {
+                    successMsg("Submit Sucess!");
+
+                    if ($("#fromType").val() == "algClass") {
+                        algItemClick(__algClassType, __algClassName, 100);
+                    } else {
+                        getVectorConfig();
+                    }                  
+                }
+            });
+        }
+
+        function SubmitClick() {      
+            if ($("#fromType")) {
+                successMsg("Submit " + $("#fromType").val() + " Data .");
+                var extData = "";
+                if ($("#fromType").val()) {
+                    $("#div_edit input[type=text]").each(function () {
+                        extData += "&" + this.id + "=" + this.value;
+                    })
+                    $("#div_edit input[type=checkbox]").each(function () {                 
+                        extData += "&" + this.id + "=" + (this.checked?1:0);
+                    })
+                    console.log(extData);
+                    setParams(extData);
+                }
+                else  {
+
+                    dangerMsg($("#fromType").val()+" is Unkown !");
+                }
+
+            } else {
+                dangerMsg("No DataType !");
+            }         
+        }
+        function load() {
+            getVectorConfig();
+
+        }
+    </script>
+</head>
+<body onload="load();">
+    <div class="row" style="width:100%;height:100%;overflow:hidden">
+        <div class="col-sm-6" style="height:100%;overflow:auto">
+            <div class="panel panel-default">
+
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        AlgVectorConfig
+                        <button type="button" class="btn btn-primary btn-xs" onclick="getVectorConfig();">刷新</button>
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <div id ="getVectorConflict" style="width:100%">
+
+                    </div>
+
+                    <table class="table table-bordered table-striped table-hover table-condensed">
+                        <thead id="thead_algVector"></thead>
+                        <tbody id="tbody_algVector"> </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6" style="height:100%;overflow:auto">
+   
+                <div id="div_algClass_main" class="panel panel-default">
+
+                    <div class="panel-heading">
+                        <h3 id="h3_algClassName" class="panel-title">
+                            AlgClassConfig
+                        </h3>
+                    </div>
+                    <div id="div_algClass_table" class="panel-body">
+
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="clearMsg();">
+                                &times;
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">
+                                ParamEdit
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="div_edit_main" class="panel panel-default">
+                                <div class="panel-body">
+                                    <div id="div_edit" class="form-horizontal">
+
+
+                                    </div>
+                                    <div class="form-horizontal">
+                                        <div class="form-group">
+                                            <div id="div_MsgOut" class="col-sm-offset-1 col-sm-10">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="clearMsg();">
+                                关闭
+                            </button>
+                            <button type="button" class="btn btn-primary" onclick="SubmitClick();">
+                                提交更改
+                            </button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal -->
+            </div>
+
+</body>
+</html>

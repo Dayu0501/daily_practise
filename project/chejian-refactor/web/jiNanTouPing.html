@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>algVector</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bm.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bminterface.js"></script>
+    <script>
+
+        function loadVehicleHtml(json) {
+            console.log(json);
+            var photoRoot = json["photoRoot"];
+
+            var html = "<table>";
+            for (var i = 0; i < photoRoot.length; i++) {
+                html += "<tr><td>" + photoRoot[i]["algName"] + "</td><td><img width=\"30%\" height=\"30%\" src=\"" + photoRoot[i]["photoUrl"]+"\"/></td></tr>";
+            }
+            html += "</table>";
+
+
+            bm_html("photo_div", html);
+
+        }
+
+        function load() {
+            bm_ajax("QueryTouPingMsgBySheBeiId", "&sheBeiId=1", function (json) {
+                console.log(json);
+                if (json["return"]) {
+                    loadVehicleHtml(JSON.parse(json["value"][0]["jsonMsg"]));
+                }
+            });
+        }
+    </script>
+</head>
+<body onload="load();">
+    <div class="row" style="max-width:100%;">
+        <div class="col-sm-12">
+
+            <div id="div_updateFile" class="row">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            jiNan
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                   
+                                   <div id="photo_div">
+
+
+                                   </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+</body>
+</html>

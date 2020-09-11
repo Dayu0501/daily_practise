@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>deviceConfig</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bm.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bminterface.js"></script>
+
+    <style type="text/css">
+
+    </style>
+
+    <script>
+        var slaveIp;
+        var selectIp;
+
+        function getTime(id) {
+            var idtime = $("#" + id).val();
+
+            return idtime.split("T")[0] + " " + idtime.split("T")[1];
+        }
+
+        //function showimage(date,path,reason) {
+        //    var inpath = "/opt/vehicle/vehicle_photo/" + date + "/" + path;
+        //    bm_slave_ajax(selectIp,"GetPhotoImage","id0", "&path=" + inpath, function (id,json) {
+        //        if (json["return"]) {
+        //            $("#photoImage").attr('src', json["value"]);
+        //            $('#myModal_image').modal('show');
+        //        }
+        //    });
+        //}
+
+        function showimage2(imgUrl) {
+            window.open(imgUrl);
+        }
+
+        function vehicleInfoClick(deviceid, id) {
+            var deviceNum = parseInt(deviceid);
+            if (slaveIp) {
+                //console.log(slaveIp.length);
+                if (slaveIp.length > deviceNum) {
+                    selectIp = slaveIp[deviceNum]["ip"];
+                }
+            }
+            bm_ajax("GetPhotoInfo", "&vehicleId="+id, function (json) {
+                if (json["return"]) {
+                    //var eventJson = {
+                    //    "tr_cbName": "showimage",
+                    //    "tr_paramKeyList": [                         
+                    //        { "paramKey": "日期" },
+                    //        { "paramKey": "图片名称" },
+                    //        { "paramKey": "说明" }
+                    //    ],
+                    //}
+                    var eventJson = {
+                        "tr_cbName": "showimage2",
+                        "tr_paramKeyList": [
+                            { "paramKey": "下载地址" },
+                        ],
+                    }
+                    loadJsonHtml("thead_photoinfo", "tbody_photoinfo", json, eventJson);     
+                    $('#myModal').modal('show');
+                } 
+            });
+        }
+
+        function cbtest(id, name) {
+            console.log("id" + id + "   name" + name);
+        }
+
+        function algProcessListQuery() {
+            bm_ajax("GetVehicleInfo", "&startTime=" + getTime("startTime") + "&endTime=" + getTime("endTime"), function (json) {
+                if (json["return"]) {
+
+                    var eventJson = {
+                        "tr_cbName": "vehicleInfoClick",
+                        "tr_paramKeyList": [
+                            { "paramKey": "运行机器" },
+                            { "paramKey": "ID" }
+                        ],
+                        //"td_event": [
+                        //    {
+                        //        "eventName": "OOXX",
+                        //        "cbName": "cbtest",
+                        //        "paramKeyList": [
+                        //            { "paramKey": "ID" },
+                        //            { "paramKey": "车架号" }
+                        //        ]
+                        //    },
+                        //    {
+                        //        "eventName": "OOXX",
+                        //        "cbName": "cbtest",
+                        //        "paramKeyList": [
+                        //            { "paramKey": "ID" },
+                        //            { "paramKey": "车架号" }
+                        //        ]
+                        //    }
+                        //]
+                    }
+                    loadJsonHtml("thead_vehicleinfo", "tbody_vehicleinfo", json ,eventJson);   
+                }
+            });
+        }
+
+
+        function setTodayTime() {
+            var now = new Date();
+            var month = now.getMonth();//得到月份
+            var date = now.getDate();//得到日期
+            month = month + 1;
+            if (month < 10) month = "0" + month;
+            if (date < 10) date = "0" + date;
+
+            var startTime = now.getFullYear() + "-" + month + "-" + date + "T00:00:00";
+            var endTime = now.getFullYear() + "-" + month + "-" + date + "T23:59:59";
+            var div_timeHtml = "起始时间:<input id=\"startTime\" type=\"datetime-local\" value=\"" + startTime + "\" />"
+            div_timeHtml += "结束时间:<input id=\"endTime\" type=\"datetime-local\" value=\"" + endTime + "\" />"
+
+            bm_html("div_time", div_timeHtml);
+        }
+
+        function querySlaveIp() {
+            bm_ajax("GetSlaveInfo", "", function (json) {
+                if (json["return"]) {
+                    slaveIp = json["value"];
+                }
+            });
+        }
+       
+    </script>
+
+    <style>
+
+    </style>
+</head>
+<body onload="querySlaveIp(); setTodayTime(); algProcessListQuery();">
+
+    <div class="row" style="max-width:100%;">
+        <div class="col-sm-12">
+
+            <div id="div_updateFile" class="row">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <div id="div_time">
+                                起始时间:<input id="startTime" type="datetime-local" value="2015-09-24T13:59:59" />
+                                结束时间:<input id="endTime" type="datetime-local" value="2015-09-24T13:59:59" />
+                            </div>
+                            <button type="button" class="btn btn-primary btn-xs" onclick="algProcessListQuery();">刷新</button>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+
+                                <table class="table table-bordered table-striped table-hover table-condensed">
+                                    <thead id="thead_vehicleinfo"> </thead>
+                                    <tbody id="tbody_vehicleinfo"> </tbody>
+                                </table>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="min-width:80%;max-height:100%">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="clearMsg();">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        Message
+                    </h4>
+                </div>
+                <div class="modal-body" style="max-height:500px;overflow:auto;">
+                    <table class="table table-bordered table-striped table-hover table-condensed">
+                        <thead id="thead_photoinfo"> </thead>
+                        <tbody id="tbody_photoinfo"> </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="clearMsg();">
+                        关闭
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="myModal_image" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="min-width:60%;max-height:100%">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        Message
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <img id="photoImage" style="max-width:60%;max-height:60%">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        关闭
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
