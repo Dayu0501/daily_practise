@@ -15,7 +15,7 @@ void test_DY_remove() {
 	cout << "operation data is " << testData_0 << endl;
 	cout << "Need to delete is " << b << endl;
 
-	testData_0.erase(DY_remove(testData_0.begin(), testData_0.end(), b), testData_0.end());
+	testData_0.erase(DY::remove(testData_0.begin(), testData_0.end(), b), testData_0.end());
 
 	cout << "result = " << testData_0 << endl;
 }
@@ -27,7 +27,7 @@ void test_DY_remove_if() {
 	cout << "operation data is " << testData_0 << endl;
 
 	testData_0.erase(
-		DY_remove_if(testData_0.begin(), testData_0.end(), [](unsigned char x) { return std::isspace(x); }),
+		DY::remove_if(testData_0.begin(), testData_0.end(), [](unsigned char x) { return std::isspace(x); }),
 		testData_0.end());
 
 	cout << "result = " << testData_0 << endl;
@@ -117,10 +117,10 @@ void test_DY_replace() {
 	string hello{"7289245892288"};
 	cout << "hello is " << hello << endl;
 
-	DY_replace(hello.begin(), hello.end(), '2', '0');
+	DY::replace(hello.begin(), hello.end(), '2', '0');
 	cout << "DY_replace hello is " << hello << endl;
 
-	DY_replace_if(hello.begin(), hello.end(), '1', [](char x) { return x == '9'; });
+	DY::replace_if(hello.begin(), hello.end(), '1', [](char x) { return x == '9'; });
 	cout << "DY_replace_if hello is " << hello << endl;
 }
 
@@ -159,7 +159,7 @@ int main() {
 	pClass *pIns = &ins;
 	pIns->print();
 
-	cout << "---------------" << endl;
+	cout << "----- lambda ---------" << endl;
 
 	auto bb = []() {
 		int aa = 0;
@@ -168,6 +168,8 @@ int main() {
 	};
 
 	cout << "bb = " << bb << endl;
+
+	cout << "----- assert ----------" << endl;
 
 	int hehe = 1;
 
