@@ -11,6 +11,14 @@ using namespace std;
 
 namespace DY {
 
+/*** tools ***/
+	// 决定某个迭代器的类型-value_type
+	template<typename _Iter>
+	inline typename iterator_traits<_Iter>::value_type *__value_type(const _Iter &) {
+		return static_cast<typename iterator_traits<_Iter>::value_type *>(0);
+	}
+
+
 /*** function declare ***/
 	/* 1 */
 	template<typename ForWardIter, typename T>
@@ -52,15 +60,27 @@ namespace DY {
 		*last = tmp;
 	}
 
-	// 决定某个迭代器的类型-value_type
-//	template<class _Iter>
-//	inline typename iterator_traits<_Iter>::value_type *__value_type(const _Iter &) {
-//		return static_cast<typename iterator_traits<_Iter>::value_type *>(0);
-//	}
+	/* 10 */
+	template<typename _BidirectionalIter>
+	void reverse(_BidirectionalIter first, _BidirectionalIter last) {
+		while (true) {
+			if (first == last || first == --last)
+				return;
+			else
+				iter_swap(first++, last, __value_type(first));
+		}
+	}
 
-	template<typename _Iter>
-	inline typename iterator_traits<_Iter>::value_type *__value_type(const _Iter &) {
-		return static_cast<typename iterator_traits<_Iter>::value_type *>(0);
+	/* 11 */
+	template<typename _BidirectionalIter, class _OutputIter>
+	_OutputIter reverse_copy(_BidirectionalIter __first, _BidirectionalIter __last, _OutputIter __result) {
+		while (__first != __last) {
+			--__last;
+			*__result = *__last;
+			++__result;
+		}
+
+		return __result;
 	}
 
 
@@ -138,6 +158,12 @@ namespace DY {
 		for (; first != last; ++first, ++result) {
 			*result = pred(*first) ? new_val : *first;
 		}
+	}
+
+	void testCase(int c) {
+		static int a = 100;
+		a += c;
+		cout << "a = " << a << endl;
 	}
 }
 #endif //STL_ALG_ALGORITHMUNITY_H

@@ -78,10 +78,10 @@ time_t strTime2unix(const std::string &time, const std::string &format) {
 }
 
 void testDiffOneYear() {
-	string kaiShiRiQiShuChu{"20200716"};
+	string kaiShiRiQiShuChu{"20190826"};
 	kaiShiRiQiShuChu += " 00:00:00";
 
-	string jieZhiRiQiShuChu{"20210715"};
+	string jieZhiRiQiShuChu{"20200825"};
 	jieZhiRiQiShuChu += " 00:00:00";
 
 	time_t kaiShiRiQiShuChuStamp = strTime2unix(kaiShiRiQiShuChu, "%4d%2d%2d %d:%d:%d");
@@ -95,8 +95,12 @@ void testDiffOneYear() {
 	cout << "diff = " << diff << endl;
 }
 
+void testReverse() {
+	std::string hel{"123456789"};
+	DY::reverse(hel.begin(), hel.end());
 
-//test parent child
+	cout << "hel is " << hel << endl;
+}
 
 class pClass {
 public :
@@ -124,7 +128,7 @@ void test_DY_replace() {
 	cout << "DY_replace_if hello is " << hello << endl;
 }
 
-#define DY_REPLACE
+#define DY_REVERSE
 
 int main() {
 
@@ -136,6 +140,10 @@ int main() {
 	test_DY_remove_if();
 #elif defined(DY_REPLACE)
 	test_DY_replace();
+#endif
+
+#ifdef DY_REVERSE
+	testReverse();
 #endif
 
 
@@ -178,6 +186,12 @@ int main() {
 
 
 	cout << "test test test !" << endl;
+
+	DY::testCase(1);
+
+	cout << "---------------" << endl;
+
+	DY::testCase(2);
 
 	return 0;
 }

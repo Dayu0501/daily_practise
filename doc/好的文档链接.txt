@@ -36,3 +36,6 @@ https://zhuanlan.zhihu.com/p/31505598
 
 traits
 https://www.cnblogs.com/mangoyuan/p/6446046.html
+
+stl算法链接
+http://c.biancheng.net/view/609.html

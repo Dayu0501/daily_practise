@@ -35,12 +35,15 @@
 #ifndef __STL_CONFIG_H
 #include <stl_config.h>
 #endif
+
 #ifndef __SGI_STL_INTERNAL_RELOPS
 #include <stl_relops.h>
 #endif
+
 #ifndef __SGI_STL_INTERNAL_PAIR_H
 #include <stl_pair.h>
 #endif
+
 #ifndef __TYPE_TRAITS_H
 #include <type_traits.h>
 #endif
@@ -66,8 +69,7 @@
 
 __STL_BEGIN_NAMESPACE
 
-// swap and iter_swap
-
+//交换
 // 将两个迭代器所指元素对调
 template <class _ForwardIter1, class _ForwardIter2, class _Tp>
 inline void __iter_swap(_ForwardIter1 __a, _ForwardIter2 __b, _Tp*) {
@@ -78,8 +80,11 @@ inline void __iter_swap(_ForwardIter1 __a, _ForwardIter2 __b, _Tp*) {
 
 template <class _ForwardIter1, class _ForwardIter2>
 inline void iter_swap(_ForwardIter1 __a, _ForwardIter2 __b) {
+  //在编译期,确保_ForwardIter1是指向非常量的前向迭代器
   __STL_REQUIRES(_ForwardIter1, _Mutable_ForwardIterator);
   __STL_REQUIRES(_ForwardIter2, _Mutable_ForwardIterator);
+  
+  //在编译期,确保_ForwardIter1所指类型可以转化到ForwardIter2所指类型
   __STL_CONVERTIBLE(typename iterator_traits<_ForwardIter1>::value_type,
                     typename iterator_traits<_ForwardIter2>::value_type);
   __STL_CONVERTIBLE(typename iterator_traits<_ForwardIter2>::value_type,
@@ -89,15 +94,16 @@ inline void iter_swap(_ForwardIter1 __a, _ForwardIter2 __b) {
 // 交换
 template <class _Tp>
 inline void swap(_Tp& __a, _Tp& __b) {
-  __STL_REQUIRES(_Tp, _Assignable);
+  __STL_REQUIRES(_Tp, _Assignable); //在编译期,确保_Tp可以被赋值
   _Tp __tmp = __a;
   __a = __b;
   __b = __tmp;
 }
 
 //--------------------------------------------------
-// min and max
 
+
+// 大小比较
 #if !defined(__BORLANDC__) || __BORLANDC__ >= 0x540 /* C++ Builder 4.0 */
 
 #undef min
@@ -106,7 +112,7 @@ inline void swap(_Tp& __a, _Tp& __b) {
 // 取两个值最小值
 template <class _Tp>
 inline const _Tp& min(const _Tp& __a, const _Tp& __b) {
-  __STL_REQUIRES(_Tp, _LessThanComparable);
+  __STL_REQUIRES(_Tp, _LessThanComparable); //在编译期,确保_Tp具有小于操作符
   return __b < __a ? __b : __a;
 }
 
@@ -130,6 +136,7 @@ inline const _Tp& max(const _Tp& __a, const _Tp& __b, _Compare __comp) {
   return __comp(__a, __b) ? __b : __a;
 }
 
+
 //--------------------------------------------------
 // copy
 
@@ -140,34 +147,38 @@ inline const _Tp& max(const _Tp& __a, const _Tp& __b, _Compare __comp) {
 // a for loop with an explicit count.
 // copy 函数-效率 memmove
 // copy 版本
+
+//下面是两个版本的__copy，一个是使用非随机迭代器，一个使用随机迭代器的
+//使用非随机迭代的方式
 template <class _InputIter, class _OutputIter, class _Distance>
-inline _OutputIter __copy(_InputIter __first, _InputIter __last,
-                          _OutputIter __result,
-                          input_iterator_tag, _Distance*)
-{
+inline _OutputIter __copy(_InputIter __first, _InputIter __last, _OutputIter __result, 
+ 						  input_iterator_tag, _Distance*) {
   for ( ; __first != __last; ++__result, ++__first)
     *__result = *__first;
+  
   return __result;
 }
 
+//使用随机访问迭代方式
+//此举利用_RandomAccessIter的特性,将循环条件改为n>0;
+//程序更高效,因为_RandomAccessIter的operator!=函数必然要复杂许多
 template <class _RandomAccessIter, class _OutputIter, class _Distance>
-inline _OutputIter
-__copy(_RandomAccessIter __first, _RandomAccessIter __last,
-       _OutputIter __result, random_access_iterator_tag, _Distance*)
-{
+inline _OutputIter __copy(_RandomAccessIter __first, _RandomAccessIter __last,
+       					  _OutputIter __result, random_access_iterator_tag, _Distance*) {
   for (_Distance __n = __last - __first; __n > 0; --__n) {
     *__result = *__first;
     ++__first;
     ++__result;
   }
+  
   return __result;
 }
 
-// 使用 memmove
+//使用memmove的方式，应该是针对指针类型的
 template <class _Tp>
-inline _Tp*
-__copy_trivial(const _Tp* __first, const _Tp* __last, _Tp* __result) {
+inline _Tp* __copy_trivial(const _Tp* __first, const _Tp* __last, _Tp* __result) {
   memmove(__result, __first, sizeof(_Tp) * (__last - __first));
+  
   return __result + (__last - __first);
 }
 
@@ -176,32 +187,26 @@ __copy_trivial(const _Tp* __first, const _Tp* __last, _Tp* __result) {
 template <class _InputIter, class _OutputIter>
 inline _OutputIter __copy_aux2(_InputIter __first, _InputIter __last,
                                _OutputIter __result, __false_type) {
-  return __copy(__first, __last, __result,
-                __ITERATOR_CATEGORY(__first),
-                __DISTANCE_TYPE(__first));
+  return __copy(__first, __last, __result, __ITERATOR_CATEGORY(__first), __DISTANCE_TYPE(__first));
 }
 
 template <class _InputIter, class _OutputIter>
 inline _OutputIter __copy_aux2(_InputIter __first, _InputIter __last,
                                _OutputIter __result, __true_type) {
-  return __copy(__first, __last, __result,
-                __ITERATOR_CATEGORY(__first),
-                __DISTANCE_TYPE(__first));
+  return __copy(__first, __last, __result, __ITERATOR_CATEGORY(__first), __DISTANCE_TYPE(__first));
 }
 
 #ifndef __USLC__
 
 template <class _Tp>
-inline _Tp* __copy_aux2(_Tp* __first, _Tp* __last, _Tp* __result,
-                        __true_type) {
+inline _Tp* __copy_aux2(_Tp* __first, _Tp* __last, _Tp* __result, __true_type) {
   return __copy_trivial(__first, __last, __result);
 }
 
 #endif /* __USLC__ */
 
 template <class _Tp>
-inline _Tp* __copy_aux2(const _Tp* __first, const _Tp* __last, _Tp* __result,
-                        __true_type) {
+inline _Tp* __copy_aux2(const _Tp* __first, const _Tp* __last, _Tp* __result, __true_type) {
   return __copy_trivial(__first, __last, __result);
 }
 
@@ -225,13 +230,14 @@ inline _OutputIter copy(_InputIter __first, _InputIter __last,
 // Hack for compilers that don't have partial ordering of function templates
 // but do have partial specialization of class templates.
 #elif defined(__STL_CLASS_PARTIAL_SPECIALIZATION)
+
 // 完全泛化版本 __copy_dispatch
 template <class _InputIter, class _OutputIter, class _BoolType>
 struct __copy_dispatch {
-  static _OutputIter copy(_InputIter __first, _InputIter __last,
-                          _OutputIter __result) {
+  static _OutputIter copy(_InputIter __first, _InputIter __last, _OutputIter __result) {
     typedef typename iterator_traits<_InputIter>::iterator_category _Category;
     typedef typename iterator_traits<_InputIter>::difference_type _Distance;
+	
     return __copy(__first, __last, __result, _Category(), (_Distance*) 0);
   }
 };
@@ -260,9 +266,10 @@ inline _OutputIter copy(_InputIter __first, _InputIter __last,
                         _OutputIter __result) {
   __STL_REQUIRES(_InputIter, _InputIterator);
   __STL_REQUIRES(_OutputIter, _OutputIterator);
+  
   typedef typename iterator_traits<_InputIter>::value_type _Tp;
-  typedef typename __type_traits<_Tp>::has_trivial_assignment_operator
-          _Trivial;
+  typedef typename __type_traits<_Tp>::has_trivial_assignment_operator _Trivial;
+  
   return __copy_dispatch<_InputIter, _OutputIter, _Trivial>
     ::copy(__first, __last, __result);
 }
@@ -274,17 +281,15 @@ inline _OutputIter copy(_InputIter __first, _InputIter __last,
 
 template <class _InputIter, class _OutputIter>
 inline _OutputIter copy(_InputIter __first, _InputIter __last,
-                        _OutputIter __result)
-{
-  return __copy(__first, __last, __result,
-                __ITERATOR_CATEGORY(__first),
-                __DISTANCE_TYPE(__first));
+                        _OutputIter __result){
+  return __copy(__first, __last, __result, __ITERATOR_CATEGORY(__first), __DISTANCE_TYPE(__first));
 }
 
-#define __SGI_STL_DECLARE_COPY_TRIVIAL(_Tp)                                \
-  inline _Tp* copy(const _Tp* __first, const _Tp* __last, _Tp* __result) { \
-    memmove(__result, __first, sizeof(_Tp) * (__last - __first));          \
-    return __result + (__last - __first);                                  \
+#define __SGI_STL_DECLARE_COPY_TRIVIAL(_Tp)                                
+  inline _Tp* copy(const _Tp* __first, const _Tp* __last, _Tp* __result) { 
+    memmove(__result, __first, sizeof(_Tp) * (__last - __first));  
+	
+    return __result + (__last - __first);                                  
   }
 
 __SGI_STL_DECLARE_COPY_TRIVIAL(char)
@@ -311,6 +316,7 @@ __SGI_STL_DECLARE_COPY_TRIVIAL(long double)
 #endif /* __STL_CLASS_PARTIAL_SPECIALIZATION */
 
 //--------------------------------------------------
+
 // copy_backward
 // 逆向复制
 template <class _BidirectionalIter1, class _BidirectionalIter2, 
