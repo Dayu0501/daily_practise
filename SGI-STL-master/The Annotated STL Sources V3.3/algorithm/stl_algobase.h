@@ -174,7 +174,7 @@ inline _OutputIter __copy(_RandomAccessIter __first, _RandomAccessIter __last,
   return __result;
 }
 
-//使用memmove的方式，应该是针对指针类型的
+//使用memmove的方式，应该是针对指针类型的，采用内存copy的方式,trival琐碎的，在计算机中代表的就是内存的全拷贝
 template <class _Tp>
 inline _Tp* __copy_trivial(const _Tp* __first, const _Tp* __last, _Tp* __result) {
   memmove(__result, __first, sizeof(_Tp) * (__last - __first));
@@ -184,6 +184,7 @@ inline _Tp* __copy_trivial(const _Tp* __first, const _Tp* __last, _Tp* __result)
 
 #if defined(__STL_FUNCTION_TMPL_PARTIAL_ORDER)
 
+//__copy_aux2 这种辅助函数的用处 ？
 template <class _InputIter, class _OutputIter>
 inline _OutputIter __copy_aux2(_InputIter __first, _InputIter __last,
                                _OutputIter __result, __false_type) {
@@ -195,6 +196,7 @@ inline _OutputIter __copy_aux2(_InputIter __first, _InputIter __last,
                                _OutputIter __result, __true_type) {
   return __copy(__first, __last, __result, __ITERATOR_CATEGORY(__first), __DISTANCE_TYPE(__first));
 }
+// 上面两个函数，一个__false_type，一个__true_type，啥意思？
 
 #ifndef __USLC__
 

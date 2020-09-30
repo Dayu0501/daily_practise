@@ -30,10 +30,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fbe604e-3cf4-41af-9d97-0d6f33ccfdde" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/../SGI-STL-master/The Annotated STL Sources V3.3/algorithm/stl_algobase.h" beforeDir="false" afterPath="$PROJECT_DIR$/../SGI-STL-master/The Annotated STL Sources V3.3/algorithm/stl_algobase.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithmUnity.h" beforeDir="false" afterPath="$PROJECT_DIR$/algorithmUnity.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/好的文档链接.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/好的文档链接.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/~$git.doc" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../git_upload/chejian-refactor" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
     <configuration name="STL_alg" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="STL_alg" TARGET_NAME="STL_alg" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="STL_alg" RUN_TARGET_NAME="STL_alg">
@@ -85,7 +86,8 @@
       <workItem from="1600046849193" duration="45000" />
       <workItem from="1600084318418" duration="656000" />
       <workItem from="1600167092469" duration="9758000" />
-      <workItem from="1600396766622" duration="5654000" />
+      <workItem from="1600396766622" duration="19182000" />
+      <workItem from="1601206758766" duration="17264000" />
     </task>
     <servers />
   </component>
@@ -121,38 +123,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="808" y="211" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600411939104" />
-    <state width="1852" height="242" key="GridCell.Tab.0.bottom" timestamp="1600396915016">
+    <state width="934" height="269" key="GridCell.Tab.0.bottom" timestamp="1601278444840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1852" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600396915016" />
-    <state width="1852" height="242" key="GridCell.Tab.0.center" timestamp="1600396915016">
+    <state width="934" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601278444840" />
+    <state width="934" height="269" key="GridCell.Tab.0.center" timestamp="1601278444840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1852" height="242" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600396915016" />
-    <state width="1852" height="242" key="GridCell.Tab.0.left" timestamp="1600396915016">
+    <state width="934" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601278444840" />
+    <state width="934" height="269" key="GridCell.Tab.0.left" timestamp="1601278444840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1852" height="242" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600396915016" />
-    <state width="1852" height="242" key="GridCell.Tab.0.right" timestamp="1600396915016">
+    <state width="934" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601278444840" />
+    <state width="934" height="269" key="GridCell.Tab.0.right" timestamp="1601278444840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1852" height="242" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600396915016" />
-    <state width="1852" height="242" key="GridCell.Tab.1.bottom" timestamp="1600396914952">
+    <state width="934" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601278444840" />
+    <state width="934" height="269" key="GridCell.Tab.1.bottom" timestamp="1601278444789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1852" height="242" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600396914952" />
-    <state width="1852" height="242" key="GridCell.Tab.1.center" timestamp="1600396914952">
+    <state width="934" height="269" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601278444789" />
+    <state width="934" height="269" key="GridCell.Tab.1.center" timestamp="1601278444789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1852" height="242" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600396914952" />
-    <state width="1852" height="242" key="GridCell.Tab.1.left" timestamp="1600396914952">
+    <state width="934" height="269" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601278444789" />
+    <state width="934" height="269" key="GridCell.Tab.1.left" timestamp="1601278444789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1852" height="242" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600396914952" />
-    <state width="1852" height="242" key="GridCell.Tab.1.right" timestamp="1600396914952">
+    <state width="934" height="269" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601278444789" />
+    <state width="934" height="269" key="GridCell.Tab.1.right" timestamp="1601278444789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1852" height="242" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600396914952" />
+    <state width="934" height="269" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601278444789" />
     <state width="800" height="255" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1600170151756">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -161,10 +163,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="800" height="595" key="ImportCMakeProjectWizard.topPanel/0.0.1920.1040@0.0.1920.1040" timestamp="1600170151756" />
-    <state x="381" y="78" key="SettingsEditor" timestamp="1599465166194">
+    <state x="381" y="78" key="SettingsEditor" timestamp="1601210057018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="381" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599465166194" />
+    <state x="381" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601210057018" />
     <state width="623" height="498" key="SwitcherDM" timestamp="1599889953314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -173,9 +175,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="581" y="195" width="757" height="650" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599212071447" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1599889937158">
+    <state x="539" y="5" width="838" height="72" key="search.everywhere.popup" timestamp="1601277615180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599889937158" />
+    <state x="539" y="5" width="838" height="72" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601277615180" />
   </component>
 </project>
