@@ -585,3 +585,5 @@ F3
 本文件查找结果的上一个。 
 F4
 
+cmake .. -DCMAKE_BUILD_TYPE=Debug
+

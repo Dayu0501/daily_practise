@@ -39,3 +39,9 @@ https://www.cnblogs.com/mangoyuan/p/6446046.html
 
 stl算法链接
 http://c.biancheng.net/view/609.html
+
+clion 配置远程调试
+https://www.cnblogs.com/qiumingcheng/p/11185073.html
+
+clion 配置leetcode
+https://lluuiq.com/post/202004071321/

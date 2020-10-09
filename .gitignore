@@ -5,3 +5,5 @@ cmake_learn/*.idea*
 c++11_learn/*.idea*
 project/chejian-refactor/*.idea*
 project/chejian-refactor/cmake-build-debug
+algorithm_practice/*.idea*
+algorithm_practice/cmake-build-debug
