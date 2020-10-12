@@ -45,3 +45,12 @@ https://www.cnblogs.com/qiumingcheng/p/11185073.html
 
 clion 配置leetcode
 https://lluuiq.com/post/202004071321/
+
+leetcode 刷题合集
+https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md
+
+花花酱 刷题合集
+https://zxi.mytechroad.com/blog/leetcode-problem-categories/
+
+gdbserver，gdbserver和adb connect 调试安卓代码的原理差不多了。
+https://blog.csdn.net/yeyichao/article/details/50605286
