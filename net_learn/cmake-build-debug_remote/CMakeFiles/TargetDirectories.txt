@@ -1,3 +1,0 @@
-/home/yulichao/remote_debug/net_learn/cmake-build-debug_remote/CMakeFiles/edit_cache.dir
-/home/yulichao/remote_debug/net_learn/cmake-build-debug_remote/CMakeFiles/rebuild_cache.dir
-/home/yulichao/remote_debug/net_learn/cmake-build-debug_remote/CMakeFiles/net_learn.dir

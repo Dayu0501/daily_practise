@@ -74,6 +74,7 @@ __STL_BEGIN_NAMESPACE
 #pragma set woff 1375
 #endif
 
+
 // Note: this function is simply a kludge to work around several compilers'
 //  bugs in handling constant expressions.
 // 决定缓冲区大小的函数，全局函数，当 __size 小于 512 bytes，就返回 512 / __size
