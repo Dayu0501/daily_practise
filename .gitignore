@@ -7,3 +7,6 @@ project/chejian-refactor/*.idea*
 project/chejian-refactor/cmake-build-debug
 algorithm_practice/*.idea*
 algorithm_practice/cmake-build-debug
+net_learn/*.idea*
+net_learn/cmake-build-debug
+net_learn/cmake-build-debug_remote
