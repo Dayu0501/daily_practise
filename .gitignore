@@ -1,4 +1,5 @@
 STL_alg/cmake-build-debug
+STL_alg/*.idea*
 c++11_learn/cmake-build-debug
 mysql_uuid/*.idea*
 cmake_learn/*.idea*
