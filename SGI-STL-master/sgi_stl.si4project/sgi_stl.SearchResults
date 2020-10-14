@@ -1,16 +1,1 @@
----- _Deque_base Matches (16 in 1 files) ----
-_Deque_base in stl_deque.h (The Annotated STL Sources V3.3\container\sequence container\deque) : class _Deque_base
-_Deque_base in stl_deque.h (The Annotated STL Sources V3.3\container\sequence container\deque) :   _Deque_base(const allocator_type& __a, size_t __num_elements)
-_Deque_base in stl_deque.h (The Annotated STL Sources V3.3\container\sequence container\deque) :   _Deque_base(const allocator_type& __a) 
-_Deque_base in stl_deque.h (The Annotated STL Sources V3.3\container\sequence container\deque) :   ~_Deque_base();    
-_Deque_base in stl_deque.h (The Annotated STL Sources V3.3\container\sequence container\deque) : class _Deque_base {
-_Deque_base in stl_deque.h (The Annotated STL Sources V3.3\container\sequence container\deque) :   _Deque_base(const allocator_type&, size_t __num_elements)
-_Deque_base in stl_deque.h (The Annotated STL Sources V3.3\container\sequence container\deque) :   _Deque_base(const allocator_type&)
-_Deque_base in stl_deque.h (The Annotated STL Sources V3.3\container\sequence container\deque) :   ~_Deque_base();    
-stl_deque.h (The Annotated STL Sources V3.3\container\sequence container\deque) line 397 : // Non-inline member functions from _Deque_base.
-~_Deque_base in stl_deque.h (The Annotated STL Sources V3.3\container\sequence container\deque) : _Deque_base<_Tp,_Alloc>::~_Deque_base() {
-_M_initialize_map in stl_deque.h (The Annotated STL Sources V3.3\container\sequence container\deque) : _Deque_base<_Tp,_Alloc>::_M_initialize_map(size_t __num_elements)
-_M_create_nodes in stl_deque.h (The Annotated STL Sources V3.3\container\sequence container\deque) : void _Deque_base<_Tp,_Alloc>::_M_create_nodes(_Tp** __nstart, _Tp** __nfinish)
-_M_destroy_nodes in stl_deque.h (The Annotated STL Sources V3.3\container\sequence container\deque) : _Deque_base<_Tp,_Alloc>::_M_destroy_nodes(_Tp** __nstart, _Tp** __nfinish)
-deque in stl_deque.h (The Annotated STL Sources V3.3\container\sequence container\deque) : class deque : protected _Deque_base<_Tp, _Alloc> {
-deque in stl_deque.h (The Annotated STL Sources V3.3\container\sequence container\deque) :   typedef _Deque_base<_Tp, _Alloc> _Base;
+---- pool Matches (0 in 0 files) ----
