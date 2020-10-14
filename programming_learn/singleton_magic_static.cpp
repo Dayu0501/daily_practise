@@ -21,9 +21,24 @@ private:
 	}
 };
 
+class testtest{
+public:
+	~testtest() {
+		std::cout << "I am desctructor !" << std::endl;
+	}
+};
+
 int main(int argc, char *argv[]) {
 	Singleton &instance_1 = Singleton::get_instance();
 	Singleton &instance_2 = Singleton::get_instance();
+
+	{
+		testtest ins;
+	}
+
+	std::cout << "----- [ 测试 测试 ] -----" << std::endl;
+
+
 	return 0;
 }
 
