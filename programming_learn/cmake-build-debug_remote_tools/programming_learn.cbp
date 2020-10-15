@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="programming_learn" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="singleton_magic_static">
+         <Option output="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/singleton_magic_static" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 singleton_magic_static" />
+            <CompileFile command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="singleton_magic_static/fast">
+         <Option output="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/singleton_magic_static" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 singleton_magic_static/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="friend_learn">
+         <Option output="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/friend_learn" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 friend_learn" />
+            <CompileFile command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="friend_learn/fast">
+         <Option output="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/friend_learn" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 friend_learn/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="virtual_inherit">
+         <Option output="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/virtual_inherit" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 virtual_inherit" />
+            <CompileFile command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="virtual_inherit/fast">
+         <Option output="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/virtual_inherit" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 virtual_inherit/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="string_ref_count">
+         <Option output="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/string_ref_count" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 string_ref_count" />
+            <CompileFile command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="string_ref_count/fast">
+         <Option output="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/string_ref_count" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 string_ref_count/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="singleton">
+         <Option output="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/singleton" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 singleton" />
+            <CompileFile command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="singleton/fast">
+         <Option output="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/singleton" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 singleton/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="testtest">
+         <Option output="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/testtest" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 testtest" />
+            <CompileFile command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="testtest/fast">
+         <Option output="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/testtest" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 testtest/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/tmp/tmp.eb0FULKHKg/friend_learn.cpp">
+         <Option target="friend_learn"/>
+      </Unit>
+      <Unit filename="/tmp/tmp.eb0FULKHKg/singleton.cpp">
+         <Option target="singleton"/>
+      </Unit>
+      <Unit filename="/tmp/tmp.eb0FULKHKg/singleton_magic_static.cpp">
+         <Option target="singleton_magic_static"/>
+      </Unit>
+      <Unit filename="/tmp/tmp.eb0FULKHKg/string_ref_count.cpp">
+         <Option target="string_ref_count"/>
+      </Unit>
+      <Unit filename="/tmp/tmp.eb0FULKHKg/testtest.cpp">
+         <Option target="testtest"/>
+      </Unit>
+      <Unit filename="/tmp/tmp.eb0FULKHKg/virtual_inherit.cpp">
+         <Option target="virtual_inherit"/>
+      </Unit>
+      <Unit filename="/tmp/tmp.eb0FULKHKg/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

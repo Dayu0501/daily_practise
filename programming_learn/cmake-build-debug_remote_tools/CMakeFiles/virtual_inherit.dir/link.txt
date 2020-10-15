@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/virtual_inherit.dir/virtual_inherit.cpp.o  -o virtual_inherit -rdynamic 

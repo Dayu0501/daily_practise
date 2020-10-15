@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/friend_learn.dir/friend_learn.cpp.o  -o friend_learn -rdynamic 

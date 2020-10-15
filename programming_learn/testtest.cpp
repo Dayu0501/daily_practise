@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <memory>
+#include <ext/pool_allocator.h>
 
 using namespace std;
 
@@ -21,12 +21,13 @@ public :
 
 int main() {
 	cout << "----- [ 测试析构函数是否会被调用 ] -----" << endl;
-	AA * ptr = new AA;
-
-	//vector<AA, __gun_cxx::__pool_allo>
-	vector<string, __gun_cxx::__pool_alloc<string>> testStr;
-
+	{
+		AA * ptr = new AA;
+	}
+	std::cout << "----- [ 测试 __pool_alloc ] -----" << std::endl;
+	vector<string, __gnu_cxx::__pool_alloc<string>> testStr;
 
 
 	return 0;
 }
+
