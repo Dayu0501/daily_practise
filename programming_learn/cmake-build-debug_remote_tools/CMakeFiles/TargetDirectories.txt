@@ -1,8 +1,0 @@
-/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/CMakeFiles/singleton_magic_static.dir
-/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/CMakeFiles/rebuild_cache.dir
-/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/CMakeFiles/friend_learn.dir
-/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/CMakeFiles/virtual_inherit.dir
-/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/CMakeFiles/edit_cache.dir
-/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/CMakeFiles/string_ref_count.dir
-/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/CMakeFiles/singleton.dir
-/tmp/tmp.eb0FULKHKg/cmake-build-debug_remote_tools/CMakeFiles/testtest.dir

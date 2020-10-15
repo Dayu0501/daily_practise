@@ -1,1 +1,0 @@
-/usr/bin/c++   -g   CMakeFiles/singleton_magic_static.dir/singleton_magic_static.cpp.o  -o singleton_magic_static -rdynamic 
