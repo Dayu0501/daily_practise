@@ -1,5 +1,8 @@
 #include <iostream>
-
+#include <ext/pool_allocator.h>
+#include <string>
+#include <vector>
+#include <queue>
 
 using namespace std;
 
@@ -59,13 +62,30 @@ int main() {
 
 		std::cout << "----- [ 显示调用析构函数 ] -----" << std::endl;
 
-		memAA * p = new(tmp--)memAA; //此处调用的是上面两个参数的operator new(placement new)
+		auto * p = new(tmp--)memAA; //此处调用的是上面两个参数的operator new(placement new)
 		p->~memAA(); //placement new返回的指针是可以显示调用析构函数的。
+
+		std::cout << std::endl << "----- [ 测试测试 ] -----" << std::endl;
 
 	}
 
 	std::cout << "----- [ 创建一个临时对象 ] -----" << std::endl;
 	memAA ins;
+
+
+	std::cout << std::endl << "----- [ 分配器的内存池 ] -----" << std::endl;
+
+	vector<string, __gnu_cxx::__pool_alloc<string>> hello{"kaka", "bubu", "lala"};
+	for (const auto &item : hello) {
+		cout << "item is " << item << endl;
+	}
+
+	vector<int, __gnu_cxx::__pool_alloc<int>> kaka{3, 5, 6, 7, 7};
+
+
+	deque<string> dequeTetst;
+
+	dequeTetst.begin();
 
 	return 0;
 }

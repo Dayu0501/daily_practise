@@ -2,8 +2,13 @@
 #include <vector>
 #include <string>
 #include <ext/pool_allocator.h>
+#include <regex>
 
 using namespace std;
+
+#define ALLSTATION "1111;2222;3333;"
+using uint = unsigned int;
+
 
 class AA {
 public :
@@ -19,6 +24,13 @@ public :
     string bb;
 };
 
+void split(const char* token, std::string &str, std::vector<std::string> &splitVector)
+{
+	std::regex reg(token);
+	std::sregex_token_iterator begin(str.begin(), str.end(), reg ,-1), end;
+	std::copy(begin, end, std::back_inserter(splitVector));
+}
+
 int main() {
 	cout << "----- [ 测试析构函数是否会被调用 ] -----" << endl;
 	{
@@ -28,7 +40,27 @@ int main() {
 	std::cout << "----- [ 测试 __pool_alloc ] -----" << std::endl;
 	vector<string, __gnu_cxx::__pool_alloc<string>> testStr;
 
+	std::cout << std::endl << "----- [ 测试字符串分割函数 ] -----" << std::endl;
+	string tmp = "ALLSTATION;";
+
+	std::string::size_type pos;
+	if ((pos = tmp.find("ALLSTATION;")) != std::string::npos)
+		tmp.replace(pos, std::string("ALLSTATION;").length(), ALLSTATION);
+
+	cout << "tmp is " << tmp << endl;
+
+
+
+	std::vector<std::string> splitVector;
+	split(";", tmp, splitVector);
+
+	for (const auto & item : splitVector) {
+		cout << "item is " << item;
+	}
+	cout << "end" << endl;
+
+	uint hello{100};
+	cout << "hello is " << hello << endl;
 
 	return 0;
 }
-

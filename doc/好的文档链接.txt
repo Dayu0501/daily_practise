@@ -54,3 +54,6 @@ https://zxi.mytechroad.com/blog/leetcode-problem-categories/
 
 gdbserver，gdbserver和adb connect 调试安卓代码的原理差不多了。
 https://blog.csdn.net/yeyichao/article/details/50605286
+
+google c++编程规范
+https://blog.csdn.net/Hhrock/article/details/82386014
