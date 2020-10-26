@@ -57,3 +57,11 @@ https://blog.csdn.net/yeyichao/article/details/50605286
 
 google c++编程规范
 https://blog.csdn.net/Hhrock/article/details/82386014
+
+c++11内联命名空间
+https://zhuanlan.zhihu.com/p/125197727
+
+c++手册
+https://gcc.gnu.org/onlinedocs/libstdc++/index.html
+https://gcc.gnu.org/onlinedocs/libstdc++/manual/using_dual_abi.html
+https://developers.redhat.com/blog/2015/02/05/gcc5-and-the-c11-abi/
