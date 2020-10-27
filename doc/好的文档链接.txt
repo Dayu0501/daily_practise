@@ -65,3 +65,10 @@ c++手册
 https://gcc.gnu.org/onlinedocs/libstdc++/index.html
 https://gcc.gnu.org/onlinedocs/libstdc++/manual/using_dual_abi.html
 https://developers.redhat.com/blog/2015/02/05/gcc5-and-the-c11-abi/
+
+讲c++ string底层实现的
+https://blog.csdn.net/yolan2626/article/details/105705571?biz_id=102&utm_term=c%20%20%20string%E5%BA%95%E5%B1%82&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-105705571&spm=1018.2118.3001.4187
+
+关于write操作的原子性，非常好的一篇文章，非常非常的好
+https://blog.csdn.net/dog250/article/details/78879600
+https://blog.csdn.net/dog250/article/details/29185821

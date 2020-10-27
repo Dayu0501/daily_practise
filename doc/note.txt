@@ -589,3 +589,5 @@ du -sh /usr/ 计算文件夹使用的大小
 df -h 查看磁盘使用情况
 
 scp -r yulichao@192.168.20.71:/home/yulichao/code_code/chejian_code_repository_now/chejian-refactor/chejian-refactor/web ./
+
+iostat -d -x 1

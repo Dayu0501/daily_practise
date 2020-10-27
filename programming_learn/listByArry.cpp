@@ -2,6 +2,7 @@
  * 数组实现链表
  */
 
+//https://my.oschina.net/vincentzhao/blog/718608
 #include<bits/stdc++.h>
 
 using namespace std;
