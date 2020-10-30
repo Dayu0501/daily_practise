@@ -12,3 +12,4 @@ private-copy开放给了友元函数或者友元类。
 boost中存在这样的类，基类为不能copy或者是private-copy的，继承他们的子类，也就有这样的性质了。
 当子类继承nocopy这样的类的时候，当调用子类的copy构造的时候，子类的copy构造需要调用基类的copy构造初始化基类的部分，因为基类的是nocopy的，所以
 调用基类失败，所以该子类的copy constructor也是失败的，copy assign也是同样的道理。
+
