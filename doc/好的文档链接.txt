@@ -72,3 +72,9 @@ https://blog.csdn.net/yolan2626/article/details/105705571?biz_id=102&utm_term=c%
 关于write操作的原子性，非常好的一篇文章，非常非常的好
 https://blog.csdn.net/dog250/article/details/78879600
 https://blog.csdn.net/dog250/article/details/29185821
+
+mysql group by很好的理解
+https://blog.csdn.net/qq403580298/article/details/90756352
+
+连接表
+https://blog.csdn.net/weixin_37972723/article/details/79855381
