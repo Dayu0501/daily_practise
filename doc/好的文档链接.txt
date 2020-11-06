@@ -78,3 +78,17 @@ https://blog.csdn.net/qq403580298/article/details/90756352
 
 连接表
 https://blog.csdn.net/weixin_37972723/article/details/79855381
+
+mysql的联结表
+https://www.cnblogs.com/canger/p/9760217.html
+
+centos yum讲解
+https://www.cnblogs.com/jpfss/p/10929258.html
+https://blog.csdn.net/xiaojin21cen/article/details/84726193
+
+文件的页缓存
+https://www.linuxprobe.com/linux-read-write-tuning.html
+http://blog.chinaunix.net/uid-667478-id-2384354.html
+
+好的，讲并发编程的问题
+https://blog.csdn.net/dog250/article/details/108908750

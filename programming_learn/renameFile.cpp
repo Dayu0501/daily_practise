@@ -11,5 +11,9 @@ int main(int argc, char *argv[]) {
 		std::cout << "rename error " << std::endl;
 	}
 
+	std::string str{"0"};
+
+	std::cout << "str length is " << str.length() << std::endl;
+
 	return 0;
 }

@@ -591,3 +591,11 @@ df -h 查看磁盘使用情况
 scp -r yulichao@192.168.20.71:/home/yulichao/code_code/chejian_code_repository_now/chejian-refactor/chejian-refactor/web ./
 
 iostat -d -x 1
+
+清空页缓存 sudo sysctl -w vm.drop_caches=3
+
+
+
+
+
+cmake . -DCMAKE_INSTALL_PREFIX=/usr/local/mysql -DMYSQL_DATADIR=/usr/local/mysql/data -DMYSQL_UNIX_ADDR=/var/lib/mysql/mysql.sock -DMYSQL_USER=mysql -DDEFAULT_CHARSET=utf8 -DDEFAULT_COLLATION=utf8_general_ci -DENABLED_LOCAL_INFILE=ON -DWITH_INNOBASE_STORAGE_ENGINE=1 -DWITH_FEDERATED_STORAGE_ENGINE=1 -DWITH_BLACKHOLE_STORAGE_ENGINE=1 -DWITHOUT_EXAMPLE_STORAGE_ENGINE=1 -DDOWNLOAD_BOOST=1 -DWITH_BOOST=/usr/local/boost
