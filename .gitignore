@@ -19,3 +19,6 @@ programming_learn/cmake-build-debug_remote_tools
 apue.3e/*.idea*   
 apue.3e/cmake-build-debug
 apue.3e/cmake-build-remote_debug_tool
+design_mode/*.idea*   
+design_mode/cmake-build-debug
+design_mode/cmake-build-debug_remote_tools
