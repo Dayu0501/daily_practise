@@ -22,15 +22,6 @@ public:
 
 		cout << endl;
 	}
-
-//	void exec() {
-//		cout << "observer exec :" << endl;
-//		master ins;
-//		ins.addObserver(this);
-//		observer2 ins2;
-//		ins.addObserver(&ins2);
-//		ins.doWork();
-//	}
 };
 
 
@@ -38,7 +29,7 @@ public:
 int main() {
 	observer1 ins;
 	std::cout << std::endl << "----- [ ma doWork ] -----" << std::endl;
-	//下面这种使用方式，类似于epoll的使用方式
+	/* 下面这种使用方式，类似于epoll的使用方式，epoll中的回调函数的工作是，把注册了socket加到就绪队列中 */
 	observer2 ins2;
 	master ma;
 	ma.addObserver(&ins);

@@ -13,7 +13,13 @@ add_executable(design_mode
         Component_collaboration/template_method/template1_app.cpp
         Component_collaboration/template_method/template1_lib.h
         Component_collaboration/template_method/template2_app.cpp
-        Component_collaboration/template_method/template2_lib.h Component_collaboration/observer/test/master.h Component_collaboration/observer/test/observer.cpp Component_collaboration/observer/test/head.h Component_collaboration/observer/test/new_observer.cpp)
+        Component_collaboration/template_method/template2_lib.h Component_collaboration/observer/test/master.h Component_collaboration/observer/test/observer.cpp Component_collaboration/observer/test/head.h Component_collaboration/observer/test/new_observer.cpp
+        Single_responsibility/decorator/decorator1.cpp
+        Single_responsibility/decorator/decorator2.cpp
+        Single_responsibility/decorator/decorator3.cpp
+        Single_responsibility/brigde/bridge1.cpp
+        Single_responsibility/brigde/bridge2.cpp
+        )
 
 add_executable(observer Component_collaboration/observer/test/observer.cpp)
 add_executable(new_observer Component_collaboration/observer/test/new_observer.cpp)

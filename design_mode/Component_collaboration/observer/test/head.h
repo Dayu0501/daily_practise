@@ -7,7 +7,7 @@
 
 class notifier {
 public:
-	virtual void notify(int val) = 0;
+	virtual void notify(int val) = 0; //这里的notify机制，在c中相当于回调函数，在epoll中，就是使用的回调函数实现的通知
 	virtual ~notifier() { }
 };
 

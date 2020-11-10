@@ -594,7 +594,10 @@ iostat -d -x 1
 
 清空页缓存 sudo sysctl -w vm.drop_caches=3
 
-
+区分大小写
+find . -name 's*'
+不区分大小写
+find  搜索路径   -iname   "文件名"
 
 
 
