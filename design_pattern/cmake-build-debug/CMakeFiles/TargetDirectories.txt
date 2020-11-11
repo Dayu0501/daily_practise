@@ -1,0 +1,5 @@
+E:/daily_practice/daily_practise/design_mode/cmake-build-debug/CMakeFiles/design_mode.dir
+E:/daily_practice/daily_practise/design_mode/cmake-build-debug/CMakeFiles/observer.dir
+E:/daily_practice/daily_practise/design_mode/cmake-build-debug/CMakeFiles/new_observer.dir
+E:/daily_practice/daily_practise/design_mode/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/daily_practice/daily_practise/design_mode/cmake-build-debug/CMakeFiles/rebuild_cache.dir
