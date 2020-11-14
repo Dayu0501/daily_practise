@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="E:/daily_practice/daily_practise/design_mode/cmake-build-debug"/>
+				<Option working_dir="E:/daily_practice/daily_practise/design_pattern/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="design_mode">
-				<Option output="E:/daily_practice/daily_practise/design_mode/cmake-build-debug/design_mode.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="E:/daily_practice/daily_practise/design_mode/cmake-build-debug"/>
+				<Option output="E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/design_mode.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/daily_practice/daily_practise/design_pattern/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -32,15 +32,15 @@
 					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 design_mode"/>
-					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 design_mode"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="design_mode/fast">
-				<Option output="E:/daily_practice/daily_practise/design_mode/cmake-build-debug/design_mode.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="E:/daily_practice/daily_practise/design_mode/cmake-build-debug"/>
+				<Option output="E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/design_mode.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/daily_practice/daily_practise/design_pattern/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 design_mode/fast"/>
-					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 design_mode/fast"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="observer">
-				<Option output="E:/daily_practice/daily_practise/design_mode/cmake-build-debug/observer.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="E:/daily_practice/daily_practise/design_mode/cmake-build-debug"/>
+				<Option output="E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/observer.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/daily_practice/daily_practise/design_pattern/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -74,15 +74,15 @@
 					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 observer"/>
-					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 observer"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="observer/fast">
-				<Option output="E:/daily_practice/daily_practise/design_mode/cmake-build-debug/observer.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="E:/daily_practice/daily_practise/design_mode/cmake-build-debug"/>
+				<Option output="E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/observer.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/daily_practice/daily_practise/design_pattern/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -95,15 +95,15 @@
 					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 observer/fast"/>
-					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 observer/fast"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="new_observer">
-				<Option output="E:/daily_practice/daily_practise/design_mode/cmake-build-debug/new_observer.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="E:/daily_practice/daily_practise/design_mode/cmake-build-debug"/>
+				<Option output="E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/new_observer.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/daily_practice/daily_practise/design_pattern/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -116,15 +116,15 @@
 					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 new_observer"/>
-					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 new_observer"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="new_observer/fast">
-				<Option output="E:/daily_practice/daily_practise/design_mode/cmake-build-debug/new_observer.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="E:/daily_practice/daily_practise/design_mode/cmake-build-debug"/>
+				<Option output="E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/new_observer.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/daily_practice/daily_practise/design_pattern/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -137,93 +137,93 @@
 					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 new_observer/fast"/>
-					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 new_observer/fast"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="E:/daily_practice/daily_practise/design_mode/cmake-build-debug"/>
+				<Option working_dir="E:/daily_practice/daily_practise/design_pattern/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="E:/daily_practice/daily_practise/design_mode/cmake-build-debug"/>
+				<Option working_dir="E:/daily_practice/daily_practise/design_pattern/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_mode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Component_collaboration/observer/FileSplitter1.h">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Component_collaboration/observer/FileSplitter1.h">
 			<Option target="design_mode"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Component_collaboration/observer/FileSplitter2.h">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Component_collaboration/observer/FileSplitter2.h">
 			<Option target="design_mode"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Component_collaboration/observer/MainForm1.cpp">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Component_collaboration/observer/MainForm1.cpp">
 			<Option target="design_mode"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Component_collaboration/observer/MainForm2.cpp">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Component_collaboration/observer/MainForm2.cpp">
 			<Option target="design_mode"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Component_collaboration/observer/test/head.h">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Component_collaboration/observer/test/head.h">
 			<Option target="design_mode"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Component_collaboration/observer/test/master.h">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Component_collaboration/observer/test/master.h">
 			<Option target="design_mode"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Component_collaboration/observer/test/new_observer.cpp">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Component_collaboration/observer/test/new_observer.cpp">
 			<Option target="design_mode"/>
 			<Option target="new_observer"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Component_collaboration/observer/test/observer.cpp">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Component_collaboration/observer/test/observer.cpp">
 			<Option target="design_mode"/>
 			<Option target="observer"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Component_collaboration/strategy/strategy1.cpp">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Component_collaboration/strategy/strategy1.cpp">
 			<Option target="design_mode"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Component_collaboration/strategy/strategy2.cpp">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Component_collaboration/strategy/strategy2.cpp">
 			<Option target="design_mode"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Component_collaboration/template_method/template1_app.cpp">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Component_collaboration/template_method/template1_app.cpp">
 			<Option target="design_mode"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Component_collaboration/template_method/template1_lib.h">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Component_collaboration/template_method/template1_lib.h">
 			<Option target="design_mode"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Component_collaboration/template_method/template2_app.cpp">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Component_collaboration/template_method/template2_app.cpp">
 			<Option target="design_mode"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Component_collaboration/template_method/template2_lib.h">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Component_collaboration/template_method/template2_lib.h">
 			<Option target="design_mode"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Single_responsibility/brigde/bridge1.cpp">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Single_responsibility/brigde/bridge1.cpp">
 			<Option target="design_mode"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Single_responsibility/brigde/bridge2.cpp">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Single_responsibility/brigde/bridge2.cpp">
 			<Option target="design_mode"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Single_responsibility/decorator/decorator1.cpp">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Single_responsibility/decorator/decorator1.cpp">
 			<Option target="design_mode"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Single_responsibility/decorator/decorator2.cpp">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Single_responsibility/decorator/decorator2.cpp">
 			<Option target="design_mode"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/Single_responsibility/decorator/decorator3.cpp">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Single_responsibility/decorator/decorator3.cpp">
 			<Option target="design_mode"/>
 		</Unit>
-		<Unit filename="E:/daily_practice/daily_practise/design_mode/CMakeLists.txt">
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

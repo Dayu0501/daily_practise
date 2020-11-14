@@ -42,10 +42,10 @@ RM = "D:\job_install\cl_mymechine\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\daily_practice\daily_practise\design_mode
+CMAKE_SOURCE_DIR = E:\daily_practice\daily_practise\design_pattern
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\daily_practice\daily_practise\design_mode\cmake-build-debug
+CMAKE_BINARY_DIR = E:\daily_practice\daily_practise\design_pattern\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/design_mode.dir/depend.make
@@ -58,172 +58,172 @@ include CMakeFiles/design_mode.dir/flags.make
 
 CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm1.cpp.obj: CMakeFiles/design_mode.dir/flags.make
 CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm1.cpp.obj: ../Component_collaboration/observer/MainForm1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm1.cpp.obj"
-	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Component_collaboration\observer\MainForm1.cpp.obj -c E:\daily_practice\daily_practise\design_mode\Component_collaboration\observer\MainForm1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm1.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Component_collaboration\observer\MainForm1.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Component_collaboration\observer\MainForm1.cpp
 
 CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm1.cpp.i"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_mode\Component_collaboration\observer\MainForm1.cpp > CMakeFiles\design_mode.dir\Component_collaboration\observer\MainForm1.cpp.i
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Component_collaboration\observer\MainForm1.cpp > CMakeFiles\design_mode.dir\Component_collaboration\observer\MainForm1.cpp.i
 
 CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm1.cpp.s"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_mode\Component_collaboration\observer\MainForm1.cpp -o CMakeFiles\design_mode.dir\Component_collaboration\observer\MainForm1.cpp.s
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Component_collaboration\observer\MainForm1.cpp -o CMakeFiles\design_mode.dir\Component_collaboration\observer\MainForm1.cpp.s
 
 CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm2.cpp.obj: CMakeFiles/design_mode.dir/flags.make
 CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm2.cpp.obj: ../Component_collaboration/observer/MainForm2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm2.cpp.obj"
-	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Component_collaboration\observer\MainForm2.cpp.obj -c E:\daily_practice\daily_practise\design_mode\Component_collaboration\observer\MainForm2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm2.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Component_collaboration\observer\MainForm2.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Component_collaboration\observer\MainForm2.cpp
 
 CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm2.cpp.i"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_mode\Component_collaboration\observer\MainForm2.cpp > CMakeFiles\design_mode.dir\Component_collaboration\observer\MainForm2.cpp.i
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Component_collaboration\observer\MainForm2.cpp > CMakeFiles\design_mode.dir\Component_collaboration\observer\MainForm2.cpp.i
 
 CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm2.cpp.s"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_mode\Component_collaboration\observer\MainForm2.cpp -o CMakeFiles\design_mode.dir\Component_collaboration\observer\MainForm2.cpp.s
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Component_collaboration\observer\MainForm2.cpp -o CMakeFiles\design_mode.dir\Component_collaboration\observer\MainForm2.cpp.s
 
 CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy1.cpp.obj: CMakeFiles/design_mode.dir/flags.make
 CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy1.cpp.obj: ../Component_collaboration/strategy/strategy1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy1.cpp.obj"
-	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Component_collaboration\strategy\strategy1.cpp.obj -c E:\daily_practice\daily_practise\design_mode\Component_collaboration\strategy\strategy1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy1.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Component_collaboration\strategy\strategy1.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Component_collaboration\strategy\strategy1.cpp
 
 CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy1.cpp.i"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_mode\Component_collaboration\strategy\strategy1.cpp > CMakeFiles\design_mode.dir\Component_collaboration\strategy\strategy1.cpp.i
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Component_collaboration\strategy\strategy1.cpp > CMakeFiles\design_mode.dir\Component_collaboration\strategy\strategy1.cpp.i
 
 CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy1.cpp.s"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_mode\Component_collaboration\strategy\strategy1.cpp -o CMakeFiles\design_mode.dir\Component_collaboration\strategy\strategy1.cpp.s
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Component_collaboration\strategy\strategy1.cpp -o CMakeFiles\design_mode.dir\Component_collaboration\strategy\strategy1.cpp.s
 
 CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy2.cpp.obj: CMakeFiles/design_mode.dir/flags.make
 CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy2.cpp.obj: ../Component_collaboration/strategy/strategy2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy2.cpp.obj"
-	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Component_collaboration\strategy\strategy2.cpp.obj -c E:\daily_practice\daily_practise\design_mode\Component_collaboration\strategy\strategy2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy2.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Component_collaboration\strategy\strategy2.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Component_collaboration\strategy\strategy2.cpp
 
 CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy2.cpp.i"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_mode\Component_collaboration\strategy\strategy2.cpp > CMakeFiles\design_mode.dir\Component_collaboration\strategy\strategy2.cpp.i
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Component_collaboration\strategy\strategy2.cpp > CMakeFiles\design_mode.dir\Component_collaboration\strategy\strategy2.cpp.i
 
 CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy2.cpp.s"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_mode\Component_collaboration\strategy\strategy2.cpp -o CMakeFiles\design_mode.dir\Component_collaboration\strategy\strategy2.cpp.s
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Component_collaboration\strategy\strategy2.cpp -o CMakeFiles\design_mode.dir\Component_collaboration\strategy\strategy2.cpp.s
 
 CMakeFiles/design_mode.dir/Component_collaboration/template_method/template1_app.cpp.obj: CMakeFiles/design_mode.dir/flags.make
 CMakeFiles/design_mode.dir/Component_collaboration/template_method/template1_app.cpp.obj: ../Component_collaboration/template_method/template1_app.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/design_mode.dir/Component_collaboration/template_method/template1_app.cpp.obj"
-	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Component_collaboration\template_method\template1_app.cpp.obj -c E:\daily_practice\daily_practise\design_mode\Component_collaboration\template_method\template1_app.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/design_mode.dir/Component_collaboration/template_method/template1_app.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Component_collaboration\template_method\template1_app.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Component_collaboration\template_method\template1_app.cpp
 
 CMakeFiles/design_mode.dir/Component_collaboration/template_method/template1_app.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Component_collaboration/template_method/template1_app.cpp.i"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_mode\Component_collaboration\template_method\template1_app.cpp > CMakeFiles\design_mode.dir\Component_collaboration\template_method\template1_app.cpp.i
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Component_collaboration\template_method\template1_app.cpp > CMakeFiles\design_mode.dir\Component_collaboration\template_method\template1_app.cpp.i
 
 CMakeFiles/design_mode.dir/Component_collaboration/template_method/template1_app.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Component_collaboration/template_method/template1_app.cpp.s"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_mode\Component_collaboration\template_method\template1_app.cpp -o CMakeFiles\design_mode.dir\Component_collaboration\template_method\template1_app.cpp.s
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Component_collaboration\template_method\template1_app.cpp -o CMakeFiles\design_mode.dir\Component_collaboration\template_method\template1_app.cpp.s
 
 CMakeFiles/design_mode.dir/Component_collaboration/template_method/template2_app.cpp.obj: CMakeFiles/design_mode.dir/flags.make
 CMakeFiles/design_mode.dir/Component_collaboration/template_method/template2_app.cpp.obj: ../Component_collaboration/template_method/template2_app.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/design_mode.dir/Component_collaboration/template_method/template2_app.cpp.obj"
-	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Component_collaboration\template_method\template2_app.cpp.obj -c E:\daily_practice\daily_practise\design_mode\Component_collaboration\template_method\template2_app.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/design_mode.dir/Component_collaboration/template_method/template2_app.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Component_collaboration\template_method\template2_app.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Component_collaboration\template_method\template2_app.cpp
 
 CMakeFiles/design_mode.dir/Component_collaboration/template_method/template2_app.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Component_collaboration/template_method/template2_app.cpp.i"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_mode\Component_collaboration\template_method\template2_app.cpp > CMakeFiles\design_mode.dir\Component_collaboration\template_method\template2_app.cpp.i
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Component_collaboration\template_method\template2_app.cpp > CMakeFiles\design_mode.dir\Component_collaboration\template_method\template2_app.cpp.i
 
 CMakeFiles/design_mode.dir/Component_collaboration/template_method/template2_app.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Component_collaboration/template_method/template2_app.cpp.s"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_mode\Component_collaboration\template_method\template2_app.cpp -o CMakeFiles\design_mode.dir\Component_collaboration\template_method\template2_app.cpp.s
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Component_collaboration\template_method\template2_app.cpp -o CMakeFiles\design_mode.dir\Component_collaboration\template_method\template2_app.cpp.s
 
 CMakeFiles/design_mode.dir/Component_collaboration/observer/test/observer.cpp.obj: CMakeFiles/design_mode.dir/flags.make
 CMakeFiles/design_mode.dir/Component_collaboration/observer/test/observer.cpp.obj: ../Component_collaboration/observer/test/observer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/design_mode.dir/Component_collaboration/observer/test/observer.cpp.obj"
-	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Component_collaboration\observer\test\observer.cpp.obj -c E:\daily_practice\daily_practise\design_mode\Component_collaboration\observer\test\observer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/design_mode.dir/Component_collaboration/observer/test/observer.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Component_collaboration\observer\test\observer.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Component_collaboration\observer\test\observer.cpp
 
 CMakeFiles/design_mode.dir/Component_collaboration/observer/test/observer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Component_collaboration/observer/test/observer.cpp.i"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_mode\Component_collaboration\observer\test\observer.cpp > CMakeFiles\design_mode.dir\Component_collaboration\observer\test\observer.cpp.i
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Component_collaboration\observer\test\observer.cpp > CMakeFiles\design_mode.dir\Component_collaboration\observer\test\observer.cpp.i
 
 CMakeFiles/design_mode.dir/Component_collaboration/observer/test/observer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Component_collaboration/observer/test/observer.cpp.s"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_mode\Component_collaboration\observer\test\observer.cpp -o CMakeFiles\design_mode.dir\Component_collaboration\observer\test\observer.cpp.s
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Component_collaboration\observer\test\observer.cpp -o CMakeFiles\design_mode.dir\Component_collaboration\observer\test\observer.cpp.s
 
 CMakeFiles/design_mode.dir/Component_collaboration/observer/test/new_observer.cpp.obj: CMakeFiles/design_mode.dir/flags.make
 CMakeFiles/design_mode.dir/Component_collaboration/observer/test/new_observer.cpp.obj: ../Component_collaboration/observer/test/new_observer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/design_mode.dir/Component_collaboration/observer/test/new_observer.cpp.obj"
-	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Component_collaboration\observer\test\new_observer.cpp.obj -c E:\daily_practice\daily_practise\design_mode\Component_collaboration\observer\test\new_observer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/design_mode.dir/Component_collaboration/observer/test/new_observer.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Component_collaboration\observer\test\new_observer.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Component_collaboration\observer\test\new_observer.cpp
 
 CMakeFiles/design_mode.dir/Component_collaboration/observer/test/new_observer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Component_collaboration/observer/test/new_observer.cpp.i"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_mode\Component_collaboration\observer\test\new_observer.cpp > CMakeFiles\design_mode.dir\Component_collaboration\observer\test\new_observer.cpp.i
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Component_collaboration\observer\test\new_observer.cpp > CMakeFiles\design_mode.dir\Component_collaboration\observer\test\new_observer.cpp.i
 
 CMakeFiles/design_mode.dir/Component_collaboration/observer/test/new_observer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Component_collaboration/observer/test/new_observer.cpp.s"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_mode\Component_collaboration\observer\test\new_observer.cpp -o CMakeFiles\design_mode.dir\Component_collaboration\observer\test\new_observer.cpp.s
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Component_collaboration\observer\test\new_observer.cpp -o CMakeFiles\design_mode.dir\Component_collaboration\observer\test\new_observer.cpp.s
 
 CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator1.cpp.obj: CMakeFiles/design_mode.dir/flags.make
 CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator1.cpp.obj: ../Single_responsibility/decorator/decorator1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator1.cpp.obj"
-	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator1.cpp.obj -c E:\daily_practice\daily_practise\design_mode\Single_responsibility\decorator\decorator1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator1.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator1.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Single_responsibility\decorator\decorator1.cpp
 
 CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator1.cpp.i"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_mode\Single_responsibility\decorator\decorator1.cpp > CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator1.cpp.i
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Single_responsibility\decorator\decorator1.cpp > CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator1.cpp.i
 
 CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator1.cpp.s"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_mode\Single_responsibility\decorator\decorator1.cpp -o CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator1.cpp.s
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Single_responsibility\decorator\decorator1.cpp -o CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator1.cpp.s
 
 CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator2.cpp.obj: CMakeFiles/design_mode.dir/flags.make
 CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator2.cpp.obj: ../Single_responsibility/decorator/decorator2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator2.cpp.obj"
-	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator2.cpp.obj -c E:\daily_practice\daily_practise\design_mode\Single_responsibility\decorator\decorator2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator2.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator2.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Single_responsibility\decorator\decorator2.cpp
 
 CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator2.cpp.i"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_mode\Single_responsibility\decorator\decorator2.cpp > CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator2.cpp.i
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Single_responsibility\decorator\decorator2.cpp > CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator2.cpp.i
 
 CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator2.cpp.s"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_mode\Single_responsibility\decorator\decorator2.cpp -o CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator2.cpp.s
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Single_responsibility\decorator\decorator2.cpp -o CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator2.cpp.s
 
 CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator3.cpp.obj: CMakeFiles/design_mode.dir/flags.make
 CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator3.cpp.obj: ../Single_responsibility/decorator/decorator3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator3.cpp.obj"
-	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator3.cpp.obj -c E:\daily_practice\daily_practise\design_mode\Single_responsibility\decorator\decorator3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator3.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator3.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Single_responsibility\decorator\decorator3.cpp
 
 CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator3.cpp.i"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_mode\Single_responsibility\decorator\decorator3.cpp > CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator3.cpp.i
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Single_responsibility\decorator\decorator3.cpp > CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator3.cpp.i
 
 CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator3.cpp.s"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_mode\Single_responsibility\decorator\decorator3.cpp -o CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator3.cpp.s
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Single_responsibility\decorator\decorator3.cpp -o CMakeFiles\design_mode.dir\Single_responsibility\decorator\decorator3.cpp.s
 
 CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge1.cpp.obj: CMakeFiles/design_mode.dir/flags.make
 CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge1.cpp.obj: ../Single_responsibility/brigde/bridge1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge1.cpp.obj"
-	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Single_responsibility\brigde\bridge1.cpp.obj -c E:\daily_practice\daily_practise\design_mode\Single_responsibility\brigde\bridge1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge1.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Single_responsibility\brigde\bridge1.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Single_responsibility\brigde\bridge1.cpp
 
 CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge1.cpp.i"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_mode\Single_responsibility\brigde\bridge1.cpp > CMakeFiles\design_mode.dir\Single_responsibility\brigde\bridge1.cpp.i
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Single_responsibility\brigde\bridge1.cpp > CMakeFiles\design_mode.dir\Single_responsibility\brigde\bridge1.cpp.i
 
 CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge1.cpp.s"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_mode\Single_responsibility\brigde\bridge1.cpp -o CMakeFiles\design_mode.dir\Single_responsibility\brigde\bridge1.cpp.s
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Single_responsibility\brigde\bridge1.cpp -o CMakeFiles\design_mode.dir\Single_responsibility\brigde\bridge1.cpp.s
 
 CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge2.cpp.obj: CMakeFiles/design_mode.dir/flags.make
 CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge2.cpp.obj: ../Single_responsibility/brigde/bridge2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge2.cpp.obj"
-	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Single_responsibility\brigde\bridge2.cpp.obj -c E:\daily_practice\daily_practise\design_mode\Single_responsibility\brigde\bridge2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge2.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Single_responsibility\brigde\bridge2.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Single_responsibility\brigde\bridge2.cpp
 
 CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge2.cpp.i"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_mode\Single_responsibility\brigde\bridge2.cpp > CMakeFiles\design_mode.dir\Single_responsibility\brigde\bridge2.cpp.i
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Single_responsibility\brigde\bridge2.cpp > CMakeFiles\design_mode.dir\Single_responsibility\brigde\bridge2.cpp.i
 
 CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge2.cpp.s"
-	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_mode\Single_responsibility\brigde\bridge2.cpp -o CMakeFiles\design_mode.dir\Single_responsibility\brigde\bridge2.cpp.s
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Single_responsibility\brigde\bridge2.cpp -o CMakeFiles\design_mode.dir\Single_responsibility\brigde\bridge2.cpp.s
 
 # Object files for target design_mode
 design_mode_OBJECTS = \
@@ -261,7 +261,7 @@ design_mode.exe: CMakeFiles/design_mode.dir/build.make
 design_mode.exe: CMakeFiles/design_mode.dir/linklibs.rsp
 design_mode.exe: CMakeFiles/design_mode.dir/objects1.rsp
 design_mode.exe: CMakeFiles/design_mode.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable design_mode.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable design_mode.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\design_mode.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -274,6 +274,6 @@ CMakeFiles/design_mode.dir/clean:
 .PHONY : CMakeFiles/design_mode.dir/clean
 
 CMakeFiles/design_mode.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\daily_practice\daily_practise\design_mode E:\daily_practice\daily_practise\design_mode E:\daily_practice\daily_practise\design_mode\cmake-build-debug E:\daily_practice\daily_practise\design_mode\cmake-build-debug E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles\design_mode.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\daily_practice\daily_practise\design_pattern E:\daily_practice\daily_practise\design_pattern E:\daily_practice\daily_practise\design_pattern\cmake-build-debug E:\daily_practice\daily_practise\design_pattern\cmake-build-debug E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles\design_mode.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/design_mode.dir/depend
 

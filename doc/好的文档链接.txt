@@ -92,3 +92,13 @@ http://blog.chinaunix.net/uid-667478-id-2384354.html
 
 好的，讲并发编程的问题
 https://blog.csdn.net/dog250/article/details/108908750
+
+mysql关于连接表的讲解
+mysql之左连接、右连接、内连接、全连接、等值连接、交叉连接等
+
+oracle忘记SYS用户的密码
+https://jingyan.baidu.com/article/64d05a02626613de54f73b5e.html
+https://jingyan.baidu.com/article/67508eb43cf7879ccb1ce47e.html
+
+PLSQL 导入 dmp 文件图文详解
+https://blog.csdn.net/qq_35238963/article/details/80901078

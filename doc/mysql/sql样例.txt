@@ -1,0 +1,17 @@
+CREATE OR REPLACE PROCEDURE "insert_per_1" AS
+BEGIN
+	-- routine body goes here, e.g.
+	-- DBMS_OUTPUT.PUT_LINE('Navicat for Oracle');
+	
+	for i in 1..10 loop
+
+        insert into HONGSHU."test" values(i, 'x');
+		COMMIT;
+			 
+		--dbms_output.put_line(to_char(sysdate,'yyyy-MM-dd HH24:MI:SS'));
+		dbms_lock.SLEEP(1);--–›√ﬂ60√Î
+		--dbms_output.put_line(to_char(sysdate,'yyyy-MM-dd HH24:MI:SS'));
+					 
+        end loop;
+END;
+

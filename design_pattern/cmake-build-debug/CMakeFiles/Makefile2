@@ -43,10 +43,10 @@ RM = "D:\job_install\cl_mymechine\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\daily_practice\daily_practise\design_mode
+CMAKE_SOURCE_DIR = E:\daily_practice\daily_practise\design_pattern
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\daily_practice\daily_practise\design_mode\cmake-build-debug
+CMAKE_BINARY_DIR = E:\daily_practice\daily_practise\design_pattern\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -77,14 +77,14 @@ clean: CMakeFiles/new_observer.dir/clean
 CMakeFiles/design_mode.dir/all:
 	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/depend
 	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target design_mode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target design_mode"
 .PHONY : CMakeFiles/design_mode.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/design_mode.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles 14
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/design_mode.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/design_mode.dir/rule
 
 # Convenience name for target.
@@ -104,14 +104,14 @@ CMakeFiles/design_mode.dir/clean:
 CMakeFiles/observer.dir/all:
 	$(MAKE) -f CMakeFiles\observer.dir\build.make CMakeFiles/observer.dir/depend
 	$(MAKE) -f CMakeFiles\observer.dir\build.make CMakeFiles/observer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles --progress-num=17,18 "Built target observer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=17,18 "Built target observer"
 .PHONY : CMakeFiles/observer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/observer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles 2
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/observer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/observer.dir/rule
 
 # Convenience name for target.
@@ -131,14 +131,14 @@ CMakeFiles/observer.dir/clean:
 CMakeFiles/new_observer.dir/all:
 	$(MAKE) -f CMakeFiles\new_observer.dir\build.make CMakeFiles/new_observer.dir/depend
 	$(MAKE) -f CMakeFiles\new_observer.dir\build.make CMakeFiles/new_observer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles --progress-num=15,16 "Built target new_observer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=15,16 "Built target new_observer"
 .PHONY : CMakeFiles/new_observer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/new_observer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles 2
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/new_observer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\design_mode\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/new_observer.dir/rule
 
 # Convenience name for target.

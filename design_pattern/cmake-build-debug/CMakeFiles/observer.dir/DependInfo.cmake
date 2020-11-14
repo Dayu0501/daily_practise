@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "E:/daily_practice/daily_practise/design_mode/Component_collaboration/observer/test/observer.cpp" "E:/daily_practice/daily_practise/design_mode/cmake-build-debug/CMakeFiles/observer.dir/Component_collaboration/observer/test/observer.cpp.obj"
+  "E:/daily_practice/daily_practise/design_pattern/Component_collaboration/observer/test/observer.cpp" "E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/CMakeFiles/observer.dir/Component_collaboration/observer/test/observer.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,4 +1,4 @@
-# Install script for directory: E:/daily_practice/daily_practise/design_mode
+# Install script for directory: E:/daily_practice/daily_practise/design_pattern
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/daily_practice/daily_practise/design_mode/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/daily_practice/daily_practise/design_pattern/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
