@@ -208,6 +208,36 @@
 		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Component_collaboration/template_method/template2_lib.h">
 			<Option target="design_mode"/>
 		</Unit>
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Object_create/abstract_factory/EmployeeDAO1.cpp">
+			<Option target="design_mode"/>
+		</Unit>
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Object_create/abstract_factory/EmployeeDAO2.cpp">
+			<Option target="design_mode"/>
+		</Unit>
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Object_create/abstract_factory/EmployeeDAO3.cpp">
+			<Option target="design_mode"/>
+		</Unit>
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Object_create/abstract_factory/head.h">
+			<Option target="design_mode"/>
+		</Unit>
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Object_create/factory_method/FileSplitter1.cpp">
+			<Option target="design_mode"/>
+		</Unit>
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Object_create/factory_method/FileSplitter2.cpp">
+			<Option target="design_mode"/>
+		</Unit>
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Object_create/factory_method/ISplitterFactory.cpp">
+			<Option target="design_mode"/>
+		</Unit>
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Object_create/factory_method/MainForm1.cpp">
+			<Option target="design_mode"/>
+		</Unit>
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Object_create/factory_method/MainForm2.cpp">
+			<Option target="design_mode"/>
+		</Unit>
+		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Object_create/factory_method/head.h">
+			<Option target="design_mode"/>
+		</Unit>
 		<Unit filename="E:/daily_practice/daily_practise/design_pattern/Single_responsibility/brigde/bridge1.cpp">
 			<Option target="design_mode"/>
 		</Unit>

@@ -370,6 +370,222 @@ Component_collaboration/template_method/template2_app.cpp.s:
 	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/template_method/template2_app.cpp.s
 .PHONY : Component_collaboration/template_method/template2_app.cpp.s
 
+Object_create/abstract_factory/EmployeeDAO1.obj: Object_create/abstract_factory/EmployeeDAO1.cpp.obj
+
+.PHONY : Object_create/abstract_factory/EmployeeDAO1.obj
+
+# target to build an object file
+Object_create/abstract_factory/EmployeeDAO1.cpp.obj:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.obj
+.PHONY : Object_create/abstract_factory/EmployeeDAO1.cpp.obj
+
+Object_create/abstract_factory/EmployeeDAO1.i: Object_create/abstract_factory/EmployeeDAO1.cpp.i
+
+.PHONY : Object_create/abstract_factory/EmployeeDAO1.i
+
+# target to preprocess a source file
+Object_create/abstract_factory/EmployeeDAO1.cpp.i:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.i
+.PHONY : Object_create/abstract_factory/EmployeeDAO1.cpp.i
+
+Object_create/abstract_factory/EmployeeDAO1.s: Object_create/abstract_factory/EmployeeDAO1.cpp.s
+
+.PHONY : Object_create/abstract_factory/EmployeeDAO1.s
+
+# target to generate assembly for a file
+Object_create/abstract_factory/EmployeeDAO1.cpp.s:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.s
+.PHONY : Object_create/abstract_factory/EmployeeDAO1.cpp.s
+
+Object_create/abstract_factory/EmployeeDAO2.obj: Object_create/abstract_factory/EmployeeDAO2.cpp.obj
+
+.PHONY : Object_create/abstract_factory/EmployeeDAO2.obj
+
+# target to build an object file
+Object_create/abstract_factory/EmployeeDAO2.cpp.obj:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.obj
+.PHONY : Object_create/abstract_factory/EmployeeDAO2.cpp.obj
+
+Object_create/abstract_factory/EmployeeDAO2.i: Object_create/abstract_factory/EmployeeDAO2.cpp.i
+
+.PHONY : Object_create/abstract_factory/EmployeeDAO2.i
+
+# target to preprocess a source file
+Object_create/abstract_factory/EmployeeDAO2.cpp.i:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.i
+.PHONY : Object_create/abstract_factory/EmployeeDAO2.cpp.i
+
+Object_create/abstract_factory/EmployeeDAO2.s: Object_create/abstract_factory/EmployeeDAO2.cpp.s
+
+.PHONY : Object_create/abstract_factory/EmployeeDAO2.s
+
+# target to generate assembly for a file
+Object_create/abstract_factory/EmployeeDAO2.cpp.s:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.s
+.PHONY : Object_create/abstract_factory/EmployeeDAO2.cpp.s
+
+Object_create/abstract_factory/EmployeeDAO3.obj: Object_create/abstract_factory/EmployeeDAO3.cpp.obj
+
+.PHONY : Object_create/abstract_factory/EmployeeDAO3.obj
+
+# target to build an object file
+Object_create/abstract_factory/EmployeeDAO3.cpp.obj:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.obj
+.PHONY : Object_create/abstract_factory/EmployeeDAO3.cpp.obj
+
+Object_create/abstract_factory/EmployeeDAO3.i: Object_create/abstract_factory/EmployeeDAO3.cpp.i
+
+.PHONY : Object_create/abstract_factory/EmployeeDAO3.i
+
+# target to preprocess a source file
+Object_create/abstract_factory/EmployeeDAO3.cpp.i:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.i
+.PHONY : Object_create/abstract_factory/EmployeeDAO3.cpp.i
+
+Object_create/abstract_factory/EmployeeDAO3.s: Object_create/abstract_factory/EmployeeDAO3.cpp.s
+
+.PHONY : Object_create/abstract_factory/EmployeeDAO3.s
+
+# target to generate assembly for a file
+Object_create/abstract_factory/EmployeeDAO3.cpp.s:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.s
+.PHONY : Object_create/abstract_factory/EmployeeDAO3.cpp.s
+
+Object_create/factory_method/FileSplitter1.obj: Object_create/factory_method/FileSplitter1.cpp.obj
+
+.PHONY : Object_create/factory_method/FileSplitter1.obj
+
+# target to build an object file
+Object_create/factory_method/FileSplitter1.cpp.obj:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter1.cpp.obj
+.PHONY : Object_create/factory_method/FileSplitter1.cpp.obj
+
+Object_create/factory_method/FileSplitter1.i: Object_create/factory_method/FileSplitter1.cpp.i
+
+.PHONY : Object_create/factory_method/FileSplitter1.i
+
+# target to preprocess a source file
+Object_create/factory_method/FileSplitter1.cpp.i:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter1.cpp.i
+.PHONY : Object_create/factory_method/FileSplitter1.cpp.i
+
+Object_create/factory_method/FileSplitter1.s: Object_create/factory_method/FileSplitter1.cpp.s
+
+.PHONY : Object_create/factory_method/FileSplitter1.s
+
+# target to generate assembly for a file
+Object_create/factory_method/FileSplitter1.cpp.s:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter1.cpp.s
+.PHONY : Object_create/factory_method/FileSplitter1.cpp.s
+
+Object_create/factory_method/FileSplitter2.obj: Object_create/factory_method/FileSplitter2.cpp.obj
+
+.PHONY : Object_create/factory_method/FileSplitter2.obj
+
+# target to build an object file
+Object_create/factory_method/FileSplitter2.cpp.obj:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter2.cpp.obj
+.PHONY : Object_create/factory_method/FileSplitter2.cpp.obj
+
+Object_create/factory_method/FileSplitter2.i: Object_create/factory_method/FileSplitter2.cpp.i
+
+.PHONY : Object_create/factory_method/FileSplitter2.i
+
+# target to preprocess a source file
+Object_create/factory_method/FileSplitter2.cpp.i:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter2.cpp.i
+.PHONY : Object_create/factory_method/FileSplitter2.cpp.i
+
+Object_create/factory_method/FileSplitter2.s: Object_create/factory_method/FileSplitter2.cpp.s
+
+.PHONY : Object_create/factory_method/FileSplitter2.s
+
+# target to generate assembly for a file
+Object_create/factory_method/FileSplitter2.cpp.s:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter2.cpp.s
+.PHONY : Object_create/factory_method/FileSplitter2.cpp.s
+
+Object_create/factory_method/ISplitterFactory.obj: Object_create/factory_method/ISplitterFactory.cpp.obj
+
+.PHONY : Object_create/factory_method/ISplitterFactory.obj
+
+# target to build an object file
+Object_create/factory_method/ISplitterFactory.cpp.obj:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/ISplitterFactory.cpp.obj
+.PHONY : Object_create/factory_method/ISplitterFactory.cpp.obj
+
+Object_create/factory_method/ISplitterFactory.i: Object_create/factory_method/ISplitterFactory.cpp.i
+
+.PHONY : Object_create/factory_method/ISplitterFactory.i
+
+# target to preprocess a source file
+Object_create/factory_method/ISplitterFactory.cpp.i:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/ISplitterFactory.cpp.i
+.PHONY : Object_create/factory_method/ISplitterFactory.cpp.i
+
+Object_create/factory_method/ISplitterFactory.s: Object_create/factory_method/ISplitterFactory.cpp.s
+
+.PHONY : Object_create/factory_method/ISplitterFactory.s
+
+# target to generate assembly for a file
+Object_create/factory_method/ISplitterFactory.cpp.s:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/ISplitterFactory.cpp.s
+.PHONY : Object_create/factory_method/ISplitterFactory.cpp.s
+
+Object_create/factory_method/MainForm1.obj: Object_create/factory_method/MainForm1.cpp.obj
+
+.PHONY : Object_create/factory_method/MainForm1.obj
+
+# target to build an object file
+Object_create/factory_method/MainForm1.cpp.obj:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm1.cpp.obj
+.PHONY : Object_create/factory_method/MainForm1.cpp.obj
+
+Object_create/factory_method/MainForm1.i: Object_create/factory_method/MainForm1.cpp.i
+
+.PHONY : Object_create/factory_method/MainForm1.i
+
+# target to preprocess a source file
+Object_create/factory_method/MainForm1.cpp.i:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm1.cpp.i
+.PHONY : Object_create/factory_method/MainForm1.cpp.i
+
+Object_create/factory_method/MainForm1.s: Object_create/factory_method/MainForm1.cpp.s
+
+.PHONY : Object_create/factory_method/MainForm1.s
+
+# target to generate assembly for a file
+Object_create/factory_method/MainForm1.cpp.s:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm1.cpp.s
+.PHONY : Object_create/factory_method/MainForm1.cpp.s
+
+Object_create/factory_method/MainForm2.obj: Object_create/factory_method/MainForm2.cpp.obj
+
+.PHONY : Object_create/factory_method/MainForm2.obj
+
+# target to build an object file
+Object_create/factory_method/MainForm2.cpp.obj:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm2.cpp.obj
+.PHONY : Object_create/factory_method/MainForm2.cpp.obj
+
+Object_create/factory_method/MainForm2.i: Object_create/factory_method/MainForm2.cpp.i
+
+.PHONY : Object_create/factory_method/MainForm2.i
+
+# target to preprocess a source file
+Object_create/factory_method/MainForm2.cpp.i:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm2.cpp.i
+.PHONY : Object_create/factory_method/MainForm2.cpp.i
+
+Object_create/factory_method/MainForm2.s: Object_create/factory_method/MainForm2.cpp.s
+
+.PHONY : Object_create/factory_method/MainForm2.s
+
+# target to generate assembly for a file
+Object_create/factory_method/MainForm2.cpp.s:
+	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm2.cpp.s
+.PHONY : Object_create/factory_method/MainForm2.cpp.s
+
 Single_responsibility/brigde/bridge1.obj: Single_responsibility/brigde/bridge1.cpp.obj
 
 .PHONY : Single_responsibility/brigde/bridge1.obj
@@ -540,6 +756,30 @@ help:
 	@echo ... Component_collaboration/template_method/template2_app.obj
 	@echo ... Component_collaboration/template_method/template2_app.i
 	@echo ... Component_collaboration/template_method/template2_app.s
+	@echo ... Object_create/abstract_factory/EmployeeDAO1.obj
+	@echo ... Object_create/abstract_factory/EmployeeDAO1.i
+	@echo ... Object_create/abstract_factory/EmployeeDAO1.s
+	@echo ... Object_create/abstract_factory/EmployeeDAO2.obj
+	@echo ... Object_create/abstract_factory/EmployeeDAO2.i
+	@echo ... Object_create/abstract_factory/EmployeeDAO2.s
+	@echo ... Object_create/abstract_factory/EmployeeDAO3.obj
+	@echo ... Object_create/abstract_factory/EmployeeDAO3.i
+	@echo ... Object_create/abstract_factory/EmployeeDAO3.s
+	@echo ... Object_create/factory_method/FileSplitter1.obj
+	@echo ... Object_create/factory_method/FileSplitter1.i
+	@echo ... Object_create/factory_method/FileSplitter1.s
+	@echo ... Object_create/factory_method/FileSplitter2.obj
+	@echo ... Object_create/factory_method/FileSplitter2.i
+	@echo ... Object_create/factory_method/FileSplitter2.s
+	@echo ... Object_create/factory_method/ISplitterFactory.obj
+	@echo ... Object_create/factory_method/ISplitterFactory.i
+	@echo ... Object_create/factory_method/ISplitterFactory.s
+	@echo ... Object_create/factory_method/MainForm1.obj
+	@echo ... Object_create/factory_method/MainForm1.i
+	@echo ... Object_create/factory_method/MainForm1.s
+	@echo ... Object_create/factory_method/MainForm2.obj
+	@echo ... Object_create/factory_method/MainForm2.i
+	@echo ... Object_create/factory_method/MainForm2.s
 	@echo ... Single_responsibility/brigde/bridge1.obj
 	@echo ... Single_responsibility/brigde/bridge1.i
 	@echo ... Single_responsibility/brigde/bridge1.s

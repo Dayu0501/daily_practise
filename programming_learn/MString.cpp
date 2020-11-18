@@ -174,9 +174,13 @@ void test() {
 	printf("s3 address is %p\n", s3.c_str());
 }
 
+
+
 int main() {
 	test();
 	string hello;
+
+
 
 	return 0;
 }

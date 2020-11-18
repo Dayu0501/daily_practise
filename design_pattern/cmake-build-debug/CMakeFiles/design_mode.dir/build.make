@@ -225,6 +225,110 @@ CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge2.cpp.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge2.cpp.s"
 	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Single_responsibility\brigde\bridge2.cpp -o CMakeFiles\design_mode.dir\Single_responsibility\brigde\bridge2.cpp.s
 
+CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter1.cpp.obj: CMakeFiles/design_mode.dir/flags.make
+CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter1.cpp.obj: ../Object_create/factory_method/FileSplitter1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter1.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Object_create\factory_method\FileSplitter1.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Object_create\factory_method\FileSplitter1.cpp
+
+CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter1.cpp.i"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Object_create\factory_method\FileSplitter1.cpp > CMakeFiles\design_mode.dir\Object_create\factory_method\FileSplitter1.cpp.i
+
+CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter1.cpp.s"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Object_create\factory_method\FileSplitter1.cpp -o CMakeFiles\design_mode.dir\Object_create\factory_method\FileSplitter1.cpp.s
+
+CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter2.cpp.obj: CMakeFiles/design_mode.dir/flags.make
+CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter2.cpp.obj: ../Object_create/factory_method/FileSplitter2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter2.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Object_create\factory_method\FileSplitter2.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Object_create\factory_method\FileSplitter2.cpp
+
+CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter2.cpp.i"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Object_create\factory_method\FileSplitter2.cpp > CMakeFiles\design_mode.dir\Object_create\factory_method\FileSplitter2.cpp.i
+
+CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter2.cpp.s"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Object_create\factory_method\FileSplitter2.cpp -o CMakeFiles\design_mode.dir\Object_create\factory_method\FileSplitter2.cpp.s
+
+CMakeFiles/design_mode.dir/Object_create/factory_method/ISplitterFactory.cpp.obj: CMakeFiles/design_mode.dir/flags.make
+CMakeFiles/design_mode.dir/Object_create/factory_method/ISplitterFactory.cpp.obj: ../Object_create/factory_method/ISplitterFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/design_mode.dir/Object_create/factory_method/ISplitterFactory.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Object_create\factory_method\ISplitterFactory.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Object_create\factory_method\ISplitterFactory.cpp
+
+CMakeFiles/design_mode.dir/Object_create/factory_method/ISplitterFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Object_create/factory_method/ISplitterFactory.cpp.i"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Object_create\factory_method\ISplitterFactory.cpp > CMakeFiles\design_mode.dir\Object_create\factory_method\ISplitterFactory.cpp.i
+
+CMakeFiles/design_mode.dir/Object_create/factory_method/ISplitterFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Object_create/factory_method/ISplitterFactory.cpp.s"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Object_create\factory_method\ISplitterFactory.cpp -o CMakeFiles\design_mode.dir\Object_create\factory_method\ISplitterFactory.cpp.s
+
+CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm1.cpp.obj: CMakeFiles/design_mode.dir/flags.make
+CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm1.cpp.obj: ../Object_create/factory_method/MainForm1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm1.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Object_create\factory_method\MainForm1.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Object_create\factory_method\MainForm1.cpp
+
+CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm1.cpp.i"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Object_create\factory_method\MainForm1.cpp > CMakeFiles\design_mode.dir\Object_create\factory_method\MainForm1.cpp.i
+
+CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm1.cpp.s"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Object_create\factory_method\MainForm1.cpp -o CMakeFiles\design_mode.dir\Object_create\factory_method\MainForm1.cpp.s
+
+CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm2.cpp.obj: CMakeFiles/design_mode.dir/flags.make
+CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm2.cpp.obj: ../Object_create/factory_method/MainForm2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm2.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Object_create\factory_method\MainForm2.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Object_create\factory_method\MainForm2.cpp
+
+CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm2.cpp.i"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Object_create\factory_method\MainForm2.cpp > CMakeFiles\design_mode.dir\Object_create\factory_method\MainForm2.cpp.i
+
+CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm2.cpp.s"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Object_create\factory_method\MainForm2.cpp -o CMakeFiles\design_mode.dir\Object_create\factory_method\MainForm2.cpp.s
+
+CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.obj: CMakeFiles/design_mode.dir/flags.make
+CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.obj: ../Object_create/abstract_factory/EmployeeDAO1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Object_create\abstract_factory\EmployeeDAO1.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Object_create\abstract_factory\EmployeeDAO1.cpp
+
+CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.i"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Object_create\abstract_factory\EmployeeDAO1.cpp > CMakeFiles\design_mode.dir\Object_create\abstract_factory\EmployeeDAO1.cpp.i
+
+CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.s"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Object_create\abstract_factory\EmployeeDAO1.cpp -o CMakeFiles\design_mode.dir\Object_create\abstract_factory\EmployeeDAO1.cpp.s
+
+CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.obj: CMakeFiles/design_mode.dir/flags.make
+CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.obj: ../Object_create/abstract_factory/EmployeeDAO2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Object_create\abstract_factory\EmployeeDAO2.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Object_create\abstract_factory\EmployeeDAO2.cpp
+
+CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.i"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Object_create\abstract_factory\EmployeeDAO2.cpp > CMakeFiles\design_mode.dir\Object_create\abstract_factory\EmployeeDAO2.cpp.i
+
+CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.s"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Object_create\abstract_factory\EmployeeDAO2.cpp -o CMakeFiles\design_mode.dir\Object_create\abstract_factory\EmployeeDAO2.cpp.s
+
+CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.obj: CMakeFiles/design_mode.dir/flags.make
+CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.obj: ../Object_create/abstract_factory/EmployeeDAO3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.obj"
+	D:\job_install\mingw\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\design_mode.dir\Object_create\abstract_factory\EmployeeDAO3.cpp.obj -c E:\daily_practice\daily_practise\design_pattern\Object_create\abstract_factory\EmployeeDAO3.cpp
+
+CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.i"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\daily_practice\daily_practise\design_pattern\Object_create\abstract_factory\EmployeeDAO3.cpp > CMakeFiles\design_mode.dir\Object_create\abstract_factory\EmployeeDAO3.cpp.i
+
+CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.s"
+	D:\job_install\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\daily_practice\daily_practise\design_pattern\Object_create\abstract_factory\EmployeeDAO3.cpp -o CMakeFiles\design_mode.dir\Object_create\abstract_factory\EmployeeDAO3.cpp.s
+
 # Object files for target design_mode
 design_mode_OBJECTS = \
 "CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm1.cpp.obj" \
@@ -239,7 +343,15 @@ design_mode_OBJECTS = \
 "CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator2.cpp.obj" \
 "CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator3.cpp.obj" \
 "CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge1.cpp.obj" \
-"CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge2.cpp.obj"
+"CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge2.cpp.obj" \
+"CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter1.cpp.obj" \
+"CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter2.cpp.obj" \
+"CMakeFiles/design_mode.dir/Object_create/factory_method/ISplitterFactory.cpp.obj" \
+"CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm1.cpp.obj" \
+"CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm2.cpp.obj" \
+"CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.obj" \
+"CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.obj" \
+"CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.obj"
 
 # External object files for target design_mode
 design_mode_EXTERNAL_OBJECTS =
@@ -257,11 +369,19 @@ design_mode.exe: CMakeFiles/design_mode.dir/Single_responsibility/decorator/deco
 design_mode.exe: CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator3.cpp.obj
 design_mode.exe: CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge1.cpp.obj
 design_mode.exe: CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge2.cpp.obj
+design_mode.exe: CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter1.cpp.obj
+design_mode.exe: CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter2.cpp.obj
+design_mode.exe: CMakeFiles/design_mode.dir/Object_create/factory_method/ISplitterFactory.cpp.obj
+design_mode.exe: CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm1.cpp.obj
+design_mode.exe: CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm2.cpp.obj
+design_mode.exe: CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.obj
+design_mode.exe: CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.obj
+design_mode.exe: CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.obj
 design_mode.exe: CMakeFiles/design_mode.dir/build.make
 design_mode.exe: CMakeFiles/design_mode.dir/linklibs.rsp
 design_mode.exe: CMakeFiles/design_mode.dir/objects1.rsp
 design_mode.exe: CMakeFiles/design_mode.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable design_mode.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable design_mode.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\design_mode.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

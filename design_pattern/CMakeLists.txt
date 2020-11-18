@@ -3,6 +3,11 @@ project(design_mode)
 
 set(CMAKE_CXX_STANDARD 14)
 
+# 查找当前目录下的所有源文件
+# 并将名称保存到 DIR_SRCS 变量
+aux_source_directory(Object_create/factory_method/ FACTORY_METHOD)
+aux_source_directory(Object_create/abstract_factory/ ABSTRACT_FACTORY)
+
 add_executable(design_mode
         Component_collaboration/observer/FileSplitter1.h
         Component_collaboration/observer/FileSplitter2.h
@@ -19,7 +24,10 @@ add_executable(design_mode
         Single_responsibility/decorator/decorator3.cpp
         Single_responsibility/brigde/bridge1.cpp
         Single_responsibility/brigde/bridge2.cpp
-        )
+        Object_create/factory_method/head.h
+        ${FACTORY_METHOD}
+        ${ABSTRACT_FACTORY}
+        Object_create/abstract_factory/head.h)
 
 add_executable(observer Component_collaboration/observer/test/observer.cpp)
 add_executable(new_observer Component_collaboration/observer/test/new_observer.cpp)

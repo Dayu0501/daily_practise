@@ -31,6 +31,12 @@ void split(const char* token, std::string &str, std::vector<std::string> &splitV
 	std::copy(begin, end, std::back_inserter(splitVector));
 }
 
+std::string deleteMarks(string& des, char x) {
+	des.erase(remove(des.begin(), des.end(), x), des.end());
+
+	return des;
+}
+
 int main() {
 	cout << "----- [ 测试析构函数是否会被调用 ] -----" << endl;
 	{
@@ -61,6 +67,10 @@ int main() {
 
 	uint hello{100};
 	cout << "hello is " << hello << endl;
+
+	string faDongJiHao = "FP 081222121";
+	deleteMarks(faDongJiHao, ' ');
+	cout << "faDongJiHao = " << faDongJiHao << endl;
 
 	return 0;
 }
