@@ -1,14 +1,19 @@
 cmake_minimum_required(VERSION 3.16)
-project(design_mode)
+project(design_pattern)
 
 set(CMAKE_CXX_STANDARD 14)
 
-# 查找当前目录下的所有源文件
-# 并将名称保存到 DIR_SRCS 变量
-aux_source_directory(Object_create/factory_method/ FACTORY_METHOD)
-aux_source_directory(Object_create/abstract_factory/ ABSTRACT_FACTORY)
+include_directories(Component_collaboration/observer)
+include_directories(Component_collaboration/observer/test)
+include_directories(Component_collaboration/template_method)
+include_directories(Object_create/abstract_factory)
+include_directories(Object_create/factory_method)
 
-add_executable(design_mode
+add_executable(design_pattern
+        Component_collaboration/observer/test/head.h
+        Component_collaboration/observer/test/master.h
+        Component_collaboration/observer/test/new_observer.cpp
+        Component_collaboration/observer/test/observer.cpp
         Component_collaboration/observer/FileSplitter1.h
         Component_collaboration/observer/FileSplitter2.h
         Component_collaboration/observer/MainForm1.cpp
@@ -18,16 +23,23 @@ add_executable(design_mode
         Component_collaboration/template_method/template1_app.cpp
         Component_collaboration/template_method/template1_lib.h
         Component_collaboration/template_method/template2_app.cpp
-        Component_collaboration/template_method/template2_lib.h Component_collaboration/observer/test/master.h Component_collaboration/observer/test/observer.cpp Component_collaboration/observer/test/head.h Component_collaboration/observer/test/new_observer.cpp
-        Single_responsibility/decorator/decorator1.cpp
-        Single_responsibility/decorator/decorator2.cpp
-        Single_responsibility/decorator/decorator3.cpp
+        Component_collaboration/template_method/template2_lib.h
+        Object_create/abstract_factory/EmployeeDAO1.cpp
+        Object_create/abstract_factory/EmployeeDAO2.cpp
+        Object_create/abstract_factory/EmployeeDAO3.cpp
+        Object_create/abstract_factory/head.h
+        Object_create/builder/builder.cpp
+        Object_create/factory_method/FileSplitter1.cpp
+        Object_create/factory_method/FileSplitter2.cpp
+        Object_create/factory_method/head.h
+        Object_create/factory_method/ISplitterFactory.cpp
+        Object_create/factory_method/MainForm1.cpp
+        Object_create/factory_method/MainForm2.cpp
+        Object_create/prototype/Client.cpp
+        Object_create/prototype/ConcretePrototype.cpp
+        Object_create/prototype/Prototype.cpp
         Single_responsibility/brigde/bridge1.cpp
         Single_responsibility/brigde/bridge2.cpp
-        Object_create/factory_method/head.h
-        ${FACTORY_METHOD}
-        ${ABSTRACT_FACTORY}
-        Object_create/abstract_factory/head.h)
-
-add_executable(observer Component_collaboration/observer/test/observer.cpp)
-add_executable(new_observer Component_collaboration/observer/test/new_observer.cpp)
+        Single_responsibility/decorator/decorator1.cpp
+        Single_responsibility/decorator/decorator2.cpp
+        Single_responsibility/decorator/decorator3.cpp)

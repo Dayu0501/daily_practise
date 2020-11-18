@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\job_install\cl_mymechine\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\job_install\cl_mymechine\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\daily_practice\daily_practise\design_pattern
+CMAKE_SOURCE_DIR = F:\daily_practise\daily_practise\design_pattern
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\daily_practice\daily_practise\design_pattern\cmake-build-debug
+CMAKE_BINARY_DIR = F:\daily_practise\daily_practise\design_pattern\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = E:\daily_practice\daily_practise\design_pattern\cmake-build-d
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\job_install\cl_mymechine\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\job_install\cl_mymechine\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\daily_practise\daily_practise\design_pattern\cmake-build-debug\CMakeFiles F:\daily_practise\daily_practise\design_pattern\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\daily_practice\daily_practise\design_pattern\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\daily_practise\daily_practise\design_pattern\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,43 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named design_mode
+# Target rules for targets named design_pattern
 
 # Build rule for target.
-design_mode: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 design_mode
-.PHONY : design_mode
+design_pattern: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 design_pattern
+.PHONY : design_pattern
 
 # fast build rule for target.
-design_mode/fast:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/build
-.PHONY : design_mode/fast
-
-#=============================================================================
-# Target rules for targets named observer
-
-# Build rule for target.
-observer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 observer
-.PHONY : observer
-
-# fast build rule for target.
-observer/fast:
-	$(MAKE) -f CMakeFiles\observer.dir\build.make CMakeFiles/observer.dir/build
-.PHONY : observer/fast
-
-#=============================================================================
-# Target rules for targets named new_observer
-
-# Build rule for target.
-new_observer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 new_observer
-.PHONY : new_observer
-
-# fast build rule for target.
-new_observer/fast:
-	$(MAKE) -f CMakeFiles\new_observer.dir\build.make CMakeFiles/new_observer.dir/build
-.PHONY : new_observer/fast
+design_pattern/fast:
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/build
+.PHONY : design_pattern/fast
 
 Component_collaboration/observer/MainForm1.obj: Component_collaboration/observer/MainForm1.cpp.obj
 
@@ -154,7 +128,7 @@ Component_collaboration/observer/MainForm1.obj: Component_collaboration/observer
 
 # target to build an object file
 Component_collaboration/observer/MainForm1.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm1.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/observer/MainForm1.cpp.obj
 .PHONY : Component_collaboration/observer/MainForm1.cpp.obj
 
 Component_collaboration/observer/MainForm1.i: Component_collaboration/observer/MainForm1.cpp.i
@@ -163,7 +137,7 @@ Component_collaboration/observer/MainForm1.i: Component_collaboration/observer/M
 
 # target to preprocess a source file
 Component_collaboration/observer/MainForm1.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm1.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/observer/MainForm1.cpp.i
 .PHONY : Component_collaboration/observer/MainForm1.cpp.i
 
 Component_collaboration/observer/MainForm1.s: Component_collaboration/observer/MainForm1.cpp.s
@@ -172,7 +146,7 @@ Component_collaboration/observer/MainForm1.s: Component_collaboration/observer/M
 
 # target to generate assembly for a file
 Component_collaboration/observer/MainForm1.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm1.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/observer/MainForm1.cpp.s
 .PHONY : Component_collaboration/observer/MainForm1.cpp.s
 
 Component_collaboration/observer/MainForm2.obj: Component_collaboration/observer/MainForm2.cpp.obj
@@ -181,7 +155,7 @@ Component_collaboration/observer/MainForm2.obj: Component_collaboration/observer
 
 # target to build an object file
 Component_collaboration/observer/MainForm2.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm2.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/observer/MainForm2.cpp.obj
 .PHONY : Component_collaboration/observer/MainForm2.cpp.obj
 
 Component_collaboration/observer/MainForm2.i: Component_collaboration/observer/MainForm2.cpp.i
@@ -190,7 +164,7 @@ Component_collaboration/observer/MainForm2.i: Component_collaboration/observer/M
 
 # target to preprocess a source file
 Component_collaboration/observer/MainForm2.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm2.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/observer/MainForm2.cpp.i
 .PHONY : Component_collaboration/observer/MainForm2.cpp.i
 
 Component_collaboration/observer/MainForm2.s: Component_collaboration/observer/MainForm2.cpp.s
@@ -199,7 +173,7 @@ Component_collaboration/observer/MainForm2.s: Component_collaboration/observer/M
 
 # target to generate assembly for a file
 Component_collaboration/observer/MainForm2.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/observer/MainForm2.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/observer/MainForm2.cpp.s
 .PHONY : Component_collaboration/observer/MainForm2.cpp.s
 
 Component_collaboration/observer/test/new_observer.obj: Component_collaboration/observer/test/new_observer.cpp.obj
@@ -208,8 +182,7 @@ Component_collaboration/observer/test/new_observer.obj: Component_collaboration/
 
 # target to build an object file
 Component_collaboration/observer/test/new_observer.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/observer/test/new_observer.cpp.obj
-	$(MAKE) -f CMakeFiles\new_observer.dir\build.make CMakeFiles/new_observer.dir/Component_collaboration/observer/test/new_observer.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/observer/test/new_observer.cpp.obj
 .PHONY : Component_collaboration/observer/test/new_observer.cpp.obj
 
 Component_collaboration/observer/test/new_observer.i: Component_collaboration/observer/test/new_observer.cpp.i
@@ -218,8 +191,7 @@ Component_collaboration/observer/test/new_observer.i: Component_collaboration/ob
 
 # target to preprocess a source file
 Component_collaboration/observer/test/new_observer.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/observer/test/new_observer.cpp.i
-	$(MAKE) -f CMakeFiles\new_observer.dir\build.make CMakeFiles/new_observer.dir/Component_collaboration/observer/test/new_observer.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/observer/test/new_observer.cpp.i
 .PHONY : Component_collaboration/observer/test/new_observer.cpp.i
 
 Component_collaboration/observer/test/new_observer.s: Component_collaboration/observer/test/new_observer.cpp.s
@@ -228,8 +200,7 @@ Component_collaboration/observer/test/new_observer.s: Component_collaboration/ob
 
 # target to generate assembly for a file
 Component_collaboration/observer/test/new_observer.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/observer/test/new_observer.cpp.s
-	$(MAKE) -f CMakeFiles\new_observer.dir\build.make CMakeFiles/new_observer.dir/Component_collaboration/observer/test/new_observer.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/observer/test/new_observer.cpp.s
 .PHONY : Component_collaboration/observer/test/new_observer.cpp.s
 
 Component_collaboration/observer/test/observer.obj: Component_collaboration/observer/test/observer.cpp.obj
@@ -238,8 +209,7 @@ Component_collaboration/observer/test/observer.obj: Component_collaboration/obse
 
 # target to build an object file
 Component_collaboration/observer/test/observer.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/observer/test/observer.cpp.obj
-	$(MAKE) -f CMakeFiles\observer.dir\build.make CMakeFiles/observer.dir/Component_collaboration/observer/test/observer.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/observer/test/observer.cpp.obj
 .PHONY : Component_collaboration/observer/test/observer.cpp.obj
 
 Component_collaboration/observer/test/observer.i: Component_collaboration/observer/test/observer.cpp.i
@@ -248,8 +218,7 @@ Component_collaboration/observer/test/observer.i: Component_collaboration/observ
 
 # target to preprocess a source file
 Component_collaboration/observer/test/observer.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/observer/test/observer.cpp.i
-	$(MAKE) -f CMakeFiles\observer.dir\build.make CMakeFiles/observer.dir/Component_collaboration/observer/test/observer.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/observer/test/observer.cpp.i
 .PHONY : Component_collaboration/observer/test/observer.cpp.i
 
 Component_collaboration/observer/test/observer.s: Component_collaboration/observer/test/observer.cpp.s
@@ -258,8 +227,7 @@ Component_collaboration/observer/test/observer.s: Component_collaboration/observ
 
 # target to generate assembly for a file
 Component_collaboration/observer/test/observer.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/observer/test/observer.cpp.s
-	$(MAKE) -f CMakeFiles\observer.dir\build.make CMakeFiles/observer.dir/Component_collaboration/observer/test/observer.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/observer/test/observer.cpp.s
 .PHONY : Component_collaboration/observer/test/observer.cpp.s
 
 Component_collaboration/strategy/strategy1.obj: Component_collaboration/strategy/strategy1.cpp.obj
@@ -268,7 +236,7 @@ Component_collaboration/strategy/strategy1.obj: Component_collaboration/strategy
 
 # target to build an object file
 Component_collaboration/strategy/strategy1.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy1.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/strategy/strategy1.cpp.obj
 .PHONY : Component_collaboration/strategy/strategy1.cpp.obj
 
 Component_collaboration/strategy/strategy1.i: Component_collaboration/strategy/strategy1.cpp.i
@@ -277,7 +245,7 @@ Component_collaboration/strategy/strategy1.i: Component_collaboration/strategy/s
 
 # target to preprocess a source file
 Component_collaboration/strategy/strategy1.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy1.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/strategy/strategy1.cpp.i
 .PHONY : Component_collaboration/strategy/strategy1.cpp.i
 
 Component_collaboration/strategy/strategy1.s: Component_collaboration/strategy/strategy1.cpp.s
@@ -286,7 +254,7 @@ Component_collaboration/strategy/strategy1.s: Component_collaboration/strategy/s
 
 # target to generate assembly for a file
 Component_collaboration/strategy/strategy1.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy1.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/strategy/strategy1.cpp.s
 .PHONY : Component_collaboration/strategy/strategy1.cpp.s
 
 Component_collaboration/strategy/strategy2.obj: Component_collaboration/strategy/strategy2.cpp.obj
@@ -295,7 +263,7 @@ Component_collaboration/strategy/strategy2.obj: Component_collaboration/strategy
 
 # target to build an object file
 Component_collaboration/strategy/strategy2.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy2.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/strategy/strategy2.cpp.obj
 .PHONY : Component_collaboration/strategy/strategy2.cpp.obj
 
 Component_collaboration/strategy/strategy2.i: Component_collaboration/strategy/strategy2.cpp.i
@@ -304,7 +272,7 @@ Component_collaboration/strategy/strategy2.i: Component_collaboration/strategy/s
 
 # target to preprocess a source file
 Component_collaboration/strategy/strategy2.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy2.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/strategy/strategy2.cpp.i
 .PHONY : Component_collaboration/strategy/strategy2.cpp.i
 
 Component_collaboration/strategy/strategy2.s: Component_collaboration/strategy/strategy2.cpp.s
@@ -313,7 +281,7 @@ Component_collaboration/strategy/strategy2.s: Component_collaboration/strategy/s
 
 # target to generate assembly for a file
 Component_collaboration/strategy/strategy2.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/strategy/strategy2.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/strategy/strategy2.cpp.s
 .PHONY : Component_collaboration/strategy/strategy2.cpp.s
 
 Component_collaboration/template_method/template1_app.obj: Component_collaboration/template_method/template1_app.cpp.obj
@@ -322,7 +290,7 @@ Component_collaboration/template_method/template1_app.obj: Component_collaborati
 
 # target to build an object file
 Component_collaboration/template_method/template1_app.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/template_method/template1_app.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/template_method/template1_app.cpp.obj
 .PHONY : Component_collaboration/template_method/template1_app.cpp.obj
 
 Component_collaboration/template_method/template1_app.i: Component_collaboration/template_method/template1_app.cpp.i
@@ -331,7 +299,7 @@ Component_collaboration/template_method/template1_app.i: Component_collaboration
 
 # target to preprocess a source file
 Component_collaboration/template_method/template1_app.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/template_method/template1_app.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/template_method/template1_app.cpp.i
 .PHONY : Component_collaboration/template_method/template1_app.cpp.i
 
 Component_collaboration/template_method/template1_app.s: Component_collaboration/template_method/template1_app.cpp.s
@@ -340,7 +308,7 @@ Component_collaboration/template_method/template1_app.s: Component_collaboration
 
 # target to generate assembly for a file
 Component_collaboration/template_method/template1_app.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/template_method/template1_app.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/template_method/template1_app.cpp.s
 .PHONY : Component_collaboration/template_method/template1_app.cpp.s
 
 Component_collaboration/template_method/template2_app.obj: Component_collaboration/template_method/template2_app.cpp.obj
@@ -349,7 +317,7 @@ Component_collaboration/template_method/template2_app.obj: Component_collaborati
 
 # target to build an object file
 Component_collaboration/template_method/template2_app.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/template_method/template2_app.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/template_method/template2_app.cpp.obj
 .PHONY : Component_collaboration/template_method/template2_app.cpp.obj
 
 Component_collaboration/template_method/template2_app.i: Component_collaboration/template_method/template2_app.cpp.i
@@ -358,7 +326,7 @@ Component_collaboration/template_method/template2_app.i: Component_collaboration
 
 # target to preprocess a source file
 Component_collaboration/template_method/template2_app.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/template_method/template2_app.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/template_method/template2_app.cpp.i
 .PHONY : Component_collaboration/template_method/template2_app.cpp.i
 
 Component_collaboration/template_method/template2_app.s: Component_collaboration/template_method/template2_app.cpp.s
@@ -367,7 +335,7 @@ Component_collaboration/template_method/template2_app.s: Component_collaboration
 
 # target to generate assembly for a file
 Component_collaboration/template_method/template2_app.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Component_collaboration/template_method/template2_app.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Component_collaboration/template_method/template2_app.cpp.s
 .PHONY : Component_collaboration/template_method/template2_app.cpp.s
 
 Object_create/abstract_factory/EmployeeDAO1.obj: Object_create/abstract_factory/EmployeeDAO1.cpp.obj
@@ -376,7 +344,7 @@ Object_create/abstract_factory/EmployeeDAO1.obj: Object_create/abstract_factory/
 
 # target to build an object file
 Object_create/abstract_factory/EmployeeDAO1.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.obj
 .PHONY : Object_create/abstract_factory/EmployeeDAO1.cpp.obj
 
 Object_create/abstract_factory/EmployeeDAO1.i: Object_create/abstract_factory/EmployeeDAO1.cpp.i
@@ -385,7 +353,7 @@ Object_create/abstract_factory/EmployeeDAO1.i: Object_create/abstract_factory/Em
 
 # target to preprocess a source file
 Object_create/abstract_factory/EmployeeDAO1.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.i
 .PHONY : Object_create/abstract_factory/EmployeeDAO1.cpp.i
 
 Object_create/abstract_factory/EmployeeDAO1.s: Object_create/abstract_factory/EmployeeDAO1.cpp.s
@@ -394,7 +362,7 @@ Object_create/abstract_factory/EmployeeDAO1.s: Object_create/abstract_factory/Em
 
 # target to generate assembly for a file
 Object_create/abstract_factory/EmployeeDAO1.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/abstract_factory/EmployeeDAO1.cpp.s
 .PHONY : Object_create/abstract_factory/EmployeeDAO1.cpp.s
 
 Object_create/abstract_factory/EmployeeDAO2.obj: Object_create/abstract_factory/EmployeeDAO2.cpp.obj
@@ -403,7 +371,7 @@ Object_create/abstract_factory/EmployeeDAO2.obj: Object_create/abstract_factory/
 
 # target to build an object file
 Object_create/abstract_factory/EmployeeDAO2.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.obj
 .PHONY : Object_create/abstract_factory/EmployeeDAO2.cpp.obj
 
 Object_create/abstract_factory/EmployeeDAO2.i: Object_create/abstract_factory/EmployeeDAO2.cpp.i
@@ -412,7 +380,7 @@ Object_create/abstract_factory/EmployeeDAO2.i: Object_create/abstract_factory/Em
 
 # target to preprocess a source file
 Object_create/abstract_factory/EmployeeDAO2.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.i
 .PHONY : Object_create/abstract_factory/EmployeeDAO2.cpp.i
 
 Object_create/abstract_factory/EmployeeDAO2.s: Object_create/abstract_factory/EmployeeDAO2.cpp.s
@@ -421,7 +389,7 @@ Object_create/abstract_factory/EmployeeDAO2.s: Object_create/abstract_factory/Em
 
 # target to generate assembly for a file
 Object_create/abstract_factory/EmployeeDAO2.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/abstract_factory/EmployeeDAO2.cpp.s
 .PHONY : Object_create/abstract_factory/EmployeeDAO2.cpp.s
 
 Object_create/abstract_factory/EmployeeDAO3.obj: Object_create/abstract_factory/EmployeeDAO3.cpp.obj
@@ -430,7 +398,7 @@ Object_create/abstract_factory/EmployeeDAO3.obj: Object_create/abstract_factory/
 
 # target to build an object file
 Object_create/abstract_factory/EmployeeDAO3.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.obj
 .PHONY : Object_create/abstract_factory/EmployeeDAO3.cpp.obj
 
 Object_create/abstract_factory/EmployeeDAO3.i: Object_create/abstract_factory/EmployeeDAO3.cpp.i
@@ -439,7 +407,7 @@ Object_create/abstract_factory/EmployeeDAO3.i: Object_create/abstract_factory/Em
 
 # target to preprocess a source file
 Object_create/abstract_factory/EmployeeDAO3.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.i
 .PHONY : Object_create/abstract_factory/EmployeeDAO3.cpp.i
 
 Object_create/abstract_factory/EmployeeDAO3.s: Object_create/abstract_factory/EmployeeDAO3.cpp.s
@@ -448,8 +416,35 @@ Object_create/abstract_factory/EmployeeDAO3.s: Object_create/abstract_factory/Em
 
 # target to generate assembly for a file
 Object_create/abstract_factory/EmployeeDAO3.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/abstract_factory/EmployeeDAO3.cpp.s
 .PHONY : Object_create/abstract_factory/EmployeeDAO3.cpp.s
+
+Object_create/builder/builder.obj: Object_create/builder/builder.cpp.obj
+
+.PHONY : Object_create/builder/builder.obj
+
+# target to build an object file
+Object_create/builder/builder.cpp.obj:
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/builder/builder.cpp.obj
+.PHONY : Object_create/builder/builder.cpp.obj
+
+Object_create/builder/builder.i: Object_create/builder/builder.cpp.i
+
+.PHONY : Object_create/builder/builder.i
+
+# target to preprocess a source file
+Object_create/builder/builder.cpp.i:
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/builder/builder.cpp.i
+.PHONY : Object_create/builder/builder.cpp.i
+
+Object_create/builder/builder.s: Object_create/builder/builder.cpp.s
+
+.PHONY : Object_create/builder/builder.s
+
+# target to generate assembly for a file
+Object_create/builder/builder.cpp.s:
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/builder/builder.cpp.s
+.PHONY : Object_create/builder/builder.cpp.s
 
 Object_create/factory_method/FileSplitter1.obj: Object_create/factory_method/FileSplitter1.cpp.obj
 
@@ -457,7 +452,7 @@ Object_create/factory_method/FileSplitter1.obj: Object_create/factory_method/Fil
 
 # target to build an object file
 Object_create/factory_method/FileSplitter1.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter1.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/factory_method/FileSplitter1.cpp.obj
 .PHONY : Object_create/factory_method/FileSplitter1.cpp.obj
 
 Object_create/factory_method/FileSplitter1.i: Object_create/factory_method/FileSplitter1.cpp.i
@@ -466,7 +461,7 @@ Object_create/factory_method/FileSplitter1.i: Object_create/factory_method/FileS
 
 # target to preprocess a source file
 Object_create/factory_method/FileSplitter1.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter1.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/factory_method/FileSplitter1.cpp.i
 .PHONY : Object_create/factory_method/FileSplitter1.cpp.i
 
 Object_create/factory_method/FileSplitter1.s: Object_create/factory_method/FileSplitter1.cpp.s
@@ -475,7 +470,7 @@ Object_create/factory_method/FileSplitter1.s: Object_create/factory_method/FileS
 
 # target to generate assembly for a file
 Object_create/factory_method/FileSplitter1.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter1.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/factory_method/FileSplitter1.cpp.s
 .PHONY : Object_create/factory_method/FileSplitter1.cpp.s
 
 Object_create/factory_method/FileSplitter2.obj: Object_create/factory_method/FileSplitter2.cpp.obj
@@ -484,7 +479,7 @@ Object_create/factory_method/FileSplitter2.obj: Object_create/factory_method/Fil
 
 # target to build an object file
 Object_create/factory_method/FileSplitter2.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter2.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/factory_method/FileSplitter2.cpp.obj
 .PHONY : Object_create/factory_method/FileSplitter2.cpp.obj
 
 Object_create/factory_method/FileSplitter2.i: Object_create/factory_method/FileSplitter2.cpp.i
@@ -493,7 +488,7 @@ Object_create/factory_method/FileSplitter2.i: Object_create/factory_method/FileS
 
 # target to preprocess a source file
 Object_create/factory_method/FileSplitter2.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter2.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/factory_method/FileSplitter2.cpp.i
 .PHONY : Object_create/factory_method/FileSplitter2.cpp.i
 
 Object_create/factory_method/FileSplitter2.s: Object_create/factory_method/FileSplitter2.cpp.s
@@ -502,7 +497,7 @@ Object_create/factory_method/FileSplitter2.s: Object_create/factory_method/FileS
 
 # target to generate assembly for a file
 Object_create/factory_method/FileSplitter2.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/FileSplitter2.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/factory_method/FileSplitter2.cpp.s
 .PHONY : Object_create/factory_method/FileSplitter2.cpp.s
 
 Object_create/factory_method/ISplitterFactory.obj: Object_create/factory_method/ISplitterFactory.cpp.obj
@@ -511,7 +506,7 @@ Object_create/factory_method/ISplitterFactory.obj: Object_create/factory_method/
 
 # target to build an object file
 Object_create/factory_method/ISplitterFactory.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/ISplitterFactory.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/factory_method/ISplitterFactory.cpp.obj
 .PHONY : Object_create/factory_method/ISplitterFactory.cpp.obj
 
 Object_create/factory_method/ISplitterFactory.i: Object_create/factory_method/ISplitterFactory.cpp.i
@@ -520,7 +515,7 @@ Object_create/factory_method/ISplitterFactory.i: Object_create/factory_method/IS
 
 # target to preprocess a source file
 Object_create/factory_method/ISplitterFactory.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/ISplitterFactory.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/factory_method/ISplitterFactory.cpp.i
 .PHONY : Object_create/factory_method/ISplitterFactory.cpp.i
 
 Object_create/factory_method/ISplitterFactory.s: Object_create/factory_method/ISplitterFactory.cpp.s
@@ -529,7 +524,7 @@ Object_create/factory_method/ISplitterFactory.s: Object_create/factory_method/IS
 
 # target to generate assembly for a file
 Object_create/factory_method/ISplitterFactory.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/ISplitterFactory.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/factory_method/ISplitterFactory.cpp.s
 .PHONY : Object_create/factory_method/ISplitterFactory.cpp.s
 
 Object_create/factory_method/MainForm1.obj: Object_create/factory_method/MainForm1.cpp.obj
@@ -538,7 +533,7 @@ Object_create/factory_method/MainForm1.obj: Object_create/factory_method/MainFor
 
 # target to build an object file
 Object_create/factory_method/MainForm1.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm1.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/factory_method/MainForm1.cpp.obj
 .PHONY : Object_create/factory_method/MainForm1.cpp.obj
 
 Object_create/factory_method/MainForm1.i: Object_create/factory_method/MainForm1.cpp.i
@@ -547,7 +542,7 @@ Object_create/factory_method/MainForm1.i: Object_create/factory_method/MainForm1
 
 # target to preprocess a source file
 Object_create/factory_method/MainForm1.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm1.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/factory_method/MainForm1.cpp.i
 .PHONY : Object_create/factory_method/MainForm1.cpp.i
 
 Object_create/factory_method/MainForm1.s: Object_create/factory_method/MainForm1.cpp.s
@@ -556,7 +551,7 @@ Object_create/factory_method/MainForm1.s: Object_create/factory_method/MainForm1
 
 # target to generate assembly for a file
 Object_create/factory_method/MainForm1.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm1.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/factory_method/MainForm1.cpp.s
 .PHONY : Object_create/factory_method/MainForm1.cpp.s
 
 Object_create/factory_method/MainForm2.obj: Object_create/factory_method/MainForm2.cpp.obj
@@ -565,7 +560,7 @@ Object_create/factory_method/MainForm2.obj: Object_create/factory_method/MainFor
 
 # target to build an object file
 Object_create/factory_method/MainForm2.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm2.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/factory_method/MainForm2.cpp.obj
 .PHONY : Object_create/factory_method/MainForm2.cpp.obj
 
 Object_create/factory_method/MainForm2.i: Object_create/factory_method/MainForm2.cpp.i
@@ -574,7 +569,7 @@ Object_create/factory_method/MainForm2.i: Object_create/factory_method/MainForm2
 
 # target to preprocess a source file
 Object_create/factory_method/MainForm2.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm2.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/factory_method/MainForm2.cpp.i
 .PHONY : Object_create/factory_method/MainForm2.cpp.i
 
 Object_create/factory_method/MainForm2.s: Object_create/factory_method/MainForm2.cpp.s
@@ -583,8 +578,89 @@ Object_create/factory_method/MainForm2.s: Object_create/factory_method/MainForm2
 
 # target to generate assembly for a file
 Object_create/factory_method/MainForm2.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Object_create/factory_method/MainForm2.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/factory_method/MainForm2.cpp.s
 .PHONY : Object_create/factory_method/MainForm2.cpp.s
+
+Object_create/prototype/Client.obj: Object_create/prototype/Client.cpp.obj
+
+.PHONY : Object_create/prototype/Client.obj
+
+# target to build an object file
+Object_create/prototype/Client.cpp.obj:
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/prototype/Client.cpp.obj
+.PHONY : Object_create/prototype/Client.cpp.obj
+
+Object_create/prototype/Client.i: Object_create/prototype/Client.cpp.i
+
+.PHONY : Object_create/prototype/Client.i
+
+# target to preprocess a source file
+Object_create/prototype/Client.cpp.i:
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/prototype/Client.cpp.i
+.PHONY : Object_create/prototype/Client.cpp.i
+
+Object_create/prototype/Client.s: Object_create/prototype/Client.cpp.s
+
+.PHONY : Object_create/prototype/Client.s
+
+# target to generate assembly for a file
+Object_create/prototype/Client.cpp.s:
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/prototype/Client.cpp.s
+.PHONY : Object_create/prototype/Client.cpp.s
+
+Object_create/prototype/ConcretePrototype.obj: Object_create/prototype/ConcretePrototype.cpp.obj
+
+.PHONY : Object_create/prototype/ConcretePrototype.obj
+
+# target to build an object file
+Object_create/prototype/ConcretePrototype.cpp.obj:
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/prototype/ConcretePrototype.cpp.obj
+.PHONY : Object_create/prototype/ConcretePrototype.cpp.obj
+
+Object_create/prototype/ConcretePrototype.i: Object_create/prototype/ConcretePrototype.cpp.i
+
+.PHONY : Object_create/prototype/ConcretePrototype.i
+
+# target to preprocess a source file
+Object_create/prototype/ConcretePrototype.cpp.i:
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/prototype/ConcretePrototype.cpp.i
+.PHONY : Object_create/prototype/ConcretePrototype.cpp.i
+
+Object_create/prototype/ConcretePrototype.s: Object_create/prototype/ConcretePrototype.cpp.s
+
+.PHONY : Object_create/prototype/ConcretePrototype.s
+
+# target to generate assembly for a file
+Object_create/prototype/ConcretePrototype.cpp.s:
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/prototype/ConcretePrototype.cpp.s
+.PHONY : Object_create/prototype/ConcretePrototype.cpp.s
+
+Object_create/prototype/Prototype.obj: Object_create/prototype/Prototype.cpp.obj
+
+.PHONY : Object_create/prototype/Prototype.obj
+
+# target to build an object file
+Object_create/prototype/Prototype.cpp.obj:
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/prototype/Prototype.cpp.obj
+.PHONY : Object_create/prototype/Prototype.cpp.obj
+
+Object_create/prototype/Prototype.i: Object_create/prototype/Prototype.cpp.i
+
+.PHONY : Object_create/prototype/Prototype.i
+
+# target to preprocess a source file
+Object_create/prototype/Prototype.cpp.i:
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/prototype/Prototype.cpp.i
+.PHONY : Object_create/prototype/Prototype.cpp.i
+
+Object_create/prototype/Prototype.s: Object_create/prototype/Prototype.cpp.s
+
+.PHONY : Object_create/prototype/Prototype.s
+
+# target to generate assembly for a file
+Object_create/prototype/Prototype.cpp.s:
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Object_create/prototype/Prototype.cpp.s
+.PHONY : Object_create/prototype/Prototype.cpp.s
 
 Single_responsibility/brigde/bridge1.obj: Single_responsibility/brigde/bridge1.cpp.obj
 
@@ -592,7 +668,7 @@ Single_responsibility/brigde/bridge1.obj: Single_responsibility/brigde/bridge1.c
 
 # target to build an object file
 Single_responsibility/brigde/bridge1.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge1.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Single_responsibility/brigde/bridge1.cpp.obj
 .PHONY : Single_responsibility/brigde/bridge1.cpp.obj
 
 Single_responsibility/brigde/bridge1.i: Single_responsibility/brigde/bridge1.cpp.i
@@ -601,7 +677,7 @@ Single_responsibility/brigde/bridge1.i: Single_responsibility/brigde/bridge1.cpp
 
 # target to preprocess a source file
 Single_responsibility/brigde/bridge1.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge1.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Single_responsibility/brigde/bridge1.cpp.i
 .PHONY : Single_responsibility/brigde/bridge1.cpp.i
 
 Single_responsibility/brigde/bridge1.s: Single_responsibility/brigde/bridge1.cpp.s
@@ -610,7 +686,7 @@ Single_responsibility/brigde/bridge1.s: Single_responsibility/brigde/bridge1.cpp
 
 # target to generate assembly for a file
 Single_responsibility/brigde/bridge1.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge1.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Single_responsibility/brigde/bridge1.cpp.s
 .PHONY : Single_responsibility/brigde/bridge1.cpp.s
 
 Single_responsibility/brigde/bridge2.obj: Single_responsibility/brigde/bridge2.cpp.obj
@@ -619,7 +695,7 @@ Single_responsibility/brigde/bridge2.obj: Single_responsibility/brigde/bridge2.c
 
 # target to build an object file
 Single_responsibility/brigde/bridge2.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge2.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Single_responsibility/brigde/bridge2.cpp.obj
 .PHONY : Single_responsibility/brigde/bridge2.cpp.obj
 
 Single_responsibility/brigde/bridge2.i: Single_responsibility/brigde/bridge2.cpp.i
@@ -628,7 +704,7 @@ Single_responsibility/brigde/bridge2.i: Single_responsibility/brigde/bridge2.cpp
 
 # target to preprocess a source file
 Single_responsibility/brigde/bridge2.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge2.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Single_responsibility/brigde/bridge2.cpp.i
 .PHONY : Single_responsibility/brigde/bridge2.cpp.i
 
 Single_responsibility/brigde/bridge2.s: Single_responsibility/brigde/bridge2.cpp.s
@@ -637,7 +713,7 @@ Single_responsibility/brigde/bridge2.s: Single_responsibility/brigde/bridge2.cpp
 
 # target to generate assembly for a file
 Single_responsibility/brigde/bridge2.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Single_responsibility/brigde/bridge2.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Single_responsibility/brigde/bridge2.cpp.s
 .PHONY : Single_responsibility/brigde/bridge2.cpp.s
 
 Single_responsibility/decorator/decorator1.obj: Single_responsibility/decorator/decorator1.cpp.obj
@@ -646,7 +722,7 @@ Single_responsibility/decorator/decorator1.obj: Single_responsibility/decorator/
 
 # target to build an object file
 Single_responsibility/decorator/decorator1.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator1.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Single_responsibility/decorator/decorator1.cpp.obj
 .PHONY : Single_responsibility/decorator/decorator1.cpp.obj
 
 Single_responsibility/decorator/decorator1.i: Single_responsibility/decorator/decorator1.cpp.i
@@ -655,7 +731,7 @@ Single_responsibility/decorator/decorator1.i: Single_responsibility/decorator/de
 
 # target to preprocess a source file
 Single_responsibility/decorator/decorator1.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator1.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Single_responsibility/decorator/decorator1.cpp.i
 .PHONY : Single_responsibility/decorator/decorator1.cpp.i
 
 Single_responsibility/decorator/decorator1.s: Single_responsibility/decorator/decorator1.cpp.s
@@ -664,7 +740,7 @@ Single_responsibility/decorator/decorator1.s: Single_responsibility/decorator/de
 
 # target to generate assembly for a file
 Single_responsibility/decorator/decorator1.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator1.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Single_responsibility/decorator/decorator1.cpp.s
 .PHONY : Single_responsibility/decorator/decorator1.cpp.s
 
 Single_responsibility/decorator/decorator2.obj: Single_responsibility/decorator/decorator2.cpp.obj
@@ -673,7 +749,7 @@ Single_responsibility/decorator/decorator2.obj: Single_responsibility/decorator/
 
 # target to build an object file
 Single_responsibility/decorator/decorator2.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator2.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Single_responsibility/decorator/decorator2.cpp.obj
 .PHONY : Single_responsibility/decorator/decorator2.cpp.obj
 
 Single_responsibility/decorator/decorator2.i: Single_responsibility/decorator/decorator2.cpp.i
@@ -682,7 +758,7 @@ Single_responsibility/decorator/decorator2.i: Single_responsibility/decorator/de
 
 # target to preprocess a source file
 Single_responsibility/decorator/decorator2.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator2.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Single_responsibility/decorator/decorator2.cpp.i
 .PHONY : Single_responsibility/decorator/decorator2.cpp.i
 
 Single_responsibility/decorator/decorator2.s: Single_responsibility/decorator/decorator2.cpp.s
@@ -691,7 +767,7 @@ Single_responsibility/decorator/decorator2.s: Single_responsibility/decorator/de
 
 # target to generate assembly for a file
 Single_responsibility/decorator/decorator2.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator2.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Single_responsibility/decorator/decorator2.cpp.s
 .PHONY : Single_responsibility/decorator/decorator2.cpp.s
 
 Single_responsibility/decorator/decorator3.obj: Single_responsibility/decorator/decorator3.cpp.obj
@@ -700,7 +776,7 @@ Single_responsibility/decorator/decorator3.obj: Single_responsibility/decorator/
 
 # target to build an object file
 Single_responsibility/decorator/decorator3.cpp.obj:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator3.cpp.obj
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Single_responsibility/decorator/decorator3.cpp.obj
 .PHONY : Single_responsibility/decorator/decorator3.cpp.obj
 
 Single_responsibility/decorator/decorator3.i: Single_responsibility/decorator/decorator3.cpp.i
@@ -709,7 +785,7 @@ Single_responsibility/decorator/decorator3.i: Single_responsibility/decorator/de
 
 # target to preprocess a source file
 Single_responsibility/decorator/decorator3.cpp.i:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator3.cpp.i
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Single_responsibility/decorator/decorator3.cpp.i
 .PHONY : Single_responsibility/decorator/decorator3.cpp.i
 
 Single_responsibility/decorator/decorator3.s: Single_responsibility/decorator/decorator3.cpp.s
@@ -718,7 +794,7 @@ Single_responsibility/decorator/decorator3.s: Single_responsibility/decorator/de
 
 # target to generate assembly for a file
 Single_responsibility/decorator/decorator3.cpp.s:
-	$(MAKE) -f CMakeFiles\design_mode.dir\build.make CMakeFiles/design_mode.dir/Single_responsibility/decorator/decorator3.cpp.s
+	$(MAKE) -f CMakeFiles\design_pattern.dir\build.make CMakeFiles/design_pattern.dir/Single_responsibility/decorator/decorator3.cpp.s
 .PHONY : Single_responsibility/decorator/decorator3.cpp.s
 
 # Help Target
@@ -727,9 +803,7 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... design_mode
-	@echo ... observer
-	@echo ... new_observer
+	@echo ... design_pattern
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Component_collaboration/observer/MainForm1.obj
@@ -765,6 +839,9 @@ help:
 	@echo ... Object_create/abstract_factory/EmployeeDAO3.obj
 	@echo ... Object_create/abstract_factory/EmployeeDAO3.i
 	@echo ... Object_create/abstract_factory/EmployeeDAO3.s
+	@echo ... Object_create/builder/builder.obj
+	@echo ... Object_create/builder/builder.i
+	@echo ... Object_create/builder/builder.s
 	@echo ... Object_create/factory_method/FileSplitter1.obj
 	@echo ... Object_create/factory_method/FileSplitter1.i
 	@echo ... Object_create/factory_method/FileSplitter1.s
@@ -780,6 +857,15 @@ help:
 	@echo ... Object_create/factory_method/MainForm2.obj
 	@echo ... Object_create/factory_method/MainForm2.i
 	@echo ... Object_create/factory_method/MainForm2.s
+	@echo ... Object_create/prototype/Client.obj
+	@echo ... Object_create/prototype/Client.i
+	@echo ... Object_create/prototype/Client.s
+	@echo ... Object_create/prototype/ConcretePrototype.obj
+	@echo ... Object_create/prototype/ConcretePrototype.i
+	@echo ... Object_create/prototype/ConcretePrototype.s
+	@echo ... Object_create/prototype/Prototype.obj
+	@echo ... Object_create/prototype/Prototype.i
+	@echo ... Object_create/prototype/Prototype.s
 	@echo ... Single_responsibility/brigde/bridge1.obj
 	@echo ... Single_responsibility/brigde/bridge1.i
 	@echo ... Single_responsibility/brigde/bridge1.s
