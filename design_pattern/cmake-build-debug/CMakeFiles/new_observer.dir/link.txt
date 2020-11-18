@@ -1,3 +1,0 @@
-"D:\job_install\cl_mymechine\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\new_observer.dir/objects.a
-D:\job_install\mingw\mingw64\bin\ar.exe cr CMakeFiles\new_observer.dir/objects.a @CMakeFiles\new_observer.dir\objects1.rsp
-D:\job_install\mingw\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\new_observer.dir/objects.a -Wl,--no-whole-archive  -o new_observer.exe -Wl,--out-implib,libnew_observer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\new_observer.dir\linklibs.rsp
