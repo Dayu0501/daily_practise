@@ -44,10 +44,10 @@ int main() {
 	v1.emplace_back();
 	v1.emplace_back();
 
-	vector<Obj2> v2;
-	v2.reserve(2);
-	v2.emplace_back();
-	v2.emplace_back();
-	v2.emplace_back();
+//	vector<Obj2> v2;
+//	v2.reserve(2);
+//	v2.emplace_back();
+//	v2.emplace_back();
+//	v2.emplace_back();
 }
 

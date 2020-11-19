@@ -608,3 +608,17 @@ http://192.168.30.29/yuyang/rename_photos
 
 python实用模块书
 https://python3-cookbook.readthedocs.io/zh_CN/latest/c12/p13_polling_multiple_thread_queues.html
+
+系统启动的log(包括/etc/rc.loacal中的启动项)  /var/log/syslog 
+
+7. 停止可视化桌面：
+
+为了安装新的Nvidia驱动程序，我们需要停止当前的显示服务器。最简单的方法是使用telinit命令更改为运行级别3。执行以下linux命令后，显示服务器将停止，因此请确保在继续之前保存所有当前工作（如果有）：
+
+sudo telinit 3
+1
+之后会进入一个新的命令行会话，使用当前的用户名密码登录
+
+passwd hadoop  ##修改hadoop用户密码
+
+使用last命令可以查看系统的登录日志
