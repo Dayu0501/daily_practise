@@ -1,3 +1,0 @@
-"D:\job_install\cl\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\design_pattern.dir/objects.a
-D:\job_install\mingw\mingw64\bin\ar.exe cr CMakeFiles\design_pattern.dir/objects.a @CMakeFiles\design_pattern.dir\objects1.rsp
-D:\job_install\mingw\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\design_pattern.dir/objects.a -Wl,--no-whole-archive  -o design_pattern.exe -Wl,--out-implib,libdesign_pattern.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\design_pattern.dir\linklibs.rsp
