@@ -3,6 +3,8 @@ project(c__11_learn)
 
 set(CMAKE_CXX_STANDARD 14)
 
+include_directories(include)
+
 add_executable(test smart_ptr.cpp standard_shared_ptr.cpp move_semantic.cpp container.cpp)
 add_executable(smart_ptr smart_ptr.cpp)
 add_executable(standard_shared_ptr standard_shared_ptr.cpp)
