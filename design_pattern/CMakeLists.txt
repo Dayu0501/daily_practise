@@ -9,6 +9,10 @@ include_directories(Component_collaboration/template_method)
 include_directories(Object_create/abstract_factory)
 include_directories(Object_create/factory_method)
 
+aux_source_directory(Status_change/status STATUS)
+aux_source_directory(Status_change/memento MEMENTO)
+aux_source_directory(Data_structor/chainOfResposibility CHAINOFRESPOSIBILITY)
+
 add_executable(design_pattern
         Component_collaboration/observer/test/head.h
         Component_collaboration/observer/test/master.h
@@ -42,4 +46,5 @@ add_executable(design_pattern
         Single_responsibility/brigde/bridge2.cpp
         Single_responsibility/decorator/decorator1.cpp
         Single_responsibility/decorator/decorator2.cpp
-        Single_responsibility/decorator/decorator3.cpp)
+        Single_responsibility/decorator/decorator3.cpp
+        ${STATUS} ${MEMENTO} ${CHAINOFRESPOSIBILITY})
