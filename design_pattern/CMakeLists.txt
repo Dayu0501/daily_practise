@@ -12,6 +12,8 @@ include_directories(Object_create/factory_method)
 aux_source_directory(Status_change/status STATUS)
 aux_source_directory(Status_change/memento MEMENTO)
 aux_source_directory(Data_structor/chainOfResposibility CHAINOFRESPOSIBILITY)
+aux_source_directory(Object_performance/flyweight FLYWEIGHT)
+aux_source_directory(Object_performance/singleton SINGLETON)
 
 add_executable(design_pattern
         Component_collaboration/observer/test/head.h
@@ -47,4 +49,4 @@ add_executable(design_pattern
         Single_responsibility/decorator/decorator1.cpp
         Single_responsibility/decorator/decorator2.cpp
         Single_responsibility/decorator/decorator3.cpp
-        ${STATUS} ${MEMENTO} ${CHAINOFRESPOSIBILITY})
+        ${STATUS} ${MEMENTO} ${CHAINOFRESPOSIBILITY} ${FLYWEIGHT} ${SINGLETON})

@@ -622,3 +622,6 @@ sudo telinit 3
 passwd hadoop  ##修改hadoop用户密码
 
 使用last命令可以查看系统的登录日志
+
+下载dlv.exe 供debug使用
+go get -v -u github.com/peterh/liner github.com/derekparker/delve/cmd/dlv
