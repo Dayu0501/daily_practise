@@ -1,5 +1,6 @@
 /*
  * 备忘录模式：就是生成一个当前对象的快照，保存起来。以备后续的还原使用。
+ * 开源的序列化工具很多。
  */
 
 
@@ -42,7 +43,7 @@ int main()
     //... 改变orginator状态
     
     //从备忘录中恢复
-    orginator.setMomento(memento);
+    orginator.setMomento(mem);
 
    
     

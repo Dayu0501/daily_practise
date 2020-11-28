@@ -94,10 +94,9 @@ public:
 };
 
 
-class BufferedStream : public Stream {
-	Stream *stream;//...
+class BufferedStream : public DecoratorStream {
 public:
-	BufferedStream(Stream *stm) : stream(stm) {
+	BufferedStream(Stream *stm) : DecoratorStream(stm) {
 
 	}
 

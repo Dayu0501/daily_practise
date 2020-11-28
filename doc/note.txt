@@ -76,9 +76,19 @@ flush privileges;
 net start mysql
 
 windows查看端口占用：
-netstat -ano | findstr "3306"
+netstat -ano | findstr "任意关键字符串"
 查看哪个进程占用：
 tasklist | findstr "3540"
+
+taskkill /pid 4136 -t -f  直接杀死指定的端口
+
+taskkill /f /t /im java.exe   根据名称
+
+ f:强制
+
+t:也杀死子进程
+
+im：就是要指定名称
 
 SET GLOBAL sql_mode='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION';
 
@@ -625,3 +635,24 @@ passwd hadoop  ##修改hadoop用户密码
 
 下载dlv.exe 供debug使用
 go get -v -u github.com/peterh/liner github.com/derekparker/delve/cmd/dlv
+
+ubuntu 设置环境变量
+echo 'export GOPATH="/home/yulichao/go_workspace"' >> ~/.bashrc
+source ~/.bashrc
+或者是
+export GO111MODULE=on
+
+golang 卸载
+sudo apt-get remove golang-go
+sudo apt-get remove --auto-remove golang-go
+
+golang手动安装
+wget https://studygolang.com/dl/golang/go1.15.5.linux-amd64.tar.gz
+tar -zxvf go1.15.5.linux-amd64.tar.gz
+sudo mv go /usr/local/
+echo 'export GOROOT="/usr/local/go"' >> ~/.bashrc    # 安装目录
+echo 'export GOPATH="/home/yulichao/go_workspace"' >> ~/.bashrc    # 工作环境
+echo 'export GOBIN="$GOPATH/bin"' >> ~/.bashrc    # 可执行文件存放
+echo 'export PATH="$GOPATH:$GOBIN:$GOROOT/bin:$PATH"' >> ~/.bashrc     # 添加PATH路径
+source ~/.bashrc
+

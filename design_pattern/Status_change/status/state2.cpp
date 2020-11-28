@@ -1,6 +1,6 @@
 /*
  * 状态模式：把状态对象实例化，用一个对象来代表一种状态，这个对象内部也会针对自己的状态有相应的行为动作，所以看上去就是
- * 状态变化，行为就变化了
+ * 状态变化，行为就变化了。同样一个对象，他的状态的不同，会表现出不同的行为。
  */
 
 class NetworkState{
@@ -15,7 +15,7 @@ public:
 };
 
 class CloseState;
-class OpenState :public NetworkState{
+class OpenState : public NetworkState{
     
     static NetworkState* m_instance;
 public:
