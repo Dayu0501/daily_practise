@@ -23,3 +23,4 @@ design_pattern/*.idea*
 design_pattern/cmake-build-debug
 design_pattern/cmake-build-debug_remote_tools
 go_learn/*.idea*   
+golang_learn/*.idea*   
