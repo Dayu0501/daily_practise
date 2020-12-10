@@ -656,3 +656,10 @@ echo 'export GOBIN="$GOPATH/bin"' >> ~/.bashrc    # 可执行文件存放
 echo 'export PATH="$GOPATH:$GOBIN:$GOROOT/bin:$PATH"' >> ~/.bashrc     # 添加PATH路径
 source ~/.bashrc
 
+windows md5计算
+certutil -hashfile libBaseShare.so MD5
+
+清空git缓存
+git rm -r --cached .
+git add .
+git commit -m 'update .gitignore'

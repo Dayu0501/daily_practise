@@ -3,6 +3,8 @@
 #include <string>
 #include <ext/pool_allocator.h>
 #include <regex>
+#include <sys/stat.h>
+#include <unistd.h>
 
 using namespace std;
 
@@ -35,6 +37,44 @@ std::string deleteMarks(string& des, char x) {
 	des.erase(remove(des.begin(), des.end(), x), des.end());
 
 	return des;
+}
+
+int testNoRet() {
+	cout << "hhhhhhhhhhh" << endl;
+
+	return 1;
+}
+
+int CreatDir(const char *pszDir)
+{
+	int iLen = strlen(pszDir);
+	char des[iLen + 1];
+	memcpy(des, pszDir, iLen);
+	printf("des is %s\n", des);
+
+	iLen = strlen(des);
+	if (des[iLen - 1] != '\\' && des[iLen - 1] != '/') {
+		des[iLen] = '/';
+		des[iLen + 1] = '\0';
+	}
+
+	printf("des is %s\n", des);
+
+	for (int i = 0; i <= iLen; ++i) {
+		if ((des[i] == '\\' || des[i] == '/') && i != 0) {
+			des[i] = '\0';
+			printf("des is %s\n", des);
+			if (access(des, 0) != 0) {
+				if (mkdir(des, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) != 0) {
+					perror("mkdir failed !\n");
+					return -1;
+				}
+			}
+			//支持linux,将所有\换成/
+			des[i] = '/';
+		}
+	}
+	return 0;
 }
 
 int main() {
@@ -71,6 +111,31 @@ int main() {
 	string faDongJiHao = "FP 081222121";
 	deleteMarks(faDongJiHao, ' ');
 	cout << "faDongJiHao = " << faDongJiHao << endl;
+
+	std::cout << std::endl << "----- [ 测试字符串分割反向 ] -----" << std::endl;
+
+	tmp = "/opt/vehicle/program/log/soap/soapinfo.log";
+	pos = tmp.find_last_of('/');
+	string allPath = tmp.substr(0, pos);
+	cout << "allPath is " << allPath << endl;
+
+	pos = allPath.find_last_of('/');
+	string subPath = allPath.substr(pos + 1);
+
+	cout << "subPath is " << subPath << endl;
+
+	std::cout << std::endl << "----- [ 测试noreturn关键字 ] -----" << std::endl;
+	testNoRet();
+
+	std::cout << std::endl << "----- [ 测试mkdir函数 ] -----" << std::endl;
+	string path = "./testlog/11/222/333";
+	cout << mkdir(path.c_str(), S_IRWXU | S_IRWXG | S_IRWXO) << endl;
+	cout << "errno" << errno << endl;
+	perror("mkdir failed");
+
+	std::cout << std::endl << "----- [ 测试CreatDir ] -----" << std::endl;
+	std::string hellok = "./testtesttest/111/222";
+	CreatDir(hellok.c_str());
 
 	return 0;
 }
