@@ -663,3 +663,8 @@ certutil -hashfile libBaseShare.so MD5
 git rm -r --cached .
 git add .
 git commit -m 'update .gitignore'
+
+
+fio -filename=$filename -direct=1 -iodepth 1 -thread -rw=randrw -ioengine=psync -bs=16k -size=500M -numjobs=10 -runtime=10 -group_reporting -name=mytest 
+
+TPS 吞吐量
