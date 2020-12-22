@@ -2,6 +2,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <string.h>
+#include <stdio.h>
 
 using namespace std;
 
@@ -25,12 +26,12 @@ int display_file(int fd, int count) {
 int main(int argc, char *argv[]) {
 	int fd = 0;
 
-	fd = open("./open_1.txt", _O_RDWR);
+	fd = open("./open_1.txt", O_RDWR);
 	printf("fd = %d \r\n", fd);
-	display_file(fd, 1024);
+	//display_file(fd, 1024);
 
 	cout << "开始休眠......" << endl;
-	sleep(10);
+	sleep(1000000);
 	cout << "休眠结束......" << endl;
 
 

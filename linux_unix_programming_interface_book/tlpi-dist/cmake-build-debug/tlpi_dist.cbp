@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="tlpi_dist"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tlpi_dist">
+				<Option output="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/tlpi_dist.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cap"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/daemons"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/filelock"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/files"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/lib"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pipes"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procres"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pty"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svmsg"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svsem"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svshm"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/time"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/timers"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/tty"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/users_groups"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 tlpi_dist"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tlpi_dist/fast">
+				<Option output="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/tlpi_dist.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cap"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/daemons"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/filelock"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/files"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/lib"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pipes"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procres"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pty"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svmsg"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svsem"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svshm"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/time"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/timers"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/tty"/>
+					<Add directory="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/users_groups"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/job_install/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 tlpi_dist/fast"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/job_install/mingw/mingw64/bin/mingw32-make.exe -f &quot;E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/acl/acl_update.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/acl/acl_view.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/altio/demo_sigio.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/altio/epoll_flags_fork.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/altio/epoll_input.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/altio/multithread_epoll_wait.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/altio/poll_pipes.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/altio/select_mq.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/altio/self_pipe.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/altio/t_select.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cap/cap_functions.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cap/cap_functions.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cap/cap_launcher.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cap/cap_text.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cap/check_password_caps.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cap/demo_file_caps.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cap/show_secbits.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cap/t_cap_get_file.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cap/t_cap_get_pid.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cap/t_cap_set_file.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cap/view_cap_xattr.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cgroups/alloc_mem.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/cgroups/fork_bomb.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/daemons/become_daemon.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/daemons/become_daemon.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/daemons/daemon_SIGHUP.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/daemons/t_syslog.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/daemons/test_become_daemon.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/dirs_links/bad_symlink.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/dirs_links/file_type_stats.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/dirs_links/list_files.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/dirs_links/list_files_readdir_r.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/dirs_links/nftw_dir_tree.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/dirs_links/t_dirbasename.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/dirs_links/t_unlink.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/dirs_links/view_symlink.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/filebuff/direct_read.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/filebuff/mix23_linebuff.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/filebuff/mix23io.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/filebuff/write_bytes.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/fileio/atomic_append.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/fileio/bad_exclusive_open.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/fileio/copy.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/fileio/large_file.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/fileio/multi_descriptors.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/fileio/seek_io.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/fileio/t_readv.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/fileio/t_truncate.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/filelock/create_pid_file.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/filelock/create_pid_file.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/filelock/i_fcntl_locking.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/filelock/region_locking.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/filelock/region_locking.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/filelock/t_flock.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/files/chiflag.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/files/file_perms.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/files/file_perms.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/files/t_chown.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/files/t_stat.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/files/t_umask.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/files/t_utime.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/files/t_utimes.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/filesys/t_mount.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/filesys/t_statfs.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/filesys/t_statvfs.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/filesys/t_umount.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/getopt/t_getopt.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/inotify/demo_inotify.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/inotify/dnotify.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/inotify/inotify_dtree.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/inotify/rand_dtree.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/lib/alt_functions.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/lib/alt_functions.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/lib/error_functions.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/lib/error_functions.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/lib/get_num.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/lib/get_num.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/lib/tlpi_hdr.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/loginacct/dump_utmpx.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/loginacct/utmpx_login.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/loginacct/view_lastlog.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/memalloc/free_and_sbrk.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/mmap/anon_mmap.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/mmap/mmcat.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/mmap/mmcopy.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/mmap/t_mmap.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/mmap/t_remap_file_pages.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/cred_launcher.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/demo_userns.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/demo_uts_namespaces.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/hostname.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/multi_pidns.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/ns_capable.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/ns_child_exec.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/ns_exec.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/ns_run.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/orphan.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/pidns_init_sleep.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/show_creds.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/simple_init.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/t_setns_userns.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/unshare.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/userns_child_exec.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/userns_functions.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/userns_functions.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/namespaces/userns_setns_test.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pgsjc/catch_SIGHUP.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pgsjc/disc_SIGHUP.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pgsjc/handling_SIGTSTP.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pgsjc/job_mon.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pgsjc/orphaned_pgrp_SIGHUP.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pgsjc/t_setsid.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pipes/change_case.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pipes/fifo_seqnum.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pipes/fifo_seqnum_client.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pipes/fifo_seqnum_server.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pipes/pipe_ls_wc.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pipes/pipe_sync.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pipes/popen_glob.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pipes/simple_pipe.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pmsg/mq_notify_sig.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pmsg/mq_notify_siginfo.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pmsg/mq_notify_sigwaitinfo.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pmsg/mq_notify_thread.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pmsg/mq_notify_via_signal.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pmsg/mq_notify_via_thread.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pmsg/pmsg_create.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pmsg/pmsg_getattr.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pmsg/pmsg_receive.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pmsg/pmsg_send.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pmsg/pmsg_unlink.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/proc/bad_longjmp.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/proc/display_env.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/proc/longjmp.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/proc/mem_segments.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/proc/modify_env.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/proc/necho.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/proc/setenv.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/proc/setjmp_vars.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/proc/t_getenv.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/proccred/idshow.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/acct_on.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/acct_v3_view.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/acct_view.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/child_status.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/closeonexec.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/demo_clone.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/envargs.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/execlp.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/exit_handlers.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/footprint.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/fork_file_sharing.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/fork_sig_sync.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/fork_stdio_buf.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/fork_whos_on_first.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/make_zombie.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/multi_SIGCHLD.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/multi_wait.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/orphan.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/pdeath_signal.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/print_wait_status.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/print_wait_status.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/simple_system.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/system.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/t_clone.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/t_execl.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/t_execle.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/t_execlp.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/t_execve.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/t_fork.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/t_system.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/t_vfork.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procexec/vfork_fd_test.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procpri/demo_sched_fifo.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procpri/sched_set.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procpri/sched_view.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procpri/t_sched_getaffinity.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procpri/t_sched_setaffinity.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procpri/t_setpriority.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procres/print_rlimit.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procres/print_rlimit.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procres/print_rusage.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procres/print_rusage.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procres/rlimit_nproc.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procres/rusage.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/procres/rusage_wait.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/progconc/syscall_speed.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/psem/psem_create.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/psem/psem_getvalue.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/psem/psem_post.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/psem/psem_timedwait.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/psem/psem_trywait.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/psem/psem_unlink.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/psem/psem_wait.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/psem/thread_incr_psem.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pshm/pshm_create.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pshm/pshm_read.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pshm/pshm_unlink.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pshm/pshm_write.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pty/pty_fork.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pty/pty_fork.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pty/pty_master_open.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pty/pty_master_open.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pty/pty_master_open_bsd.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pty/script.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/pty/unbuffer.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/seccomp/dump_seccomp_filter.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/seccomp/libseccomp_demo.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/seccomp/seccomp_arg64.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/seccomp/seccomp_control_open.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/seccomp/seccomp_deny_open.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/seccomp/seccomp_launch.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/seccomp/seccomp_logging.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/seccomp/seccomp_multiarch.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/seccomp/seccomp_perf.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/seccomp/seccomp_trap_sigsys.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/seccomp/seccomp_unotify_mkdir.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/shlibs/demo_Bsymbolic/foo1.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/shlibs/demo_Bsymbolic/foo2.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/shlibs/demo_Bsymbolic/foo3.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/shlibs/demo_Bsymbolic/prog.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/shlibs/dynload.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/shlibs/mod1.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/shlibs/mod2.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/shlibs/mod3.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/shlibs/prog.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/shlibs/version_scripts/sv_lib_v1.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/shlibs/version_scripts/sv_lib_v2.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/shlibs/version_scripts/sv_prog.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/shlibs/version_scripts/vis_comm.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/shlibs/version_scripts/vis_f1.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/shlibs/version_scripts/vis_f2.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/catch_rtsigs.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/demo_SIGFPE.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/ignore_pending_sig.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/intquit.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/nonreentrant.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/ouch.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/sig_receiver.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/sig_sender.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/sig_speed_sigsuspend.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/siginterrupt.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/sigmask_longjmp.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/signal.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/signal_functions.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/signal_functions.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/signalfd_sigval.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/t_kill.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/t_sigaltstack.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/t_sigqueue.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/t_sigsuspend.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/signals/t_sigwaitinfo.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/i6d_ucase.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/i6d_ucase_cl.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/i6d_ucase_sv.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/id_echo.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/id_echo_cl.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/id_echo_sv.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/inet_sockets.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/inet_sockets.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/is_echo_cl.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/is_echo_inetd_sv.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/is_echo_sv.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/is_echo_v2_sv.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/is_seqnum.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/is_seqnum_cl.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/is_seqnum_sv.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/is_seqnum_v2.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/is_seqnum_v2_cl.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/is_seqnum_v2_sv.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/list_host_addresses.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/rdwrn.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/rdwrn.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/read_line.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/read_line.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/read_line_buf.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/read_line_buf.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/scm_cred.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/scm_cred_recv.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/scm_cred_send.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/scm_functions.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/scm_functions.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/scm_multi.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/scm_multi_recv.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/scm_multi_send.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/scm_rights.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/scm_rights_recv.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/scm_rights_send.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/sendfile.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/socknames.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/t_gethostbyname.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/t_getservbyname.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/ud_ucase.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/ud_ucase_cl.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/ud_ucase_sv.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/unix_sockets.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/unix_sockets.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/us_abstract_bind.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/us_xfr.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/us_xfr_cl.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/us_xfr_sv.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/us_xfr_v2.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/us_xfr_v2_cl.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sockets/us_xfr_v2_sv.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svipc/svmsg_demo_server.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svipc/t_ftok.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svmsg/svmsg_chqbytes.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svmsg/svmsg_create.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svmsg/svmsg_file.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svmsg/svmsg_file_client.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svmsg/svmsg_file_server.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svmsg/svmsg_info.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svmsg/svmsg_ls.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svmsg/svmsg_receive.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svmsg/svmsg_rm.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svmsg/svmsg_send.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svsem/binary_sems.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svsem/binary_sems.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svsem/event_flags.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svsem/event_flags.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svsem/semun.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svsem/svsem_bad_init.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svsem/svsem_create.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svsem/svsem_demo.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svsem/svsem_good_init.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svsem/svsem_info.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svsem/svsem_mon.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svsem/svsem_op.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svsem/svsem_rm.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svsem/svsem_setall.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svshm/svshm_attach.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svshm/svshm_create.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svshm/svshm_info.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svshm/svshm_lock.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svshm/svshm_mon.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svshm/svshm_rm.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svshm/svshm_unlock.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svshm/svshm_xfr.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svshm/svshm_xfr_reader.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/svshm/svshm_xfr_writer.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sysinfo/procfs_pidmax.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sysinfo/procfs_user_exe.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/sysinfo/t_uname.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/syslim/t_fpathconf.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/syslim/t_sysconf.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/detached_attrib.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/one_time_init.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/prod_condvar.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/prod_no_condvar.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/pthread_barrier_demo.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/simple_thread.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/strerror.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/strerror_test.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/strerror_tls.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/strerror_tsd.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/thread_cancel.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/thread_cleanup.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/thread_incr.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/thread_incr_mutex.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/thread_incr_rwlock.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/thread_incr_spinlock.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/thread_lock_speed.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/threads/thread_multijoin.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/time/calendar_time.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/time/curr_time.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/time/curr_time.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/time/process_time.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/time/show_time.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/time/strtime.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/timers/clock_times.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/timers/cpu_burner.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/timers/cpu_multi_burner.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/timers/cpu_multithread_burner.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/timers/demo_timerfd.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/timers/itimerspec_from_str.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/timers/itimerspec_from_str.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/timers/ptmr_null_evp.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/timers/ptmr_sigev_signal.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/timers/ptmr_sigev_thread.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/timers/real_timer.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/timers/t_clock_nanosleep.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/timers/t_nanosleep.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/timers/timed_read.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/tty/demo_SIGWINCH.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/tty/new_intr.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/tty/no_echo.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/tty/test_tty_functions.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/tty/tty_functions.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/tty/tty_functions.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/tty/ttyname.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/users_groups/check_password.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/users_groups/t_getpwent.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/users_groups/t_getpwnam_r.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/users_groups/ugid_functions.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/users_groups/ugid_functions.h">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/vdso/gettimeofday.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/vmem/madvise_dontneed.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/vmem/memlock.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/vmem/t_mprotect.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/xattr/t_setxattr.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/xattr/xattr_view.c">
+			<Option target="tlpi_dist"/>
+		</Unit>
+		<Unit filename="E:/daily_practise/linux_unix_programming_interface_book/tlpi-dist/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
