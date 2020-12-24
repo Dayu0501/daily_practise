@@ -1,6 +1,9 @@
 查看当前数据库的连接及状态
 show processlist; == select * from information_schema.processlist;
 
+删表语句
+drop table u;
+
 show variables = show global variables;
 客户端如果太长时间没动静，连接器就会自动将它断开。这个时间是由参数 wait_timeout 控制的，默认值是 8 小时。
 show variables like 'wait_timeout';
@@ -347,3 +350,9 @@ select d.* from tradelog l , trade_detail d where d.tradeid=CONVERT(l.tradeid US
 $取的是tradeid的值 $需要待查
 select operator from tradelog  where traideid =$R4.tradeid.value; 
 
+c上非唯一索引
+select * from t where c >=15 and c <= 20 order by desc lock in share mode;
+这个语句where条件的处理流程是先c<=20,在c>=15，因为是降序
+
+select * from t where c >=15 and c <= 20 lock in share mode;
+这个语句where条件的处理流程是先c>=15，在c <= 20，因为默认是升序
