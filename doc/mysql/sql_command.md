@@ -356,3 +356,5 @@ select * from t where c >=15 and c <= 20 order by desc lock in share mode;
 
 select * from t where c >=15 and c <= 20 lock in share mode;
 这个语句where条件的处理流程是先c>=15，在c <= 20，因为默认是升序，索引先找最低的条件
+
+东方闪电

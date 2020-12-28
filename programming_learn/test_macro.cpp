@@ -14,6 +14,7 @@ using namespace std;
 
 int main() {
 
+#define _TEST_
 
 	return 0;
 }
