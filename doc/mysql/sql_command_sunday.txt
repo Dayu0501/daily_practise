@@ -16,3 +16,12 @@
  这两个条件是或的关系，也就是说只要有一个满足条件就会调用 fsync。所以，当 binlog_group_commit_sync_delay 设置为 0 的时候，binlog_group_commit_sync_no_delay_count 也无效了。
  
  hexdump？
+
+查看binlog中的内容
+show binlog events in 'master.000001';
+
+row格式的binlog，使用下面的命令分析binlog操作内容
+
+mysqlbinlog  -vv data/master.000001 --start-position=8900;
+
+binlog_row_image 的默认配置是 FULL，因此 Delete_event 里面，包含了删掉的行的所有字段的值。如果把 binlog_row_image 设置为 MINIMAL，则只会记录必要的信息。
