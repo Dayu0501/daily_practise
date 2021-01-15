@@ -255,7 +255,7 @@ MySQL RAND()函数调用可以在0和1之间产生一个随机数，当传入一
 1，from 
 2，join 
 3，on 
-4，where（where子句内部执行顺序默认是.. and .. or .. and ..从做往右的，但是mysql的优化器会更具自己的原则做优化，如果在数据量大的时候，最好还是自己手动编写顺序，把能过滤多的条件放到前面）
+4，where（where子句内部执行顺序默认是.. and .. or .. and ..从左往右的，但是mysql的优化器会更具自己的原则做优化，如果在数据量大的时候，最好还是自己手动编写顺序，把能过滤多的条件放到前面）
 5，group by(开始使用select中的别名，后面的语句中都可以使用)
 6，avg,sum.... 
 7，having 
@@ -357,4 +357,49 @@ select * from t where c >=15 and c <= 20 order by desc lock in share mode;
 select * from t where c >=15 and c <= 20 lock in share mode;
 这个语句where条件的处理流程是先c>=15，在c <= 20，因为默认是升序，索引先找最低的条件
 
-东方闪电
+ binlog_cache_size 用于控制单个线程内 binlog cache 所占内存的大小。如果超过了这个参数规定的大小，就要暂存到磁盘。
+ 
+ sync_binlog=0 的时候，表示每次提交事务都只 write，不 fsync；
+ sync_binlog=1 的时候，表示每次提交事务都会执行 fsync；
+ sync_binlog=N(N>1) 的时候，表示每次提交事务都 write，但累积 N 个事务后才 fsync。
+ 
+ 
+ InnoDB 提供了 innodb_flush_log_at_trx_commit 参数，它有三种可能取值：
+ 设置为 0 的时候，表示每次事务提交时都只是把 redo log 留在 redo log buffer 中 ;
+ 设置为 1 的时候，表示每次事务提交时都将 redo log 直接持久化到磁盘；
+ 设置为 2 的时候，表示每次事务提交时都只是把 redo log 写到 page cache。
+ 
+ 提升 binlog 组提交的效果，可以通过设置 binlog_group_commit_sync_delay 和 binlog_group_commit_sync_no_delay_count 来实现。
+ binlog_group_commit_sync_delay 参数，表示延迟多少微秒后才调用 fsync;
+ binlog_group_commit_sync_no_delay_count 参数，表示累积多少次以后才调用 fsync。
+ 这两个条件是或的关系，也就是说只要有一个满足条件就会调用 fsync。所以，当 binlog_group_commit_sync_delay 设置为 0 的时候，binlog_group_commit_sync_no_delay_count 也无效了。
+ 
+ hexdump？
+
+查看binlog中的内容
+show binlog events in 'master.000001';
+
+row格式的binlog，使用下面的命令分析binlog操作内容
+
+mysqlbinlog  -vv data/master.000001 --start-position=8900;
+
+binlog_row_image 的默认配置是 FULL，因此 Delete_event 里面，包含了删掉的行的所有字段的值。如果把 binlog_row_image 设置为 MINIMAL，则只会记录必要的信息。
+
+binlog格式
+binlog_format 
+（1）statement。
+（2）row。
+（3）mixed。
+
+备库上执行 show slave status 命令，它的返回结果里面会显示 seconds_behind_master，用于表示当前备库延迟了多少秒。
+
+
+stop slave；
+CHANGE MASTER TO IGNORE_SERVER_IDS=(server_id_of_B); ?
+start slave;
+
+备库并行复制的worker线程总数参数
+而 work 线程的个数，就是由参数 slave_parallel_workers 决定的
+经验，把这个值设置为 8~16 之间最好（32 核物理机的情况），毕竟备库还有可能要提供读查询，不能把 CPU 都吃光了。
+
+

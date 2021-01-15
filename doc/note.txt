@@ -128,6 +128,8 @@ redis查看队列 keys *
 
 lsof -i:6379
 
+llen 获取list的长度
+
 tcpdump tcp port 43048 and host 192.168.20.71 -i enp3s0 -w
 
 
