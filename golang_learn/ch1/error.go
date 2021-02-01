@@ -7,7 +7,7 @@ import (
 
 type MyError struct {
 	When time.Time
-	What string
+	What string 
 }
 
 func (e *MyError) Error() string {
