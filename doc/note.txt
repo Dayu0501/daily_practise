@@ -217,6 +217,22 @@ Connection closed.</code>
 https://www.cnblogs.com/Archmage/p/7570749.html
 
 
+查看用户名 ：git config user.name
+查看密码： git config user.password
+查看邮箱：git config user.email
+查看配置信息： $ git config --list  
+
+ 
+
+修改用户名
+git config --global user.name "xxxx(新的用户名)"
+
+修改密码
+git config --global user.password "xxxx(新的密码)"
+
+修改邮箱
+git config --global user.email "xxxx@xxx.com(新的邮箱)"
+
 1.从远程克隆一份到本地可以通过git clone
 
 Git支持HTTPS和SSH协议，SSH速度更快
@@ -575,6 +591,11 @@ date -s 06:12:01
 
 hwclock -w
 
+
+linux查看cpu的缓存cache line大小
+在/sys/devices/system/cpu/cpu1/cache路径下，有index文件夹，者分别L1数据cache，L1指令cache，L2cache，L3cache
+所以使用下面命令：
+cat /sys/devices/system/cpu/cpu1/cache/index0/coherency_line_size
 
  Ubuntu如何同步网络时间
 1.安装ntpdate工具

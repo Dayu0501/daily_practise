@@ -393,6 +393,16 @@ binlog_format
 
 备库上执行 show slave status 命令，它的返回结果里面会显示 seconds_behind_master，用于表示当前备库延迟了多少秒。
 
+查看当前的隔离级别
+show variables like 'transaction_isolation';
+
+有的时候有些SQL语句会产生一个隐式的提交操作，即执行完成这些语句后，会有一个隐式的COMMIT操作。有以下SQL语句，不用你去“管”：
+
+DDL语句，ALTER DATABASE、ALTER EVENT、ALTER PROCEDURE、ALTER TABLE、ALTER VIEW、CREATE TABLE、DROP TABLE、RENAME TABLE、TRUNCATE TABLE等；
+修改MYSQL架构的语句，CREATE USER、DROP USER、GRANT、RENAME USER、REVOKE、SET PASSWORD；
+管理语句，ANALYZE TABLE、CACHE INDEX、CHECK TABLE、LOAD INDEX INTO CACHE、OPTIMIZE TABLE、REPAIR TABLE等
+设计事务时，不应包含这类语句。如果在事务的前部中发布了一个不能被回滚的语句，则后部的其它语句会发生错误，在这些情况下，通过发布ROLLBACK语句不能 回滚事务的全部效果。
+
 
 stop slave；
 CHANGE MASTER TO IGNORE_SERVER_IDS=(server_id_of_B); ?
