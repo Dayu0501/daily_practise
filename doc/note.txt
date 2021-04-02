@@ -160,6 +160,8 @@ nameserver 223.5.5.5
 查看显卡工作的进程
 nvidia-smi
 
+nvidia-smi -L
+nvidia-smi -q
 
 netstat -an |grep tcp   查看所有tcp连接包括LISTEN状态
 
@@ -691,3 +693,5 @@ git commit -m 'update .gitignore'
 fio -filename=$filename -direct=1 -iodepth 1 -thread -rw=randrw -ioengine=psync -bs=16k -size=500M -numjobs=10 -runtime=10 -group_reporting -name=mytest 
 
 TPS 吞吐量
+
+go env -w GO111MODULE="on"
